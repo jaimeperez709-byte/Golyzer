@@ -1,0 +1,19 @@
+{
+  "name": "golyzer-app",
+  "version": "0.1.0",
+  "description": "Golyzer — recomendaciones deportivas basadas en estadística (no gestiona dinero real).",
+  "private": true,
+  "scripts": {
+    "sync": "npx cap sync",
+    "open:ios": "npx cap open ios",
+    "open:android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "latest",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  }
+}
