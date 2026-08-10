@@ -31,4 +31,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Actualización automática de datos de Golyzer"
-          file_pattern: "predictor-app-prototipo.html pickstats-app/www/index.html"
+          file_pattern: "predictor-app-prototipo.html pickstats-app/www/index.html predictions_log.json"
