@@ -25,6 +25,7 @@ normal, está pensado para correr solo, sin que nadie lo esté mirando.
 
 import os
 import re
+import math
 import json
 import time
 import requests
@@ -36,11 +37,23 @@ HEADERS = {"x-apisports-key": API_KEY}
 SEASON = 2026
 PREVIOUS_SEASON = 2025
 RESULTS_SAMPLE = 6
+LEAGUE_AVG_GOALS = 1.35
+PREDICTIONS_LOG_FILE = "predictions_log.json"
 
 HTML_FILES = [
     "predictor-app-prototipo.html",
     "pickstats-app/www/index.html",
 ]
+
+# misma lista que ALTITUDE_TEAMS en el JS de la app -- mantenerlas iguales
+# para que el contador de aciertos compare contra lo mismo que ve el usuario.
+ALTITUDE_TEAMS = {
+    "Millonarios": 2640, "Santa Fe": 2640, "Internacional de Bogota": 2640,
+    "Deportivo Pasto": 2527,
+    "LDU de Quito": 2850, "Universidad Catolica": 2850, "Independiente del Valle": 2600,
+    "Cienciano": 3399, "Cusco": 3399, "Deportivo Garcilaso": 3399,
+    "UTC Cajamarca": 2750, "FC Cajamarca": 2750,
+}
 
 LEAGUES = {
     140: {"name": "LaLiga", "homeAdvantage": 1.25},
@@ -71,6 +84,85 @@ DEFAULT_FORM = ["D", "D", "D", "D", "D"]
 #     de una competición, ej. liga local + Libertadores) ---
 GOALS_CACHE = {}    # team_id -> (gf, gc, form)
 EXTRA_CACHE = {}    # team_id -> {recentResults, cornersAvg, cardsAvg, lastMatchCorners, lastMatchCards}
+PREDICTIONS_LOG = {}  # match_id (string) -> registro del historial de pronósticos
+
+
+def poisson_prob(k, lam):
+    return (lam ** k) * math.exp(-lam) / math.factorial(k)
+
+
+def altitude_bonus(home_name, away_name):
+    home_alt = ALTITUDE_TEAMS.get(home_name)
+    if not home_alt:
+        return 0
+    away_alt = ALTITUDE_TEAMS.get(away_name, 0)
+    if home_alt - away_alt < 1200:
+        return 0
+    return 0.12 if home_alt >= 3000 else 0.07
+
+
+def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_advantage, max_goals=8):
+    """Misma lógica que matchProbabilities()/pickRecommendation() del JS,
+    solo para local/empate/visita (lo que necesita el contador de aciertos)."""
+    home_attack = home_gf / LEAGUE_AVG_GOALS
+    home_defense = home_gc / LEAGUE_AVG_GOALS
+    away_attack = away_gf / LEAGUE_AVG_GOALS
+    away_defense = away_gc / LEAGUE_AVG_GOALS
+    effective_home_advantage = home_advantage + altitude_bonus(home_name, away_name)
+
+    lambda_home = home_attack * away_defense * LEAGUE_AVG_GOALS * effective_home_advantage
+    lambda_away = away_attack * home_defense * LEAGUE_AVG_GOALS
+
+    p_home = p_draw = p_away = 0.0
+    for i in range(max_goals + 1):
+        for j in range(max_goals + 1):
+            p = poisson_prob(i, lambda_home) * poisson_prob(j, lambda_away)
+            if i > j:
+                p_home += p
+            elif i == j:
+                p_draw += p
+            else:
+                p_away += p
+
+    total = p_home + p_draw + p_away
+    probs = {"home": p_home / total, "draw": p_draw / total, "away": p_away / total}
+    pick = max(probs, key=probs.get)
+    return pick, probs[pick]
+
+
+def actual_outcome(result):
+    if result["home"] > result["away"]:
+        return "home"
+    if result["home"] < result["away"]:
+        return "away"
+    return "draw"
+
+
+def load_predictions_log():
+    global PREDICTIONS_LOG
+    if os.path.exists(PREDICTIONS_LOG_FILE):
+        try:
+            with open(PREDICTIONS_LOG_FILE, encoding="utf-8") as f:
+                records = json.load(f)
+            PREDICTIONS_LOG = {str(r["id"]): r for r in records}
+        except Exception as e:
+            print(f"  AVISO: no se pudo leer {PREDICTIONS_LOG_FILE} ({e}), se empieza uno nuevo.")
+            PREDICTIONS_LOG = {}
+    else:
+        PREDICTIONS_LOG = {}
+    print(f"Historial de pronósticos cargado: {len(PREDICTIONS_LOG)} registros")
+
+
+def save_predictions_log():
+    records = list(PREDICTIONS_LOG.values())
+    records.sort(key=lambda r: r["date"])
+    with open(PREDICTIONS_LOG_FILE, "w", encoding="utf-8") as f:
+        json.dump(records, f, ensure_ascii=False, indent=2)
+    evaluated = [r for r in records if r["status"] in ("correct", "incorrect")]
+    correct = [r for r in evaluated if r["status"] == "correct"]
+    print(f"Historial de pronósticos guardado: {len(records)} registros totales, "
+          f"{len(evaluated)} evaluados, {len(correct)} acertados"
+          f"{f' ({round(100*len(correct)/len(evaluated))}%)' if evaluated else ''}")
 
 
 def get(path, params=None, retries=3):
@@ -285,13 +377,23 @@ def fetch_all_matches():
             tier_counts["promedio_liga"] += 1
 
         for fx in finished_fx:
+            result = {"home": fx["goals"]["home"], "away": fx["goals"]["away"]}
             all_matches.append({
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
-                "finished": True, "result": {"home": fx["goals"]["home"], "away": fx["goals"]["away"]},
+                "finished": True, "result": result,
                 "home": {"name": fx["teams"]["home"]["name"], "gf": 1.35, "gc": 1.35, "form": DEFAULT_FORM},
                 "away": {"name": fx["teams"]["away"]["name"], "gf": 1.35, "gc": 1.35, "form": DEFAULT_FORM},
                 "homeAdvantage": info["homeAdvantage"],
             })
+
+            # si habíamos registrado un pronóstico para este partido antes de
+            # que se jugara, lo cerramos comparando contra el resultado real
+            log_id = str(fx["fixture"]["id"])
+            entry = PREDICTIONS_LOG.get(log_id)
+            if entry and entry.get("status") == "pending":
+                real = actual_outcome(result)
+                entry["actualResult"] = result
+                entry["status"] = "correct" if real == entry["predictedPick"] else "incorrect"
 
         for fx in upcoming_fx:
             home_id, away_id = fx["teams"]["home"]["id"], fx["teams"]["away"]["id"]
@@ -303,6 +405,21 @@ def fetch_all_matches():
                 "homeAdvantage": info["homeAdvantage"],
             })
             print(f"    [próximo] {home_obj['name']} vs {away_obj['name']}")
+
+            # registrar (o refrescar) el pronóstico de este partido mientras
+            # todavía no se ha jugado -- se congela la última versión antes
+            # del pitazo inicial, para comparar honestamente después.
+            pick, prob = predict_pick(
+                home_obj["name"], away_obj["name"],
+                home_obj["gf"], home_obj["gc"], away_obj["gf"], away_obj["gc"],
+                info["homeAdvantage"],
+            )
+            PREDICTIONS_LOG[str(fx["fixture"]["id"])] = {
+                "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
+                "home": home_obj["name"], "away": away_obj["name"],
+                "predictedPick": pick, "predictedProb": round(prob, 4),
+                "status": "pending", "actualResult": None,
+            }
 
         time.sleep(0.15)
 
@@ -319,30 +436,45 @@ def fetch_all_matches():
 
 
 def update_html_files(matches):
-    block = json.dumps(matches, ensure_ascii=False, indent=2)
-    pattern = re.compile(r"const matches = (\[.*?\n\]);\n", re.S)
+    matches_block = json.dumps(matches, ensure_ascii=False, indent=2)
+    matches_pattern = re.compile(r"const matches = (\[.*?\n\]);\n", re.S)
+
+    log_records = list(PREDICTIONS_LOG.values())
+    log_records.sort(key=lambda r: r["date"])
+    log_block = json.dumps(log_records, ensure_ascii=False, indent=2)
+    log_pattern = re.compile(r"const predictionsLog = (\[.*?\]);\n", re.S)
 
     for path in HTML_FILES:
         if not os.path.exists(path):
             print(f"  AVISO: no se encontró {path}, se omite.")
             continue
         html = open(path, encoding="utf-8").read()
-        m = pattern.search(html)
+
+        m = matches_pattern.search(html)
         if not m:
             print(f"  ERROR: no se encontró el bloque de partidos en {path}, no se modifica.")
             continue
-        new_html = html[:m.start(1)] + block + html[m.end(1):]
-        open(path, "w", encoding="utf-8").write(new_html)
-        print(f"  Actualizado: {path} ({len(matches)} partidos)")
+        html = html[:m.start(1)] + matches_block + html[m.end(1):]
+
+        m2 = log_pattern.search(html)
+        if not m2:
+            print(f"  ERROR: no se encontró el bloque del historial en {path}, no se actualiza esa parte.")
+        else:
+            html = html[:m2.start(1)] + log_block + html[m2.end(1):]
+
+        open(path, "w", encoding="utf-8").write(html)
+        print(f"  Actualizado: {path} ({len(matches)} partidos, {len(log_records)} en el historial)")
 
 
 def main():
     if not API_KEY:
         raise SystemExit("Falta la variable de entorno API_FOOTBALL_KEY.")
     print(f"Iniciando actualización — {date.today().isoformat()}")
+    load_predictions_log()
     matches = fetch_all_matches()
     print(f"\nTotal de partidos: {len(matches)}")
     update_html_files(matches)
+    save_predictions_log()
     print("\n=== LISTO ===")
 
 
