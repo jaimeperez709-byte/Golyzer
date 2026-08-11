@@ -3,7 +3,7 @@ name: Actualizar datos de Golyzer
 on:
   schedule:
     # 9:00am hora de Colombia (UTC-5) = 14:00 UTC, todos los días
-    - cron: "0 14 * * *"
+    - cron: "47 13 * * *"
   workflow_dispatch: {}  # permite correrlo a mano desde la pestaña "Actions" en GitHub
 
 jobs:
