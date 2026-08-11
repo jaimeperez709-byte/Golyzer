@@ -7,8 +7,11 @@
     "away": "Mushuc Runa SC",
     "predictedPick": "away",
     "predictedProb": 0.7514,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 3
+    }
   },
   {
     "id": 1575453,
@@ -18,8 +21,11 @@
     "away": "Nacional",
     "predictedPick": "home",
     "predictedProb": 0.3629,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1549713,
@@ -40,8 +46,11 @@
     "away": "Universidad Catolica",
     "predictedPick": "draw",
     "predictedProb": 0.6141,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1610935,
@@ -51,8 +60,11 @@
     "away": "Sportivo Trinidense",
     "predictedPick": "away",
     "predictedProb": 0.579,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1493049,
@@ -62,8 +74,11 @@
     "away": "Belgrano Cordoba",
     "predictedPick": "home",
     "predictedProb": 0.379,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    }
   },
   {
     "id": 1611278,
@@ -73,8 +88,11 @@
     "away": "Racing Montevideo",
     "predictedPick": "home",
     "predictedProb": 0.4739,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1549719,
@@ -95,8 +113,11 @@
     "away": "Nublense",
     "predictedPick": "home",
     "predictedProb": 0.564,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1519443,
@@ -106,8 +127,11 @@
     "away": "Manta FC",
     "predictedPick": "draw",
     "predictedProb": 0.4222,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1493061,
@@ -117,8 +141,11 @@
     "away": "Central Cordoba de Santiago",
     "predictedPick": "home",
     "predictedProb": 0.5237,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1549721,
@@ -236,8 +263,8 @@
     "date": "2026-08-11T19:00:00+00:00",
     "home": "Lyon",
     "away": "Sparta Praha",
-    "predictedPick": "away",
-    "predictedProb": 0.3903,
+    "predictedPick": "home",
+    "predictedProb": 0.3845,
     "status": "pending",
     "actualResult": null
   },
@@ -347,7 +374,7 @@
     "home": "RB Bragantino",
     "away": "Atletico-MG",
     "predictedPick": "home",
-    "predictedProb": 0.6939,
+    "predictedProb": 0.4965,
     "status": "pending",
     "actualResult": null
   },
@@ -357,8 +384,8 @@
     "date": "2026-08-13T00:30:00+00:00",
     "home": "Cruzeiro",
     "away": "Flamengo",
-    "predictedPick": "home",
-    "predictedProb": 0.4146,
+    "predictedPick": "away",
+    "predictedProb": 0.5627,
     "status": "pending",
     "actualResult": null
   },
@@ -523,7 +550,7 @@
     "home": "Racing Club",
     "away": "Banfield",
     "predictedPick": "away",
-    "predictedProb": 0.48,
+    "predictedProb": 0.3707,
     "status": "pending",
     "actualResult": null
   },
@@ -611,7 +638,7 @@
     "home": "San Lorenzo",
     "away": "Union Santa Fe",
     "predictedPick": "away",
-    "predictedProb": 0.4397,
+    "predictedProb": 0.3519,
     "status": "pending",
     "actualResult": null
   },
@@ -677,7 +704,7 @@
     "home": "Manta FC",
     "away": "Leones del Norte",
     "predictedPick": "draw",
-    "predictedProb": 0.4321,
+    "predictedProb": 0.3699,
     "status": "pending",
     "actualResult": null
   },
@@ -753,8 +780,8 @@
     "date": "2026-08-15T21:30:00+00:00",
     "home": "Atletico Paranaense",
     "away": "RB Bragantino",
-    "predictedPick": "draw",
-    "predictedProb": 0.4498,
+    "predictedPick": "home",
+    "predictedProb": 0.5817,
     "status": "pending",
     "actualResult": null
   },
@@ -776,7 +803,7 @@
     "home": "Guayaquil City FC",
     "away": "Libertad",
     "predictedPick": "draw",
-    "predictedProb": 0.5132,
+    "predictedProb": 0.4565,
     "status": "pending",
     "actualResult": null
   },
@@ -787,7 +814,7 @@
     "home": "Sportivo Trinidense",
     "away": "Nacional Asuncion",
     "predictedPick": "home",
-    "predictedProb": 0.8152,
+    "predictedProb": 0.6828,
     "status": "pending",
     "actualResult": null
   },
@@ -797,8 +824,8 @@
     "date": "2026-08-15T21:30:00+00:00",
     "home": "Racing Montevideo",
     "away": "Club Nacional",
-    "predictedPick": "draw",
-    "predictedProb": 0.417,
+    "predictedPick": "home",
+    "predictedProb": 0.4078,
     "status": "pending",
     "actualResult": null
   },
@@ -820,7 +847,7 @@
     "home": "Newells Old Boys",
     "away": "Deportivo Riestra",
     "predictedPick": "away",
-    "predictedProb": 0.4112,
+    "predictedProb": 0.4732,
     "status": "pending",
     "actualResult": null
   },
@@ -919,7 +946,7 @@
     "home": "Everton de Vina",
     "away": "A. Italiano",
     "predictedPick": "home",
-    "predictedProb": 0.4544,
+    "predictedProb": 0.5509,
     "status": "pending",
     "actualResult": null
   },
@@ -930,7 +957,7 @@
     "home": "Mushuc Runa SC",
     "away": "Barcelona SC",
     "predictedPick": "home",
-    "predictedProb": 0.5,
+    "predictedProb": 0.6763,
     "status": "pending",
     "actualResult": null
   },
@@ -1117,7 +1144,7 @@
     "home": "Progreso",
     "away": "Deportivo Maldonado",
     "predictedPick": "away",
-    "predictedProb": 0.6745,
+    "predictedProb": 0.5596,
     "status": "pending",
     "actualResult": null
   },
@@ -1172,7 +1199,7 @@
     "home": "Nublense",
     "away": "Union La Calera",
     "predictedPick": "home",
-    "predictedProb": 0.7452,
+    "predictedProb": 0.834,
     "status": "pending",
     "actualResult": null
   },
@@ -1293,7 +1320,7 @@
     "home": "Orense SC",
     "away": "Deportivo Cuenca",
     "predictedPick": "home",
-    "predictedProb": 0.5998,
+    "predictedProb": 0.6488,
     "status": "pending",
     "actualResult": null
   },
@@ -1359,7 +1386,7 @@
     "home": "River Plate",
     "away": "Argentinos JRS",
     "predictedPick": "away",
-    "predictedProb": 0.759,
+    "predictedProb": 0.7755,
     "status": "pending",
     "actualResult": null
   },
@@ -1381,7 +1408,7 @@
     "home": "Emelec",
     "away": "Tecnico Universitario",
     "predictedPick": "home",
-    "predictedProb": 0.5745,
+    "predictedProb": 0.6429,
     "status": "pending",
     "actualResult": null
   },
@@ -1403,7 +1430,7 @@
     "home": "Mirassol",
     "away": "Flamengo",
     "predictedPick": "away",
-    "predictedProb": 0.5439,
+    "predictedProb": 0.7897,
     "status": "pending",
     "actualResult": null
   },
@@ -1700,7 +1727,7 @@
     "home": "Macara",
     "away": "Universidad Catolica",
     "predictedPick": "away",
-    "predictedProb": 0.6269,
+    "predictedProb": 0.3967,
     "status": "pending",
     "actualResult": null
   },
@@ -1832,7 +1859,7 @@
     "home": "Celtic",
     "away": "Lask Linz",
     "predictedPick": "home",
-    "predictedProb": 0.4313,
+    "predictedProb": 0.438,
     "status": "pending",
     "actualResult": null
   },
@@ -1865,7 +1892,7 @@
     "home": "Atletico-MG",
     "away": "RB Bragantino",
     "predictedPick": "away",
-    "predictedProb": 0.595,
+    "predictedProb": 0.3871,
     "status": "pending",
     "actualResult": null
   },
@@ -1975,7 +2002,7 @@
     "home": "Flamengo",
     "away": "Cruzeiro",
     "predictedPick": "home",
-    "predictedProb": 0.4316,
+    "predictedProb": 0.6741,
     "status": "pending",
     "actualResult": null
   },
@@ -2150,8 +2177,8 @@
     "date": "2026-08-21T17:30:00+00:00",
     "home": "Aldosivi",
     "away": "Union Santa Fe",
-    "predictedPick": "away",
-    "predictedProb": 0.371,
+    "predictedPick": "home",
+    "predictedProb": 0.4433,
     "status": "pending",
     "actualResult": null
   },
@@ -2228,7 +2255,7 @@
     "home": "Deportivo Cuenca",
     "away": "Mushuc Runa SC",
     "predictedPick": "away",
-    "predictedProb": 0.5151,
+    "predictedProb": 0.7353,
     "status": "pending",
     "actualResult": null
   },
@@ -2239,7 +2266,7 @@
     "home": "A. Italiano",
     "away": "Union La Calera",
     "predictedPick": "home",
-    "predictedProb": 0.6748,
+    "predictedProb": 0.6418,
     "status": "pending",
     "actualResult": null
   },
@@ -2580,7 +2607,7 @@
     "home": "Universidad Catolica",
     "away": "Manta FC",
     "predictedPick": "home",
-    "predictedProb": 0.8996,
+    "predictedProb": 0.8342,
     "status": "pending",
     "actualResult": null
   },
@@ -2668,7 +2695,7 @@
     "home": "Tecnico Universitario",
     "away": "Guayaquil City FC",
     "predictedPick": "away",
-    "predictedProb": 0.548,
+    "predictedProb": 0.6146,
     "status": "pending",
     "actualResult": null
   },
@@ -2711,8 +2738,8 @@
     "date": "2026-08-22T23:30:00+00:00",
     "home": "Cruzeiro",
     "away": "Flamengo",
-    "predictedPick": "home",
-    "predictedProb": 0.4261,
+    "predictedPick": "away",
+    "predictedProb": 0.5579,
     "status": "pending",
     "actualResult": null
   },
@@ -2800,7 +2827,7 @@
     "home": "Newells Old Boys",
     "away": "Banfield",
     "predictedPick": "home",
-    "predictedProb": 0.3538,
+    "predictedProb": 0.4132,
     "status": "pending",
     "actualResult": null
   },
@@ -2811,7 +2838,7 @@
     "home": "U. Catolica",
     "away": "Nublense",
     "predictedPick": "home",
-    "predictedProb": 0.8281,
+    "predictedProb": 0.5978,
     "status": "pending",
     "actualResult": null
   },
@@ -3229,7 +3256,7 @@
     "home": "RB Bragantino",
     "away": "Gremio",
     "predictedPick": "home",
-    "predictedProb": 0.8783,
+    "predictedProb": 0.6927,
     "status": "pending",
     "actualResult": null
   },
@@ -3570,7 +3597,7 @@
     "home": "Botafogo",
     "away": "Atletico Paranaense",
     "predictedPick": "away",
-    "predictedProb": 0.4409,
+    "predictedProb": 0.4989,
     "status": "pending",
     "actualResult": null
   },
@@ -3603,7 +3630,7 @@
     "home": "Libertad",
     "away": "Macara",
     "predictedPick": "home",
-    "predictedProb": 0.6231,
+    "predictedProb": 0.5722,
     "status": "pending",
     "actualResult": null
   },
@@ -3614,7 +3641,7 @@
     "home": "Lanus",
     "away": "Argentinos JRS",
     "predictedPick": "away",
-    "predictedProb": 0.6352,
+    "predictedProb": 0.6515,
     "status": "pending",
     "actualResult": null
   },
@@ -3647,7 +3674,7 @@
     "home": "Lask Linz",
     "away": "Celtic",
     "predictedPick": "home",
-    "predictedProb": 0.4313,
+    "predictedProb": 0.438,
     "status": "pending",
     "actualResult": null
   },
@@ -3889,7 +3916,7 @@
     "home": "Union Santa Fe",
     "away": "Sarmiento Junin",
     "predictedPick": "home",
-    "predictedProb": 0.5571,
+    "predictedProb": 0.428,
     "status": "pending",
     "actualResult": null
   },
@@ -4505,7 +4532,7 @@
     "home": "Nublense",
     "away": "Concepción",
     "predictedPick": "away",
-    "predictedProb": 0.7004,
+    "predictedProb": 0.4748,
     "status": "pending",
     "actualResult": null
   },
@@ -4835,7 +4862,7 @@
     "home": "Banfield",
     "away": "River Plate",
     "predictedPick": "home",
-    "predictedProb": 0.7038,
+    "predictedProb": 0.6172,
     "status": "pending",
     "actualResult": null
   },
@@ -4945,7 +4972,7 @@
     "home": "Sao Paulo",
     "away": "RB Bragantino",
     "predictedPick": "away",
-    "predictedProb": 0.759,
+    "predictedProb": 0.5776,
     "status": "pending",
     "actualResult": null
   },
@@ -4956,7 +4983,7 @@
     "home": "Flamengo",
     "away": "Botafogo",
     "predictedPick": "home",
-    "predictedProb": 0.5173,
+    "predictedProb": 0.7208,
     "status": "pending",
     "actualResult": null
   },
@@ -5000,7 +5027,7 @@
     "home": "Atletico Paranaense",
     "away": "Fluminense",
     "predictedPick": "home",
-    "predictedProb": 0.5719,
+    "predictedProb": 0.6119,
     "status": "pending",
     "actualResult": null
   },
@@ -5044,7 +5071,7 @@
     "home": "Argentinos JRS",
     "away": "Aldosivi",
     "predictedPick": "home",
-    "predictedProb": 0.8011,
+    "predictedProb": 0.8109,
     "status": "pending",
     "actualResult": null
   },
@@ -5066,7 +5093,7 @@
     "home": "Tecnico Universitario",
     "away": "Deportivo Cuenca",
     "predictedPick": "away",
-    "predictedProb": 0.4855,
+    "predictedProb": 0.5386,
     "status": "pending",
     "actualResult": null
   },
@@ -5076,8 +5103,8 @@
     "date": "2026-08-30T20:00:00+00:00",
     "home": "Independiente del Valle",
     "away": "Universidad Catolica",
-    "predictedPick": "away",
-    "predictedProb": 0.4089,
+    "predictedPick": "home",
+    "predictedProb": 0.5733,
     "status": "pending",
     "actualResult": null
   },
@@ -5088,7 +5115,7 @@
     "home": "Aucas",
     "away": "Libertad",
     "predictedPick": "away",
-    "predictedProb": 0.6078,
+    "predictedProb": 0.5669,
     "status": "pending",
     "actualResult": null
   },
@@ -5110,7 +5137,7 @@
     "home": "Mushuc Runa SC",
     "away": "Delfin SC",
     "predictedPick": "home",
-    "predictedProb": 0.5,
+    "predictedProb": 0.6763,
     "status": "pending",
     "actualResult": null
   },
@@ -5120,8 +5147,8 @@
     "date": "2026-08-30T20:00:00+00:00",
     "home": "Manta FC",
     "away": "Barcelona SC",
-    "predictedPick": "draw",
-    "predictedProb": 0.4197,
+    "predictedPick": "home",
+    "predictedProb": 0.3876,
     "status": "pending",
     "actualResult": null
   },
@@ -5154,7 +5181,7 @@
     "home": "Colo Colo",
     "away": "A. Italiano",
     "predictedPick": "home",
-    "predictedProb": 0.6762,
+    "predictedProb": 0.7684,
     "status": "pending",
     "actualResult": null
   },
@@ -5341,7 +5368,7 @@
     "home": "Estudiantes L.P.",
     "away": "Newells Old Boys",
     "predictedPick": "away",
-    "predictedProb": 0.4112,
+    "predictedProb": 0.3822,
     "status": "pending",
     "actualResult": null
   },
@@ -5429,7 +5456,7 @@
     "home": "Delfin SC",
     "away": "Tecnico Universitario",
     "predictedPick": "home",
-    "predictedProb": 0.7283,
+    "predictedProb": 0.7912,
     "status": "pending",
     "actualResult": null
   },
@@ -5450,8 +5477,8 @@
     "date": "2026-09-02T20:00:00+00:00",
     "home": "Deportivo Cuenca",
     "away": "Guayaquil City FC",
-    "predictedPick": "draw",
-    "predictedProb": 0.4382,
+    "predictedPick": "away",
+    "predictedProb": 0.4383,
     "status": "pending",
     "actualResult": null
   },
@@ -5462,7 +5489,7 @@
     "home": "Macara",
     "away": "Manta FC",
     "predictedPick": "home",
-    "predictedProb": 0.8834,
+    "predictedProb": 0.8255,
     "status": "pending",
     "actualResult": null
   },
@@ -5473,7 +5500,7 @@
     "home": "Universidad Catolica",
     "away": "Aucas",
     "predictedPick": "home",
-    "predictedProb": 0.8607,
+    "predictedProb": 0.7539,
     "status": "pending",
     "actualResult": null
   },
@@ -5483,8 +5510,8 @@
     "date": "2026-09-02T20:00:00+00:00",
     "home": "LDU de Quito",
     "away": "Mushuc Runa SC",
-    "predictedPick": "home",
-    "predictedProb": 0.4129,
+    "predictedPick": "away",
+    "predictedProb": 0.4465,
     "status": "pending",
     "actualResult": null
   },
@@ -5495,7 +5522,7 @@
     "home": "Libertad",
     "away": "Emelec",
     "predictedPick": "home",
-    "predictedProb": 0.9344,
+    "predictedProb": 0.9443,
     "status": "pending",
     "actualResult": null
   },
@@ -5518,6 +5545,17 @@
     "away": "Internacional de Bogota",
     "predictedPick": "home",
     "predictedProb": 0.4106,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1505479,
+    "league": "Primera División (Chile)",
+    "date": "2026-09-03T00:30:00+00:00",
+    "home": "Deportes Limache",
+    "away": "Nublense",
+    "predictedPick": "away",
+    "predictedProb": 0.6862,
     "status": "pending",
     "actualResult": null
   },
@@ -5650,6 +5688,567 @@
     "away": "Nashville SC",
     "predictedPick": "home",
     "predictedProb": 0.378,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1505515,
+    "league": "Primera División (Chile)",
+    "date": "2026-09-05T00:30:00+00:00",
+    "home": "Concepción",
+    "away": "A. Italiano",
+    "predictedPick": "home",
+    "predictedProb": 0.6831,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550948,
+    "league": "Liga MX",
+    "date": "2026-09-05T01:00:00+00:00",
+    "home": "Puebla",
+    "away": "Toluca",
+    "predictedPick": "away",
+    "predictedProb": 0.4921,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550949,
+    "league": "Liga MX",
+    "date": "2026-09-05T03:00:00+00:00",
+    "home": "FC Juarez",
+    "away": "CF Pachuca",
+    "predictedPick": "away",
+    "predictedProb": 0.8202,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557395,
+    "league": "Premier League",
+    "date": "2026-09-05T11:30:00+00:00",
+    "home": "Newcastle",
+    "away": "Bournemouth",
+    "predictedPick": "home",
+    "predictedProb": 0.4246,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550110,
+    "league": "Serie A",
+    "date": "2026-09-05T13:00:00+00:00",
+    "home": "Fiorentina",
+    "away": "Torino",
+    "predictedPick": "home",
+    "predictedProb": 0.4919,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575155,
+    "league": "Bundesliga",
+    "date": "2026-09-05T13:30:00+00:00",
+    "home": "Werder Bremen",
+    "away": "RB Leipzig",
+    "predictedPick": "away",
+    "predictedProb": 0.6269,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575153,
+    "league": "Bundesliga",
+    "date": "2026-09-05T13:30:00+00:00",
+    "home": "Borussia Mönchengladbach",
+    "away": "SV Elversberg",
+    "predictedPick": "away",
+    "predictedProb": 0.4705,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575150,
+    "league": "Bundesliga",
+    "date": "2026-09-05T13:30:00+00:00",
+    "home": "1899 Hoffenheim",
+    "away": "Borussia Dortmund",
+    "predictedPick": "away",
+    "predictedProb": 0.5234,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575151,
+    "league": "Bundesliga",
+    "date": "2026-09-05T13:30:00+00:00",
+    "home": "Bayer Leverkusen",
+    "away": "Union Berlin",
+    "predictedPick": "home",
+    "predictedProb": 0.7104,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575157,
+    "league": "Bundesliga",
+    "date": "2026-09-05T13:30:00+00:00",
+    "home": "SC Paderborn 07",
+    "away": "SC Freiburg",
+    "predictedPick": "home",
+    "predictedProb": 0.6076,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557391,
+    "league": "Premier League",
+    "date": "2026-09-05T14:00:00+00:00",
+    "home": "Fulham",
+    "away": "Crystal Palace",
+    "predictedPick": "home",
+    "predictedProb": 0.4439,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557394,
+    "league": "Premier League",
+    "date": "2026-09-05T14:00:00+00:00",
+    "home": "Manchester City",
+    "away": "Coventry",
+    "predictedPick": "home",
+    "predictedProb": 0.6713,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557389,
+    "league": "Premier League",
+    "date": "2026-09-05T14:00:00+00:00",
+    "home": "Brighton",
+    "away": "Leeds",
+    "predictedPick": "home",
+    "predictedProb": 0.5398,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557388,
+    "league": "Premier League",
+    "date": "2026-09-05T14:00:00+00:00",
+    "home": "Brentford",
+    "away": "Sunderland",
+    "predictedPick": "home",
+    "predictedProb": 0.4845,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557396,
+    "league": "Premier League",
+    "date": "2026-09-05T14:00:00+00:00",
+    "home": "Nottingham Forest",
+    "away": "Tottenham",
+    "predictedPick": "home",
+    "predictedProb": 0.4871,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1570364,
+    "league": "LaLiga",
+    "date": "2026-09-05T14:15:00+00:00",
+    "home": "Athletic Club",
+    "away": "Atletico Madrid",
+    "predictedPick": "away",
+    "predictedProb": 0.5042,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552154,
+    "league": "Eredivisie",
+    "date": "2026-09-05T14:30:00+00:00",
+    "home": "NEC Nijmegen",
+    "away": "Feyenoord",
+    "predictedPick": "home",
+    "predictedProb": 0.4343,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552750,
+    "league": "Ligue 1",
+    "date": "2026-09-05T15:00:00+00:00",
+    "home": "Lyon",
+    "away": "Auxerre",
+    "predictedPick": "home",
+    "predictedProb": 0.5998,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552749,
+    "league": "Ligue 1",
+    "date": "2026-09-05T15:15:00+00:00",
+    "home": "Lens",
+    "away": "Lorient",
+    "predictedPick": "home",
+    "predictedProb": 0.6976,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550113,
+    "league": "Serie A",
+    "date": "2026-09-05T16:00:00+00:00",
+    "home": "Inter",
+    "away": "Napoli",
+    "predictedPick": "home",
+    "predictedProb": 0.5706,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1570370,
+    "league": "LaLiga",
+    "date": "2026-09-05T16:30:00+00:00",
+    "home": "Rayo Vallecano",
+    "away": "Racing Santander",
+    "predictedPick": "home",
+    "predictedProb": 0.3895,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1557392,
+    "league": "Premier League",
+    "date": "2026-09-05T16:30:00+00:00",
+    "home": "Hull City",
+    "away": "Aston Villa",
+    "predictedPick": "home",
+    "predictedProb": 0.4341,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575156,
+    "league": "Bundesliga",
+    "date": "2026-09-05T16:30:00+00:00",
+    "home": "FC Schalke 04",
+    "away": "Bayern München",
+    "predictedPick": "away",
+    "predictedProb": 0.7791,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552155,
+    "league": "Eredivisie",
+    "date": "2026-09-05T16:45:00+00:00",
+    "home": "Utrecht",
+    "away": "GO Ahead Eagles",
+    "predictedPick": "home",
+    "predictedProb": 0.5383,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552156,
+    "league": "Eredivisie",
+    "date": "2026-09-05T18:00:00+00:00",
+    "home": "Ajax",
+    "away": "PSV Eindhoven",
+    "predictedPick": "away",
+    "predictedProb": 0.5146,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550107,
+    "league": "Serie A",
+    "date": "2026-09-05T18:45:00+00:00",
+    "home": "AS Roma",
+    "away": "Atalanta",
+    "predictedPick": "home",
+    "predictedProb": 0.4852,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552752,
+    "league": "Ligue 1",
+    "date": "2026-09-05T18:45:00+00:00",
+    "home": "Nice",
+    "away": "Le Mans",
+    "predictedPick": "away",
+    "predictedProb": 0.4999,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552748,
+    "league": "Ligue 1",
+    "date": "2026-09-05T18:45:00+00:00",
+    "home": "Le Havre",
+    "away": "Stade Brestois 29",
+    "predictedPick": "home",
+    "predictedProb": 0.3727,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1570372,
+    "league": "LaLiga",
+    "date": "2026-09-05T19:00:00+00:00",
+    "home": "Villarreal",
+    "away": "Deportivo La Coruna",
+    "predictedPick": "home",
+    "predictedProb": 0.6125,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549765,
+    "league": "Liga BetPlay (Colombia)",
+    "date": "2026-09-05T19:00:00+00:00",
+    "home": "Bucaramanga",
+    "away": "Independiente Medellin",
+    "predictedPick": "away",
+    "predictedProb": 0.3866,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552157,
+    "league": "Eredivisie",
+    "date": "2026-09-05T19:00:00+00:00",
+    "home": "Willem II",
+    "away": "Excelsior",
+    "predictedPick": "home",
+    "predictedProb": 0.5799,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549481,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Universitario",
+    "away": "Comerciantes Unidos",
+    "predictedPick": "home",
+    "predictedProb": 0.5522,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549480,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Sporting Cristal",
+    "away": "Club Deportivo Los Chankas",
+    "predictedPick": "home",
+    "predictedProb": 0.5362,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549476,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "FBC Melgar",
+    "away": "ADT",
+    "predictedPick": "home",
+    "predictedProb": 0.8486,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549479,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Sport Huancayo",
+    "away": "Sport Boys",
+    "predictedPick": "draw",
+    "predictedProb": 0.4019,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549473,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Alianza Atletico",
+    "away": "UTC Cajamarca",
+    "predictedPick": "home",
+    "predictedProb": 0.5954,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549474,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Cusco",
+    "away": "UCV Moquegua",
+    "predictedPick": "home",
+    "predictedProb": 0.8147,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549475,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Deportivo Garcilaso",
+    "away": "Atletico Grau",
+    "predictedPick": "home",
+    "predictedProb": 0.6617,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549478,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "Juan Pablo II College",
+    "away": "Alianza Lima",
+    "predictedPick": "away",
+    "predictedProb": 0.6011,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549477,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-05T20:00:00+00:00",
+    "home": "FC Cajamarca",
+    "away": "Cienciano",
+    "predictedPick": "home",
+    "predictedProb": 0.5595,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1505516,
+    "league": "Primera División (Chile)",
+    "date": "2026-09-05T21:30:00+00:00",
+    "home": "Everton de Vina",
+    "away": "U. Catolica",
+    "predictedPick": "away",
+    "predictedProb": 0.5213,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550951,
+    "league": "Liga MX",
+    "date": "2026-09-05T23:00:00+00:00",
+    "home": "Club Queretaro",
+    "away": "Monterrey",
+    "predictedPick": "home",
+    "predictedProb": 0.4363,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550950,
+    "league": "Liga MX",
+    "date": "2026-09-05T23:00:00+00:00",
+    "home": "Atletico San Luis",
+    "away": "Guadalajara Chivas",
+    "predictedPick": "home",
+    "predictedProb": 0.4489,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549766,
+    "league": "Liga BetPlay (Colombia)",
+    "date": "2026-09-05T23:00:00+00:00",
+    "home": "Chico",
+    "away": "Once Caldas",
+    "predictedPick": "away",
+    "predictedProb": 0.9253,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490440,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "Orlando City SC",
+    "away": "San Diego",
+    "predictedPick": "home",
+    "predictedProb": 0.6109,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490438,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "Philadelphia Union",
+    "away": "CF Montreal",
+    "predictedPick": "home",
+    "predictedProb": 0.6948,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490442,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "Toronto FC",
+    "away": "Chicago Fire",
+    "predictedPick": "away",
+    "predictedProb": 0.4756,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490441,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "Columbus Crew",
+    "away": "Colorado Rapids",
+    "predictedPick": "home",
+    "predictedProb": 0.5474,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490439,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "FC Cincinnati",
+    "away": "DC United",
+    "predictedPick": "home",
+    "predictedProb": 0.6853,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490437,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "Inter Miami",
+    "away": "Atlanta United FC",
+    "predictedPick": "home",
+    "predictedProb": 0.9501,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1490443,
+    "league": "MLS",
+    "date": "2026-09-05T23:30:00+00:00",
+    "home": "Charlotte",
+    "away": "Houston Dynamo",
+    "predictedPick": "away",
+    "predictedProb": 0.5326,
     "status": "pending",
     "actualResult": null
   }
