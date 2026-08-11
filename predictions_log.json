@@ -166,8 +166,11 @@
     "away": "Levski Sofia",
     "predictedPick": "draw",
     "predictedProb": 0.3782,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 1598827,
@@ -188,8 +191,11 @@
     "away": "Aarhus",
     "predictedPick": "home",
     "predictedProb": 0.6946,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 4,
+      "away": 0
+    }
   },
   {
     "id": 1607171,
@@ -199,8 +205,11 @@
     "away": "Dinamo Zagreb",
     "predictedPick": "away",
     "predictedProb": 0.8596,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1598829,
@@ -221,8 +230,11 @@
     "away": "Hapoel Beer Sheva",
     "predictedPick": "home",
     "predictedProb": 0.748,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    }
   },
   {
     "id": 1607173,
@@ -232,8 +244,11 @@
     "away": "Mjallby AIF",
     "predictedPick": "home",
     "predictedProb": 0.4273,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    }
   },
   {
     "id": 1605371,
@@ -243,8 +258,11 @@
     "away": "Ararat-Armenia",
     "predictedPick": "away",
     "predictedProb": 0.5323,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    }
   },
   {
     "id": 1607174,
@@ -1254,7 +1272,7 @@
     "home": "Central Cordoba de Santiago",
     "away": "Instituto Cordoba",
     "predictedPick": "away",
-    "predictedProb": 0.5357,
+    "predictedProb": 0.5521,
     "status": "pending",
     "actualResult": null
   },
@@ -1859,7 +1877,7 @@
     "home": "Celtic",
     "away": "Lask Linz",
     "predictedPick": "home",
-    "predictedProb": 0.438,
+    "predictedProb": 0.422,
     "status": "pending",
     "actualResult": null
   },
@@ -3586,7 +3604,7 @@
     "home": "Tigre",
     "away": "Central Cordoba de Santiago",
     "predictedPick": "home",
-    "predictedProb": 0.5502,
+    "predictedProb": 0.5595,
     "status": "pending",
     "actualResult": null
   },
@@ -3674,7 +3692,7 @@
     "home": "Lask Linz",
     "away": "Celtic",
     "predictedPick": "home",
-    "predictedProb": 0.438,
+    "predictedProb": 0.422,
     "status": "pending",
     "actualResult": null
   },
@@ -4554,7 +4572,7 @@
     "home": "Talleres Cordoba",
     "away": "Central Cordoba de Santiago",
     "predictedPick": "home",
-    "predictedProb": 0.5595,
+    "predictedProb": 0.5252,
     "status": "pending",
     "actualResult": null
   },
