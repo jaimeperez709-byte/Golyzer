@@ -85,6 +85,12 @@ DEFAULT_FORM = ["D", "D", "D", "D", "D"]
 GOALS_CACHE = {}    # team_id -> (gf, gc, form)
 EXTRA_CACHE = {}    # team_id -> {recentResults, cornersAvg, cardsAvg, lastMatchCorners, lastMatchCards}
 PREDICTIONS_LOG = {}  # match_id (string) -> registro del historial de pronósticos
+TOPSCORERS_CACHE = {}  # league_id -> {team_name: {name, goals, injured}}
+
+# si el goleador principal de un equipo está lesionado, le bajamos un poco
+# el ataque -- no es exacto (no sabemos qué % de los goles del equipo son
+# de él), pero es una señal razonable y conservadora.
+TOPSCORER_INJURY_PENALTY = 0.10
 
 
 def poisson_prob(k, lam):
@@ -101,13 +107,18 @@ def altitude_bonus(home_name, away_name):
     return 0.12 if home_alt >= 3000 else 0.07
 
 
-def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_advantage, max_goals=8):
+def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_advantage,
+                  home_top_scorer=None, away_top_scorer=None, max_goals=8):
     """Misma lógica que matchProbabilities()/pickRecommendation() del JS,
     solo para local/empate/visita (lo que necesita el contador de aciertos)."""
     home_attack = home_gf / LEAGUE_AVG_GOALS
     home_defense = home_gc / LEAGUE_AVG_GOALS
     away_attack = away_gf / LEAGUE_AVG_GOALS
     away_defense = away_gc / LEAGUE_AVG_GOALS
+    if home_top_scorer and home_top_scorer.get("injured"):
+        home_attack *= (1 - TOPSCORER_INJURY_PENALTY)
+    if away_top_scorer and away_top_scorer.get("injured"):
+        away_attack *= (1 - TOPSCORER_INJURY_PENALTY)
     effective_home_advantage = home_advantage + altitude_bonus(home_name, away_name)
 
     lambda_home = home_attack * away_defense * LEAGUE_AVG_GOALS * effective_home_advantage
@@ -288,7 +299,44 @@ def fetch_team_extra(team_id):
     return result
 
 
-def build_team_object(name, team_id, goals_data, avg_gf, avg_gc):
+def fetch_league_topscorers(league_id):
+    """Goleador principal de cada equipo de la liga, en una sola llamada
+    (mucho más barato que pedir por equipo). Cacheado por liga -- solo se
+    pide una vez por corrida, sin importar cuántos partidos tenga la liga.
+    Ojo: si la temporada acaba de arrancar (nadie ha anotado todavía),
+    la lista viene vacía -- eso es normal, no un error."""
+    if league_id in TOPSCORERS_CACHE:
+        return TOPSCORERS_CACHE[league_id]
+
+    by_team = {}
+    try:
+        data = get("/players/topscorers", {"league": league_id, "season": SEASON})
+        for entry in data.get("response", []):
+            player = entry.get("player", {})
+            stats_list = entry.get("statistics") or []
+            if not stats_list:
+                continue
+            stats = stats_list[0]
+            team_name = (stats.get("team") or {}).get("name")
+            goals = (stats.get("goals") or {}).get("total")
+            if not team_name or goals is None:
+                continue
+            # la lista viene ordenada de más a menos goles -- la primera
+            # vez que aparece un equipo, ese jugador es SU goleador principal
+            if team_name not in by_team:
+                by_team[team_name] = {
+                    "name": player.get("name"),
+                    "goals": goals,
+                    "injured": bool(player.get("injured")),
+                }
+    except Exception as e:
+        print(f"  AVISO: no se pudieron traer goleadores de la liga {league_id} ({e})")
+
+    TOPSCORERS_CACHE[league_id] = by_team
+    return by_team
+
+
+def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None):
     gf, gc, form = goals_data if goals_data else (avg_gf, avg_gc, DEFAULT_FORM)
     extra = fetch_team_extra(team_id)
     obj = {"name": name, "gf": gf, "gc": gc, "form": form}
@@ -302,6 +350,8 @@ def build_team_object(name, team_id, goals_data, avg_gf, avg_gc):
         obj["lastMatchCorners"] = extra["lastMatchCorners"]
     if extra["lastMatchCards"] is not None:
         obj["lastMatchCards"] = extra["lastMatchCards"]
+    if topscorers_by_team and name in topscorers_by_team:
+        obj["topScorer"] = topscorers_by_team[name]
     return obj
 
 
@@ -327,6 +377,8 @@ def fetch_all_matches():
         finished_fx = [fx for fx in fixtures if fx["fixture"]["status"]["short"] == "FT"]
         upcoming_fx = [fx for fx in fixtures if fx["fixture"]["status"]["short"] == "NS"]
         print(f"  {len(finished_fx)} finalizados, {len(upcoming_fx)} próximos")
+
+        topscorers_by_team = fetch_league_topscorers(league_id) if upcoming_fx else {}
 
         league_team_cache = {}  # team_id -> (gf, gc, form), solo para promedio de ESTA liga
         pending = []
@@ -397,8 +449,8 @@ def fetch_all_matches():
 
         for fx in upcoming_fx:
             home_id, away_id = fx["teams"]["home"]["id"], fx["teams"]["away"]["id"]
-            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc)
-            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc)
+            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team)
+            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team)
             all_matches.append({
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "home": home_obj, "away": away_obj,
@@ -413,6 +465,8 @@ def fetch_all_matches():
                 home_obj["name"], away_obj["name"],
                 home_obj["gf"], home_obj["gc"], away_obj["gf"], away_obj["gc"],
                 info["homeAdvantage"],
+                home_top_scorer=home_obj.get("topScorer"),
+                away_top_scorer=away_obj.get("topScorer"),
             )
             PREDICTIONS_LOG[str(fx["fixture"]["id"])] = {
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
