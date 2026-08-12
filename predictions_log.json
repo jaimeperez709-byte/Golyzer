@@ -342,8 +342,11 @@
     "away": "U. Catolica",
     "predictedPick": "away",
     "predictedProb": 0.7196,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    }
   },
   {
     "id": 1547758,
@@ -364,8 +367,11 @@
     "away": "Sao Paulo",
     "predictedPick": "home",
     "predictedProb": 0.8585,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    }
   },
   {
     "id": 1547762,
@@ -504,9 +510,9 @@
     "league": "Primeira Liga (Portugal)",
     "date": "2026-08-14T19:15:00+00:00",
     "home": "Sporting CP",
-    "away": "Guimaraes",
+    "away": "Vitória SC",
     "predictedPick": "home",
-    "predictedProb": 0.8596,
+    "predictedProb": 0.8377,
     "status": "pending",
     "actualResult": null
   },
@@ -528,7 +534,7 @@
     "home": "Deportivo Recoleta",
     "away": "2 de Mayo",
     "predictedPick": "away",
-    "predictedProb": 0.6525,
+    "predictedProb": 0.6454,
     "status": "pending",
     "actualResult": null
   },
@@ -693,7 +699,7 @@
     "home": "Aldosivi",
     "away": "Tigre",
     "predictedPick": "away",
-    "predictedProb": 0.6003,
+    "predictedProb": 0.5976,
     "status": "pending",
     "actualResult": null
   },
@@ -748,7 +754,7 @@
     "home": "Club Guarani",
     "away": "Rubio NU",
     "predictedPick": "home",
-    "predictedProb": 0.9017,
+    "predictedProb": 0.9081,
     "status": "pending",
     "actualResult": null
   },
@@ -858,7 +864,7 @@
     "home": "Sportivo Trinidense",
     "away": "Nacional Asuncion",
     "predictedPick": "home",
-    "predictedProb": 0.798,
+    "predictedProb": 0.7934,
     "status": "pending",
     "actualResult": null
   },
@@ -869,7 +875,7 @@
     "home": "Belgrano Cordoba",
     "away": "Independ. Rivadavia",
     "predictedPick": "home",
-    "predictedProb": 0.6278,
+    "predictedProb": 0.6264,
     "status": "pending",
     "actualResult": null
   },
@@ -880,7 +886,7 @@
     "home": "Newells Old Boys",
     "away": "Deportivo Riestra",
     "predictedPick": "away",
-    "predictedProb": 0.5257,
+    "predictedProb": 0.5231,
     "status": "pending",
     "actualResult": null
   },
@@ -1012,7 +1018,7 @@
     "home": "Platense",
     "away": "Boca Juniors",
     "predictedPick": "away",
-    "predictedProb": 0.4826,
+    "predictedProb": 0.4798,
     "status": "pending",
     "actualResult": null
   },
@@ -1052,7 +1058,7 @@
   {
     "id": 1550922,
     "league": "Liga MX",
-    "date": "2026-08-16T01:00:00+00:00",
+    "date": "2026-08-16T01:10:00+00:00",
     "home": "Monterrey",
     "away": "FC Juarez",
     "predictedPick": "home",
@@ -1118,7 +1124,7 @@
   {
     "id": 1550923,
     "league": "Liga MX",
-    "date": "2026-08-16T03:00:00+00:00",
+    "date": "2026-08-16T03:10:00+00:00",
     "home": "Atlas",
     "away": "Tigres UANL",
     "predictedPick": "home",
@@ -1287,7 +1293,7 @@
     "home": "Sarmiento Junin",
     "away": "Huracan",
     "predictedPick": "away",
-    "predictedProb": 0.5598,
+    "predictedProb": 0.5586,
     "status": "pending",
     "actualResult": null
   },
@@ -1298,7 +1304,7 @@
     "home": "Central Cordoba de Santiago",
     "away": "Instituto Cordoba",
     "predictedPick": "away",
-    "predictedProb": 0.6298,
+    "predictedProb": 0.6305,
     "status": "pending",
     "actualResult": null
   },
@@ -1375,7 +1381,7 @@
     "home": "Sportivo Luqueno",
     "away": "Libertad Asuncion",
     "predictedPick": "away",
-    "predictedProb": 0.8075,
+    "predictedProb": 0.8017,
     "status": "pending",
     "actualResult": null
   },
@@ -1496,7 +1502,7 @@
     "home": "Olimpia",
     "away": "Sportivo Ameliano",
     "predictedPick": "draw",
-    "predictedProb": 0.3596,
+    "predictedProb": 0.3565,
     "status": "pending",
     "actualResult": null
   },
@@ -1573,7 +1579,7 @@
     "home": "Barracas Central",
     "away": "Rosario Central",
     "predictedPick": "draw",
-    "predictedProb": 0.3903,
+    "predictedProb": 0.3909,
     "status": "pending",
     "actualResult": null
   },
@@ -1613,7 +1619,7 @@
   {
     "id": 1550926,
     "league": "Liga MX",
-    "date": "2026-08-17T01:00:00+00:00",
+    "date": "2026-08-17T01:10:00+00:00",
     "home": "Santos Laguna",
     "away": "Guadalajara Chivas",
     "predictedPick": "away",
@@ -1661,7 +1667,7 @@
     "home": "Estudiantes de Rio Cuarto",
     "away": "Atletico Tucuman",
     "predictedPick": "away",
-    "predictedProb": 0.4771,
+    "predictedProb": 0.4748,
     "status": "pending",
     "actualResult": null
   },
@@ -1704,8 +1710,8 @@
     "date": "2026-08-17T20:00:00+00:00",
     "home": "Lanus",
     "away": "Independiente",
-    "predictedPick": "draw",
-    "predictedProb": 0.4734,
+    "predictedPick": "home",
+    "predictedProb": 0.4346,
     "status": "pending",
     "actualResult": null
   },
@@ -1727,7 +1733,7 @@
     "home": "Velez Sarsfield",
     "away": "Defensa Y Justicia",
     "predictedPick": "home",
-    "predictedProb": 0.7405,
+    "predictedProb": 0.7416,
     "status": "pending",
     "actualResult": null
   },
@@ -1771,7 +1777,7 @@
     "home": "Gimnasia M.",
     "away": "Talleres Cordoba",
     "predictedPick": "home",
-    "predictedProb": 0.5581,
+    "predictedProb": 0.6856,
     "status": "pending",
     "actualResult": null
   },
@@ -1816,6 +1822,39 @@
     "away": "Puebla",
     "predictedPick": "home",
     "predictedProb": 0.4182,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622621,
+    "league": "Champions League",
+    "date": "2026-08-18T19:00:00+00:00",
+    "home": "Fenerbahçe",
+    "away": "Lyon",
+    "predictedPick": "home",
+    "predictedProb": 0.6176,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622620,
+    "league": "Champions League",
+    "date": "2026-08-18T19:00:00+00:00",
+    "home": "Dinamo Zagreb",
+    "away": "Viking",
+    "predictedPick": "home",
+    "predictedProb": 0.5667,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622622,
+    "league": "Champions League",
+    "date": "2026-08-18T19:00:00+00:00",
+    "home": "Levski Sofia",
+    "away": "AEK Athens FC",
+    "predictedPick": "home",
+    "predictedProb": 0.5919,
     "status": "pending",
     "actualResult": null
   },
@@ -1870,7 +1909,7 @@
     "home": "Sao Paulo",
     "away": "Bolívar",
     "predictedPick": "away",
-    "predictedProb": 0.6806,
+    "predictedProb": 0.5328,
     "status": "pending",
     "actualResult": null
   },
@@ -1892,7 +1931,40 @@
     "home": "Celtic",
     "away": "Lask Linz",
     "predictedPick": "home",
-    "predictedProb": 0.422,
+    "predictedProb": 0.4241,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622624,
+    "league": "Champions League",
+    "date": "2026-08-19T19:00:00+00:00",
+    "home": "NEC Nijmegen",
+    "away": "Bodo/Glimt",
+    "predictedPick": "home",
+    "predictedProb": 0.5712,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622623,
+    "league": "Champions League",
+    "date": "2026-08-19T19:00:00+00:00",
+    "home": "Hapoel Beer Sheva",
+    "away": "Sabah FA",
+    "predictedPick": "draw",
+    "predictedProb": 0.3663,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622625,
+    "league": "Champions League",
+    "date": "2026-08-19T19:00:00+00:00",
+    "home": "Slovan Bratislava",
+    "away": "Celje",
+    "predictedPick": "home",
+    "predictedProb": 0.7713,
     "status": "pending",
     "actualResult": null
   },
@@ -2596,7 +2668,7 @@
     "home": "Gimnasia L.P.",
     "away": "Gimnasia M.",
     "predictedPick": "draw",
-    "predictedProb": 0.3483,
+    "predictedProb": 0.3489,
     "status": "pending",
     "actualResult": null
   },
@@ -2607,7 +2679,7 @@
     "home": "Atletico Tucuman",
     "away": "Instituto Cordoba",
     "predictedPick": "draw",
-    "predictedProb": 0.5509,
+    "predictedProb": 0.5515,
     "status": "pending",
     "actualResult": null
   },
@@ -2706,7 +2778,7 @@
     "home": "Independiente",
     "away": "Independ. Rivadavia",
     "predictedPick": "away",
-    "predictedProb": 0.3835,
+    "predictedProb": 0.3827,
     "status": "pending",
     "actualResult": null
   },
@@ -2849,7 +2921,7 @@
     "home": "Huracan",
     "away": "Deportivo Riestra",
     "predictedPick": "draw",
-    "predictedProb": 0.436,
+    "predictedProb": 0.4377,
     "status": "pending",
     "actualResult": null
   },
@@ -3077,10 +3149,10 @@
     "id": 1575472,
     "league": "Primeira Liga (Portugal)",
     "date": "2026-08-23T14:30:00+00:00",
-    "home": "Guimaraes",
+    "home": "Vitória SC",
     "away": "Nacional",
     "predictedPick": "home",
-    "predictedProb": 0.3505,
+    "predictedProb": 0.4255,
     "status": "pending",
     "actualResult": null
   },
@@ -3201,7 +3273,7 @@
     "home": "Sarmiento Junin",
     "away": "Estudiantes L.P.",
     "predictedPick": "home",
-    "predictedProb": 0.6249,
+    "predictedProb": 0.622,
     "status": "pending",
     "actualResult": null
   },
@@ -3355,7 +3427,7 @@
     "home": "Belgrano Cordoba",
     "away": "Defensa Y Justicia",
     "predictedPick": "home",
-    "predictedProb": 0.7456,
+    "predictedProb": 0.7441,
     "status": "pending",
     "actualResult": null
   },
@@ -3520,7 +3592,7 @@
     "home": "Racing Club",
     "away": "Boca Juniors",
     "predictedPick": "home",
-    "predictedProb": 0.3953,
+    "predictedProb": 0.3971,
     "status": "pending",
     "actualResult": null
   },
@@ -3619,7 +3691,7 @@
     "home": "Tigre",
     "away": "Central Cordoba de Santiago",
     "predictedPick": "home",
-    "predictedProb": 0.6318,
+    "predictedProb": 0.6299,
     "status": "pending",
     "actualResult": null
   },
@@ -3674,7 +3746,7 @@
     "home": "Lanus",
     "away": "Argentinos JRS",
     "predictedPick": "away",
-    "predictedProb": 0.7562,
+    "predictedProb": 0.5746,
     "status": "pending",
     "actualResult": null
   },
@@ -3685,7 +3757,18 @@
     "home": "Talleres Cordoba",
     "away": "Rosario Central",
     "predictedPick": "away",
-    "predictedProb": 0.3667,
+    "predictedProb": 0.493,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622626,
+    "league": "Champions League",
+    "date": "2026-08-25T16:45:00+00:00",
+    "home": "Sabah FA",
+    "away": "Hapoel Beer Sheva",
+    "predictedPick": "home",
+    "predictedProb": 0.3728,
     "status": "pending",
     "actualResult": null
   },
@@ -3707,7 +3790,29 @@
     "home": "Lask Linz",
     "away": "Celtic",
     "predictedPick": "home",
-    "predictedProb": 0.422,
+    "predictedProb": 0.4241,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622627,
+    "league": "Champions League",
+    "date": "2026-08-25T19:00:00+00:00",
+    "home": "Bodo/Glimt",
+    "away": "NEC Nijmegen",
+    "predictedPick": "away",
+    "predictedProb": 0.4412,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622628,
+    "league": "Champions League",
+    "date": "2026-08-25T19:00:00+00:00",
+    "home": "Celje",
+    "away": "Slovan Bratislava",
+    "predictedPick": "away",
+    "predictedProb": 0.6875,
     "status": "pending",
     "actualResult": null
   },
@@ -3752,6 +3857,39 @@
     "away": "Fortaleza FC",
     "predictedPick": "away",
     "predictedProb": 0.8123,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622630,
+    "league": "Champions League",
+    "date": "2026-08-26T19:00:00+00:00",
+    "home": "Lyon",
+    "away": "Fenerbahçe",
+    "predictedPick": "away",
+    "predictedProb": 0.5489,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622629,
+    "league": "Champions League",
+    "date": "2026-08-26T19:00:00+00:00",
+    "home": "AEK Athens FC",
+    "away": "Levski Sofia",
+    "predictedPick": "away",
+    "predictedProb": 0.5144,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1622631,
+    "league": "Champions League",
+    "date": "2026-08-26T19:00:00+00:00",
+    "home": "Viking",
+    "away": "Dinamo Zagreb",
+    "predictedPick": "away",
+    "predictedProb": 0.4603,
     "status": "pending",
     "actualResult": null
   },
@@ -3938,7 +4076,7 @@
     "home": "Huracan",
     "away": "Estudiantes de Rio Cuarto",
     "predictedPick": "home",
-    "predictedProb": 0.6808,
+    "predictedProb": 0.6782,
     "status": "pending",
     "actualResult": null
   },
@@ -3960,7 +4098,7 @@
     "home": "Union Santa Fe",
     "away": "Sarmiento Junin",
     "predictedPick": "away",
-    "predictedProb": 0.4817,
+    "predictedProb": 0.4785,
     "status": "pending",
     "actualResult": null
   },
@@ -4235,7 +4373,7 @@
     "home": "Deportivo Riestra",
     "away": "Velez Sarsfield",
     "predictedPick": "draw",
-    "predictedProb": 0.3849,
+    "predictedProb": 0.3857,
     "status": "pending",
     "actualResult": null
   },
@@ -4334,7 +4472,7 @@
     "home": "Rosario Central",
     "away": "Gimnasia L.P.",
     "predictedPick": "home",
-    "predictedProb": 0.3494,
+    "predictedProb": 0.3473,
     "status": "pending",
     "actualResult": null
   },
@@ -4399,8 +4537,8 @@
     "date": "2026-08-29T22:00:00+00:00",
     "home": "Boca Juniors",
     "away": "Lanus",
-    "predictedPick": "home",
-    "predictedProb": 0.4916,
+    "predictedPick": "away",
+    "predictedProb": 0.4624,
     "status": "pending",
     "actualResult": null
   },
@@ -4532,7 +4670,7 @@
     "home": "Atletico Tucuman",
     "away": "Belgrano Cordoba",
     "predictedPick": "draw",
-    "predictedProb": 0.4543,
+    "predictedProb": 0.4561,
     "status": "pending",
     "actualResult": null
   },
@@ -4542,8 +4680,8 @@
     "date": "2026-08-30T00:30:00+00:00",
     "home": "Talleres Cordoba",
     "away": "Central Cordoba de Santiago",
-    "predictedPick": "home",
-    "predictedProb": 0.4331,
+    "predictedPick": "away",
+    "predictedProb": 0.3638,
     "status": "pending",
     "actualResult": null
   },
@@ -5203,7 +5341,7 @@
     "home": "Independiente",
     "away": "Gimnasia M.",
     "predictedPick": "draw",
-    "predictedProb": 0.3995,
+    "predictedProb": 0.4013,
     "status": "pending",
     "actualResult": null
   },
@@ -5269,7 +5407,7 @@
     "home": "Independ. Rivadavia",
     "away": "Racing Club",
     "predictedPick": "home",
-    "predictedProb": 0.7222,
+    "predictedProb": 0.7194,
     "status": "pending",
     "actualResult": null
   },
@@ -5366,9 +5504,9 @@
     "league": "Primeira Liga (Portugal)",
     "date": "2026-08-31T19:45:00+00:00",
     "home": "SC Braga",
-    "away": "Guimaraes",
+    "away": "Vitória SC",
     "predictedPick": "home",
-    "predictedProb": 0.6902,
+    "predictedProb": 0.6463,
     "status": "pending",
     "actualResult": null
   },
@@ -5390,7 +5528,7 @@
     "home": "Defensa Y Justicia",
     "away": "Platense",
     "predictedPick": "home",
-    "predictedProb": 0.7961,
+    "predictedProb": 0.7936,
     "status": "pending",
     "actualResult": null
   },
@@ -5434,7 +5572,7 @@
     "home": "Tigre",
     "away": "Barracas Central",
     "predictedPick": "home",
-    "predictedProb": 0.4624,
+    "predictedProb": 0.46,
     "status": "pending",
     "actualResult": null
   },
@@ -6553,10 +6691,10 @@
     "id": 1575490,
     "league": "Primeira Liga (Portugal)",
     "date": "2026-09-06T15:00:00+00:00",
-    "home": "Guimaraes",
+    "home": "Vitória SC",
     "away": "Casa Pia",
     "predictedPick": "home",
-    "predictedProb": 0.4692,
+    "predictedProb": 0.5548,
     "status": "pending",
     "actualResult": null
   },
@@ -6886,7 +7024,7 @@
     "home": "Gimnasia L.P.",
     "away": "Tigre",
     "predictedPick": "away",
-    "predictedProb": 0.3502,
+    "predictedProb": 0.348,
     "status": "pending",
     "actualResult": null
   },
@@ -6897,7 +7035,7 @@
     "home": "River Plate",
     "away": "Independ. Rivadavia",
     "predictedPick": "away",
-    "predictedProb": 0.6692,
+    "predictedProb": 0.6666,
     "status": "pending",
     "actualResult": null
   },
@@ -6908,7 +7046,7 @@
     "home": "Racing Club",
     "away": "Atletico Tucuman",
     "predictedPick": "away",
-    "predictedProb": 0.4653,
+    "predictedProb": 0.4629,
     "status": "pending",
     "actualResult": null
   },
@@ -6919,7 +7057,7 @@
     "home": "Rosario Central",
     "away": "Newells Old Boys",
     "predictedPick": "home",
-    "predictedProb": 0.5185,
+    "predictedProb": 0.5159,
     "status": "pending",
     "actualResult": null
   },
@@ -6941,7 +7079,7 @@
     "home": "Belgrano Cordoba",
     "away": "Huracan",
     "predictedPick": "home",
-    "predictedProb": 0.4401,
+    "predictedProb": 0.4388,
     "status": "pending",
     "actualResult": null
   },
@@ -6962,8 +7100,8 @@
     "date": "2026-09-06T20:00:00+00:00",
     "home": "Lanus",
     "away": "Defensa Y Justicia",
-    "predictedPick": "away",
-    "predictedProb": 0.5065,
+    "predictedPick": "home",
+    "predictedProb": 0.4902,
     "status": "pending",
     "actualResult": null
   },
@@ -6973,8 +7111,8 @@
     "date": "2026-09-06T20:00:00+00:00",
     "home": "San Lorenzo",
     "away": "Talleres Cordoba",
-    "predictedPick": "away",
-    "predictedProb": 0.4554,
+    "predictedPick": "draw",
+    "predictedProb": 0.3584,
     "status": "pending",
     "actualResult": null
   },
@@ -6996,7 +7134,7 @@
     "home": "Platense",
     "away": "Deportivo Riestra",
     "predictedPick": "away",
-    "predictedProb": 0.7443,
+    "predictedProb": 0.7417,
     "status": "pending",
     "actualResult": null
   },
@@ -7007,7 +7145,7 @@
     "home": "Central Cordoba de Santiago",
     "away": "Independiente",
     "predictedPick": "draw",
-    "predictedProb": 0.3597,
+    "predictedProb": 0.3612,
     "status": "pending",
     "actualResult": null
   },
@@ -7018,7 +7156,7 @@
     "home": "Gimnasia M.",
     "away": "Boca Juniors",
     "predictedPick": "home",
-    "predictedProb": 0.7,
+    "predictedProb": 0.6983,
     "status": "pending",
     "actualResult": null
   },
@@ -7029,7 +7167,7 @@
     "home": "Estudiantes de Rio Cuarto",
     "away": "Sarmiento Junin",
     "predictedPick": "away",
-    "predictedProb": 0.6191,
+    "predictedProb": 0.6163,
     "status": "pending",
     "actualResult": null
   },
