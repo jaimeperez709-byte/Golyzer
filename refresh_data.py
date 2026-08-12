@@ -86,11 +86,26 @@ GOALS_CACHE = {}    # team_id -> (gf, gc, form)
 EXTRA_CACHE = {}    # team_id -> {recentResults, cornersAvg, cardsAvg, lastMatchCorners, lastMatchCards}
 PREDICTIONS_LOG = {}  # match_id (string) -> registro del historial de pronósticos
 TOPSCORERS_CACHE = {}  # league_id -> {team_name: {name, goals, injured}}
+STANDINGS_CACHE = {}  # league_id -> {team_name: {rank, points, played, ppg}}
 
 # si el goleador principal de un equipo está lesionado, le bajamos un poco
 # el ataque -- no es exacto (no sabemos qué % de los goles del equipo son
 # de él), pero es una señal razonable y conservadora.
 TOPSCORER_INJURY_PENALTY = 0.10
+
+# qué tanto pesa la posición en la tabla sobre el ataque de un equipo,
+# comparando sus puntos por partido contra el promedio de su liga.
+# Se limita entre estos dos valores para que un líder aplastante o un
+# colista no disparen el ajuste a un extremo poco realista.
+STANDINGS_FACTOR_MIN = 0.80
+STANDINGS_FACTOR_MAX = 1.25
+
+# competiciones donde se enfrentan equipos de ligas muy distintas entre sí
+# -- ahí nuestras estadísticas (goles, tabla) son menos comparables de un
+# equipo a otro, así que le bajamos la confianza a la recomendación en vez
+# de mostrar un porcentaje tan extremo como en un partido de liga local.
+CUP_COMPETITIONS = {"Copa Libertadores", "Copa Sudamericana"}
+CUP_UNCERTAINTY_SHRINK = 0.18  # 18% de la probabilidad se "jala" hacia un reparto parejo
 
 
 def poisson_prob(k, lam):
@@ -108,7 +123,9 @@ def altitude_bonus(home_name, away_name):
 
 
 def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_advantage,
-                  home_top_scorer=None, away_top_scorer=None, max_goals=8):
+                  home_top_scorer=None, away_top_scorer=None,
+                  home_standing=None, away_standing=None, league_avg_ppg=None,
+                  is_cup=False, max_goals=8):
     """Misma lógica que matchProbabilities()/pickRecommendation() del JS,
     solo para local/empate/visita (lo que necesita el contador de aciertos)."""
     home_attack = home_gf / LEAGUE_AVG_GOALS
@@ -119,6 +136,8 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
         home_attack *= (1 - TOPSCORER_INJURY_PENALTY)
     if away_top_scorer and away_top_scorer.get("injured"):
         away_attack *= (1 - TOPSCORER_INJURY_PENALTY)
+    home_attack *= standings_attack_factor(home_standing, league_avg_ppg)
+    away_attack *= standings_attack_factor(away_standing, league_avg_ppg)
     effective_home_advantage = home_advantage + altitude_bonus(home_name, away_name)
 
     lambda_home = home_attack * away_defense * LEAGUE_AVG_GOALS * effective_home_advantage
@@ -137,6 +156,9 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
 
     total = p_home + p_draw + p_away
     probs = {"home": p_home / total, "draw": p_draw / total, "away": p_away / total}
+    if is_cup:
+        for k in probs:
+            probs[k] = probs[k] * (1 - CUP_UNCERTAINTY_SHRINK) + (1 / 3) * CUP_UNCERTAINTY_SHRINK
     pick = max(probs, key=probs.get)
     return pick, probs[pick]
 
@@ -336,7 +358,49 @@ def fetch_league_topscorers(league_id):
     return by_team
 
 
-def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None):
+def fetch_league_standings(league_id):
+    """Tabla de posiciones de la liga (posición, puntos, partidos jugados),
+    en una sola llamada. Cacheada por liga. Algunas ligas (ej. Colombia)
+    tienen la tabla dividida en grupos (Apertura/Clausura) -- los juntamos
+    todos en una sola lista."""
+    if league_id in STANDINGS_CACHE:
+        return STANDINGS_CACHE[league_id]
+
+    by_team = {}
+    try:
+        data = get("/standings", {"league": league_id, "season": SEASON})
+        resp = data.get("response") or []
+        groups = (resp[0]["league"]["standings"]) if resp else []
+        for group in groups:
+            for row in group:
+                team_name = (row.get("team") or {}).get("name")
+                played = (row.get("all") or {}).get("played")
+                points = row.get("points")
+                if not team_name or not played:
+                    continue
+                by_team[team_name] = {
+                    "rank": row.get("rank"),
+                    "points": points,
+                    "played": played,
+                    "ppg": round(points / played, 2),
+                }
+    except Exception as e:
+        print(f"  AVISO: no se pudo traer la tabla de posiciones de la liga {league_id} ({e})")
+
+    STANDINGS_CACHE[league_id] = by_team
+    return by_team
+
+
+def standings_attack_factor(team_standing, league_avg_ppg):
+    """Cuánto ajustar el ataque de un equipo según su posición en la tabla,
+    comparado contra el promedio de puntos por partido de su liga."""
+    if not team_standing or not league_avg_ppg:
+        return 1.0
+    factor = team_standing["ppg"] / league_avg_ppg
+    return max(STANDINGS_FACTOR_MIN, min(STANDINGS_FACTOR_MAX, factor))
+
+
+def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None, standings_by_team=None):
     gf, gc, form = goals_data if goals_data else (avg_gf, avg_gc, DEFAULT_FORM)
     extra = fetch_team_extra(team_id)
     obj = {"name": name, "gf": gf, "gc": gc, "form": form}
@@ -352,6 +416,8 @@ def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_t
         obj["lastMatchCards"] = extra["lastMatchCards"]
     if topscorers_by_team and name in topscorers_by_team:
         obj["topScorer"] = topscorers_by_team[name]
+    if standings_by_team and name in standings_by_team:
+        obj["standing"] = standings_by_team[name]
     return obj
 
 
@@ -379,6 +445,12 @@ def fetch_all_matches():
         print(f"  {len(finished_fx)} finalizados, {len(upcoming_fx)} próximos")
 
         topscorers_by_team = fetch_league_topscorers(league_id) if upcoming_fx else {}
+        standings_by_team = fetch_league_standings(league_id) if upcoming_fx else {}
+        league_avg_ppg = (
+            round(sum(s["ppg"] for s in standings_by_team.values()) / len(standings_by_team), 2)
+            if standings_by_team else None
+        )
+        is_cup = info["name"] in CUP_COMPETITIONS
 
         league_team_cache = {}  # team_id -> (gf, gc, form), solo para promedio de ESTA liga
         pending = []
@@ -449,13 +521,16 @@ def fetch_all_matches():
 
         for fx in upcoming_fx:
             home_id, away_id = fx["teams"]["home"]["id"], fx["teams"]["away"]["id"]
-            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team)
-            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team)
-            all_matches.append({
+            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team)
+            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team)
+            match_obj = {
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "home": home_obj, "away": away_obj,
                 "homeAdvantage": info["homeAdvantage"],
-            })
+            }
+            if league_avg_ppg is not None:
+                match_obj["leagueAvgPpg"] = league_avg_ppg
+            all_matches.append(match_obj)
             print(f"    [próximo] {home_obj['name']} vs {away_obj['name']}")
 
             # registrar (o refrescar) el pronóstico de este partido mientras
@@ -467,6 +542,10 @@ def fetch_all_matches():
                 info["homeAdvantage"],
                 home_top_scorer=home_obj.get("topScorer"),
                 away_top_scorer=away_obj.get("topScorer"),
+                home_standing=home_obj.get("standing"),
+                away_standing=away_obj.get("standing"),
+                league_avg_ppg=league_avg_ppg,
+                is_cup=is_cup,
             )
             PREDICTIONS_LOG[str(fx["fixture"]["id"])] = {
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
