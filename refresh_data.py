@@ -107,6 +107,23 @@ STANDINGS_FACTOR_MAX = 1.25
 CUP_COMPETITIONS = {"Copa Libertadores", "Copa Sudamericana"}
 CUP_UNCERTAINTY_SHRINK = 0.18  # 18% de la probabilidad se "jala" hacia un reparto parejo
 
+# qué tan fuerte es cada liga sudamericana en competiciones continentales
+# (Libertadores/Sudamericana), en relación a Colombia (1.00) como referencia.
+# Son valores de criterio futbolístico general -- se pueden afinar más
+# adelante con resultados reales de copa si Golyzer crece.
+LEAGUE_STRENGTH = {
+    "Brasileirão": 1.15,
+    "Liga Profesional (Arg.)": 1.12,
+    "Primera División (Uruguay)": 1.05,
+    "LigaPro (Ecuador)": 1.03,
+    "Liga BetPlay (Colombia)": 1.00,
+    "Primera División (Chile)": 0.95,
+    "Primera División (Paraguay)": 0.92,
+    "Liga 1 (Perú)": 0.90,
+}
+
+TEAM_LEAGUE_CACHE = {}  # team_id -> nombre de su liga doméstica
+
 
 def poisson_prob(k, lam):
     return (lam ** k) * math.exp(-lam) / math.factorial(k)
@@ -125,6 +142,7 @@ def altitude_bonus(home_name, away_name):
 def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_advantage,
                   home_top_scorer=None, away_top_scorer=None,
                   home_standing=None, away_standing=None, league_avg_ppg=None,
+                  home_league_strength=None, away_league_strength=None,
                   is_cup=False, max_goals=8):
     """Misma lógica que matchProbabilities()/pickRecommendation() del JS,
     solo para local/empate/visita (lo que necesita el contador de aciertos)."""
@@ -138,6 +156,12 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
         away_attack *= (1 - TOPSCORER_INJURY_PENALTY)
     home_attack *= standings_attack_factor(home_standing, league_avg_ppg)
     away_attack *= standings_attack_factor(away_standing, league_avg_ppg)
+    if is_cup:
+        # en copas internacionales, corregimos la fuerza de ataque según
+        # qué tan dura es la liga doméstica de cada equipo -- así un equipo
+        # de una liga floja no queda sobrevalorado solo por venir en racha.
+        home_attack *= (home_league_strength or 1.0)
+        away_attack *= (away_league_strength or 1.0)
     effective_home_advantage = home_advantage + altitude_bonus(home_name, away_name)
 
     lambda_home = home_attack * away_defense * LEAGUE_AVG_GOALS * effective_home_advantage
@@ -400,10 +424,16 @@ def standings_attack_factor(team_standing, league_avg_ppg):
     return max(STANDINGS_FACTOR_MIN, min(STANDINGS_FACTOR_MAX, factor))
 
 
+def team_league_strength(team_id):
+    """Peso de la liga doméstica del equipo (1.0 si no la conocemos)."""
+    league_name = TEAM_LEAGUE_CACHE.get(team_id)
+    return LEAGUE_STRENGTH.get(league_name, 1.0)
+
+
 def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None, standings_by_team=None):
     gf, gc, form = goals_data if goals_data else (avg_gf, avg_gc, DEFAULT_FORM)
     extra = fetch_team_extra(team_id)
-    obj = {"name": name, "gf": gf, "gc": gc, "form": form}
+    obj = {"name": name, "gf": gf, "gc": gc, "form": form, "leagueStrength": team_league_strength(team_id)}
     if extra["recentResults"]:
         obj["recentResults"] = extra["recentResults"]
     if extra["cornersAvg"] is not None:
@@ -440,6 +470,13 @@ def fetch_all_matches():
             continue
 
         fixtures = data.get("response", [])
+
+        # registramos la liga doméstica de cada equipo que aparece aquí (si
+        # ya la teníamos de antes -p.ej. de su liga local- no la pisamos).
+        for fx in fixtures:
+            TEAM_LEAGUE_CACHE.setdefault(fx["teams"]["home"]["id"], info["name"])
+            TEAM_LEAGUE_CACHE.setdefault(fx["teams"]["away"]["id"], info["name"])
+
         finished_fx = [fx for fx in fixtures if fx["fixture"]["status"]["short"] == "FT"]
         upcoming_fx = [fx for fx in fixtures if fx["fixture"]["status"]["short"] == "NS"]
         print(f"  {len(finished_fx)} finalizados, {len(upcoming_fx)} próximos")
@@ -545,6 +582,8 @@ def fetch_all_matches():
                 home_standing=home_obj.get("standing"),
                 away_standing=away_obj.get("standing"),
                 league_avg_ppg=league_avg_ppg,
+                home_league_strength=home_obj.get("leagueStrength"),
+                away_league_strength=away_obj.get("leagueStrength"),
                 is_cup=is_cup,
             )
             PREDICTIONS_LOG[str(fx["fixture"]["id"])] = {
