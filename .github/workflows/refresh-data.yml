@@ -1,10 +1,11 @@
 name: Actualizar datos de Golyzer
 
 on:
-  schedule:
-    # 9:00am hora de Colombia (UTC-5) = 14:00 UTC, todos los días
-    - cron: "47 13 * * *"
-  workflow_dispatch: {}  # permite correrlo a mano desde la pestaña "Actions" en GitHub
+  # El disparo diario ya NO usa el "schedule" interno de GitHub (era poco
+  # confiable, corría con horas de retraso). Ahora un servicio externo
+  # (cron-job.org) llama a la API de GitHub todos los días a la hora exacta,
+  # lo cual dispara este mismo evento "workflow_dispatch".
+  workflow_dispatch: {}  # permite correrlo a mano desde la pestaña "Actions" en GitHub, o vía API
 
 jobs:
   refresh:
