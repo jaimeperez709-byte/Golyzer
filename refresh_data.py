@@ -129,14 +129,18 @@ def poisson_prob(k, lam):
     return (lam ** k) * math.exp(-lam) / math.factorial(k)
 
 
-def altitude_bonus(home_name, away_name):
+def altitude_bonus(home_name, away_name, is_cup=False):
     home_alt = ALTITUDE_TEAMS.get(home_name)
     if not home_alt:
         return 0
     away_alt = ALTITUDE_TEAMS.get(away_name, 0)
     if home_alt - away_alt < 1200:
         return 0
-    return 0.12 if home_alt >= 3000 else 0.07
+    base = 0.12 if home_alt >= 3000 else 0.07
+    # en copa el visitante no tuvo tiempo de aclimatarse (es un viaje de un
+    # solo partido, no una temporada completa) -- el golpe de la altura
+    # suele ser más brutal ahí, así que le damos el doble de peso.
+    return base * 2 if is_cup else base
 
 
 def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_advantage,
@@ -162,7 +166,7 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
         # de una liga floja no queda sobrevalorado solo por venir en racha.
         home_attack *= (home_league_strength or 1.0)
         away_attack *= (away_league_strength or 1.0)
-    effective_home_advantage = home_advantage + altitude_bonus(home_name, away_name)
+    effective_home_advantage = home_advantage + altitude_bonus(home_name, away_name, is_cup)
 
     lambda_home = home_attack * away_defense * LEAGUE_AVG_GOALS * effective_home_advantage
     lambda_away = away_attack * home_defense * LEAGUE_AVG_GOALS
@@ -402,11 +406,26 @@ def fetch_league_standings(league_id):
                 points = row.get("points")
                 if not team_name or not played:
                     continue
+
+                # promedios de goles separados por local/visita -- un equipo
+                # casi siempre rinde distinto según dónde juega, así que esto
+                # afina el ataque/defensa más que el promedio general mezclado.
+                home_split = row.get("home") or {}
+                away_split = row.get("away") or {}
+                home_played = home_split.get("played") or 0
+                away_played = away_split.get("played") or 0
+                home_goals = home_split.get("goals") or {}
+                away_goals = away_split.get("goals") or {}
+
                 by_team[team_name] = {
                     "rank": row.get("rank"),
                     "points": points,
                     "played": played,
                     "ppg": round(points / played, 2),
+                    "homeGf": round(home_goals.get("for", 0) / home_played, 2) if home_played else None,
+                    "homeGc": round(home_goals.get("against", 0) / home_played, 2) if home_played else None,
+                    "awayGf": round(away_goals.get("for", 0) / away_played, 2) if away_played else None,
+                    "awayGc": round(away_goals.get("against", 0) / away_played, 2) if away_played else None,
                 }
     except Exception as e:
         print(f"  AVISO: no se pudo traer la tabla de posiciones de la liga {league_id} ({e})")
@@ -424,16 +443,39 @@ def standings_attack_factor(team_standing, league_avg_ppg):
     return max(STANDINGS_FACTOR_MIN, min(STANDINGS_FACTOR_MAX, factor))
 
 
+# qué tanto pesa el promedio específico de local/visita frente al promedio
+# general del equipo (mezclado). No lo reemplazamos del todo porque al
+# inicio de temporada un equipo puede tener muy pocos partidos jugados en
+# ese rol específico -- una mezcla es más estable que solo el dato parcial.
+HOME_AWAY_SPLIT_WEIGHT = 0.6
+
+
+def apply_home_away_split(gf, gc, standing, side):
+    """Ajusta el gf/gc general del equipo con su promedio específico de
+    local o visita (según corresponda), si lo tenemos disponible."""
+    if not standing:
+        return gf, gc
+    split_gf = standing.get(f"{side}Gf")
+    split_gc = standing.get(f"{side}Gc")
+    if split_gf is None or split_gc is None:
+        return gf, gc
+    w = HOME_AWAY_SPLIT_WEIGHT
+    return (gf * (1 - w) + split_gf * w), (gc * (1 - w) + split_gc * w)
+
+
 def team_league_strength(team_id):
     """Peso de la liga doméstica del equipo (1.0 si no la conocemos)."""
     league_name = TEAM_LEAGUE_CACHE.get(team_id)
     return LEAGUE_STRENGTH.get(league_name, 1.0)
 
 
-def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None, standings_by_team=None):
+def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None, standings_by_team=None, side=None):
     gf, gc, form = goals_data if goals_data else (avg_gf, avg_gc, DEFAULT_FORM)
+    standing = standings_by_team.get(name) if standings_by_team else None
+    if side:
+        gf, gc = apply_home_away_split(gf, gc, standing, side)
     extra = fetch_team_extra(team_id)
-    obj = {"name": name, "gf": gf, "gc": gc, "form": form, "leagueStrength": team_league_strength(team_id)}
+    obj = {"name": name, "gf": round(gf, 2), "gc": round(gc, 2), "form": form, "leagueStrength": team_league_strength(team_id)}
     if extra["recentResults"]:
         obj["recentResults"] = extra["recentResults"]
     if extra["cornersAvg"] is not None:
@@ -558,8 +600,8 @@ def fetch_all_matches():
 
         for fx in upcoming_fx:
             home_id, away_id = fx["teams"]["home"]["id"], fx["teams"]["away"]["id"]
-            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team)
-            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team)
+            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="home")
+            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="away")
             match_obj = {
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "home": home_obj, "away": away_obj,
