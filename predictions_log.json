@@ -1338,8 +1338,11 @@
     "away": "GO Ahead Eagles",
     "predictedPick": "home",
     "predictedProb": 0.7,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1552133,
@@ -1349,8 +1352,11 @@
     "away": "PEC Zwolle",
     "predictedPick": "home",
     "predictedProb": 0.7195,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 1
+    }
   },
   {
     "id": 1610939,
@@ -1360,8 +1366,11 @@
     "away": "Club Sp. San Lorenzo",
     "predictedPick": "home",
     "predictedProb": 0.8572,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 1492332,
@@ -1371,8 +1380,11 @@
     "away": "Bahia",
     "predictedPick": "away",
     "predictedProb": 0.658,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 3,
+      "away": 3
+    }
   },
   {
     "id": 1619024,
@@ -1382,8 +1394,11 @@
     "away": "Deportivo Maldonado",
     "predictedPick": "away",
     "predictedProb": 0.5128,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    }
   },
   {
     "id": 1575461,
@@ -1393,8 +1408,11 @@
     "away": "Estoril",
     "predictedPick": "home",
     "predictedProb": 0.39,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    }
   },
   {
     "id": 1552134,
@@ -1404,8 +1422,11 @@
     "away": "Heerenveen",
     "predictedPick": "home",
     "predictedProb": 0.6319,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1570339,
@@ -1415,8 +1436,11 @@
     "away": "Villarreal",
     "predictedPick": "away",
     "predictedProb": 0.4485,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1549454,
@@ -1426,8 +1450,11 @@
     "away": "Sport Huancayo",
     "predictedPick": "home",
     "predictedProb": 0.6351,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 4,
+      "away": 1
+    }
   },
   {
     "id": 1505496,
@@ -1437,8 +1464,11 @@
     "away": "Union La Calera",
     "predictedPick": "home",
     "predictedProb": 0.9145,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1570338,
@@ -1448,8 +1478,11 @@
     "away": "Levante",
     "predictedPick": "home",
     "predictedProb": 0.4638,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 0
+    }
   },
   {
     "id": 1575457,
@@ -1459,8 +1492,11 @@
     "away": "Moreirense",
     "predictedPick": "home",
     "predictedProb": 0.5874,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 4,
+      "away": 0
+    }
   },
   {
     "id": 1550924,
@@ -1470,8 +1506,11 @@
     "away": "Club Queretaro",
     "predictedPick": "away",
     "predictedProb": 0.8656,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 1493075,
@@ -1481,8 +1520,11 @@
     "away": "Huracan",
     "predictedPick": "away",
     "predictedProb": 0.564,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    }
   },
   {
     "id": 1619025,
@@ -1492,8 +1534,11 @@
     "away": "Liverpool Montevideo",
     "predictedPick": "away",
     "predictedProb": 0.4896,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 4
+    }
   },
   {
     "id": 1549453,
@@ -1503,8 +1548,11 @@
     "away": "Sport Boys",
     "predictedPick": "draw",
     "predictedProb": 0.4732,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    }
   },
   {
     "id": 1492338,
@@ -1514,8 +1562,11 @@
     "away": "Santos",
     "predictedPick": "home",
     "predictedProb": 0.4038,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 3
+    }
   },
   {
     "id": 1492331,
@@ -1525,8 +1576,11 @@
     "away": "Gremio",
     "predictedPick": "home",
     "predictedProb": 0.6778,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 0
+    }
   },
   {
     "id": 1505491,
@@ -1536,8 +1590,11 @@
     "away": "Concepción",
     "predictedPick": "home",
     "predictedProb": 0.3969,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    }
   },
   {
     "id": 1519455,
@@ -1547,8 +1604,11 @@
     "away": "Deportivo Cuenca",
     "predictedPick": "home",
     "predictedProb": 0.5227,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    }
   },
   {
     "id": 1610940,
@@ -1558,8 +1618,11 @@
     "away": "Libertad Asuncion",
     "predictedPick": "away",
     "predictedProb": 0.8644,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1575458,
@@ -1580,8 +1643,11 @@
     "away": "Maritimo",
     "predictedPick": "away",
     "predictedProb": 0.3753,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1549450,
@@ -1591,8 +1657,11 @@
     "away": "Universitario",
     "predictedPick": "away",
     "predictedProb": 0.5347,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 3
+    }
   },
   {
     "id": 1493073,
@@ -1602,8 +1671,11 @@
     "away": "Argentinos JRS",
     "predictedPick": "away",
     "predictedProb": 0.8527,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    }
   },
   {
     "id": 1549732,
@@ -1624,8 +1696,11 @@
     "away": "Tecnico Universitario",
     "predictedPick": "home",
     "predictedProb": 0.5647,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1492339,
@@ -1635,8 +1710,11 @@
     "away": "Botafogo",
     "predictedPick": "away",
     "predictedProb": 0.3552,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 1492336,
@@ -1646,8 +1724,11 @@
     "away": "Flamengo",
     "predictedPick": "away",
     "predictedProb": 0.7342,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 5
+    }
   },
   {
     "id": 1505492,
@@ -1657,8 +1738,11 @@
     "away": "O'Higgins",
     "predictedPick": "home",
     "predictedProb": 0.9594,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 1610941,
@@ -1668,8 +1752,11 @@
     "away": "Sportivo Ameliano",
     "predictedPick": "home",
     "predictedProb": 0.5742,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1619026,
@@ -1679,8 +1766,11 @@
     "away": "Central Espanol",
     "predictedPick": "home",
     "predictedProb": 0.4864,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1490388,
@@ -1690,8 +1780,11 @@
     "away": "Philadelphia Union",
     "predictedPick": "home",
     "predictedProb": 0.8377,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 3
+    }
   },
   {
     "id": 1490389,
@@ -1701,8 +1794,11 @@
     "away": "Portland Timbers",
     "predictedPick": "home",
     "predictedProb": 0.7665,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1492333,
@@ -1712,8 +1808,11 @@
     "away": "Cruzeiro",
     "predictedPick": "home",
     "predictedProb": 0.678,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1550925,
@@ -1723,8 +1822,11 @@
     "away": "Atletico San Luis",
     "predictedPick": "home",
     "predictedProb": 0.9927,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 0
+    }
   },
   {
     "id": 1549723,
@@ -1745,8 +1847,11 @@
     "away": "Instituto Cordoba",
     "predictedPick": "away",
     "predictedProb": 0.4491,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 1493063,
@@ -1756,8 +1861,11 @@
     "away": "Rosario Central",
     "predictedPick": "home",
     "predictedProb": 0.542,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 1549728,
@@ -1778,8 +1886,11 @@
     "away": "Deportivo Garcilaso",
     "predictedPick": "away",
     "predictedProb": 0.59,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 1519448,
@@ -1789,8 +1900,11 @@
     "away": "LDU de Quito",
     "predictedPick": "home",
     "predictedProb": 0.5402,
-    "status": "pending",
-    "actualResult": null
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 1490383,
@@ -1800,8 +1914,11 @@
     "away": "FC Dallas",
     "predictedPick": "away",
     "predictedProb": 0.5266,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 1550926,
@@ -1811,8 +1928,11 @@
     "away": "Guadalajara Chivas",
     "predictedPick": "away",
     "predictedProb": 0.5275,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 1549731,
@@ -1833,8 +1953,11 @@
     "away": "Vancouver Whitecaps",
     "predictedPick": "away",
     "predictedProb": 0.6562,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    }
   },
   {
     "id": 1550927,
@@ -1844,8 +1967,11 @@
     "away": "Cruz Azul",
     "predictedPick": "home",
     "predictedProb": 0.8765,
-    "status": "pending",
-    "actualResult": null
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 1493067,
@@ -1854,7 +1980,7 @@
     "home": "Estudiantes de Rio Cuarto",
     "away": "Atletico Tucuman",
     "predictedPick": "draw",
-    "predictedProb": 0.6916,
+    "predictedProb": 0.6886,
     "status": "pending",
     "actualResult": null
   },
@@ -1887,7 +2013,7 @@
     "home": "Lanus",
     "away": "Independiente",
     "predictedPick": "draw",
-    "predictedProb": 0.4707,
+    "predictedProb": 0.4671,
     "status": "pending",
     "actualResult": null
   },
@@ -1909,7 +2035,7 @@
     "home": "Velez Sarsfield",
     "away": "Defensa Y Justicia",
     "predictedPick": "home",
-    "predictedProb": 0.941,
+    "predictedProb": 0.9408,
     "status": "pending",
     "actualResult": null
   },
@@ -1942,7 +2068,7 @@
     "home": "Macara",
     "away": "Universidad Catolica",
     "predictedPick": "home",
-    "predictedProb": 0.5099,
+    "predictedProb": 0.5088,
     "status": "pending",
     "actualResult": null
   },
@@ -1953,7 +2079,7 @@
     "home": "Gimnasia M.",
     "away": "Talleres Cordoba",
     "predictedPick": "home",
-    "predictedProb": 0.6224,
+    "predictedProb": 0.6276,
     "status": "pending",
     "actualResult": null
   },
@@ -1986,7 +2112,7 @@
     "home": "CF Pachuca",
     "away": "Puebla",
     "predictedPick": "away",
-    "predictedProb": 0.4087,
+    "predictedProb": 0.4135,
     "status": "pending",
     "actualResult": null
   },
@@ -2140,7 +2266,7 @@
     "home": "Cerro Porteno",
     "away": "Palmeiras",
     "predictedPick": "home",
-    "predictedProb": 0.3581,
+    "predictedProb": 0.386,
     "status": "pending",
     "actualResult": null
   },
@@ -2173,7 +2299,7 @@
     "home": "Orlando City SC",
     "away": "Chicago Fire",
     "predictedPick": "away",
-    "predictedProb": 0.5202,
+    "predictedProb": 0.5074,
     "status": "pending",
     "actualResult": null
   },
@@ -2184,7 +2310,7 @@
     "home": "Philadelphia Union",
     "away": "Inter Miami",
     "predictedPick": "away",
-    "predictedProb": 0.6218,
+    "predictedProb": 0.5386,
     "status": "pending",
     "actualResult": null
   },
@@ -2195,7 +2321,7 @@
     "home": "Toronto FC",
     "away": "Charlotte",
     "predictedPick": "home",
-    "predictedProb": 0.4032,
+    "predictedProb": 0.4055,
     "status": "pending",
     "actualResult": null
   },
@@ -2206,7 +2332,7 @@
     "home": "New York Red Bulls",
     "away": "Nashville SC",
     "predictedPick": "away",
-    "predictedProb": 0.7031,
+    "predictedProb": 0.7046,
     "status": "pending",
     "actualResult": null
   },
@@ -2228,7 +2354,7 @@
     "home": "DC United",
     "away": "New England Revolution",
     "predictedPick": "home",
-    "predictedProb": 0.5052,
+    "predictedProb": 0.5045,
     "status": "pending",
     "actualResult": null
   },
@@ -2239,7 +2365,7 @@
     "home": "FC Cincinnati",
     "away": "New York City FC",
     "predictedPick": "home",
-    "predictedProb": 0.6421,
+    "predictedProb": 0.6601,
     "status": "pending",
     "actualResult": null
   },
@@ -2250,7 +2376,7 @@
     "home": "Sporting Kansas City",
     "away": "St. Louis City",
     "predictedPick": "away",
-    "predictedProb": 0.724,
+    "predictedProb": 0.7231,
     "status": "pending",
     "actualResult": null
   },
@@ -2261,7 +2387,7 @@
     "home": "Santa Fe",
     "away": "River Plate",
     "predictedPick": "away",
-    "predictedProb": 0.3622,
+    "predictedProb": 0.4165,
     "status": "pending",
     "actualResult": null
   },
@@ -2272,7 +2398,7 @@
     "home": "Minnesota United FC",
     "away": "Atlanta United FC",
     "predictedPick": "home",
-    "predictedProb": 0.5904,
+    "predictedProb": 0.5877,
     "status": "pending",
     "actualResult": null
   },
@@ -2305,7 +2431,7 @@
     "home": "Seattle Sounders",
     "away": "Austin",
     "predictedPick": "home",
-    "predictedProb": 0.7822,
+    "predictedProb": 0.6962,
     "status": "pending",
     "actualResult": null
   },
@@ -2316,7 +2442,7 @@
     "home": "Real Salt Lake",
     "away": "FC Dallas",
     "predictedPick": "home",
-    "predictedProb": 0.4592,
+    "predictedProb": 0.4239,
     "status": "pending",
     "actualResult": null
   },
@@ -2327,7 +2453,7 @@
     "home": "Colorado Rapids",
     "away": "Los Angeles FC",
     "predictedPick": "away",
-    "predictedProb": 0.495,
+    "predictedProb": 0.3735,
     "status": "pending",
     "actualResult": null
   },
@@ -2338,7 +2464,7 @@
     "home": "Vancouver Whitecaps",
     "away": "Houston Dynamo",
     "predictedPick": "home",
-    "predictedProb": 0.6457,
+    "predictedProb": 0.7039,
     "status": "pending",
     "actualResult": null
   },
@@ -2360,7 +2486,7 @@
     "home": "Portland Timbers",
     "away": "San Diego",
     "predictedPick": "home",
-    "predictedProb": 0.7294,
+    "predictedProb": 0.7165,
     "status": "pending",
     "actualResult": null
   },
@@ -2382,7 +2508,7 @@
     "home": "LDU de Quito",
     "away": "Mirassol",
     "predictedPick": "home",
-    "predictedProb": 0.7408,
+    "predictedProb": 0.7635,
     "status": "pending",
     "actualResult": null
   },
@@ -2404,7 +2530,7 @@
     "home": "Olimpia",
     "away": "Vasco DA Gama",
     "predictedPick": "home",
-    "predictedProb": 0.6841,
+    "predictedProb": 0.691,
     "status": "pending",
     "actualResult": null
   },
@@ -2415,7 +2541,7 @@
     "home": "Corinthians",
     "away": "Rosario Central",
     "predictedPick": "home",
-    "predictedProb": 0.4237,
+    "predictedProb": 0.3688,
     "status": "pending",
     "actualResult": null
   },
@@ -2426,7 +2552,7 @@
     "home": "Botafogo",
     "away": "Cienciano",
     "predictedPick": "home",
-    "predictedProb": 0.8359,
+    "predictedProb": 0.8303,
     "status": "pending",
     "actualResult": null
   },
@@ -2437,7 +2563,7 @@
     "home": "FC Cajamarca",
     "away": "Atletico Grau",
     "predictedPick": "home",
-    "predictedProb": 0.4483,
+    "predictedProb": 0.4938,
     "status": "pending",
     "actualResult": null
   },
@@ -2503,7 +2629,7 @@
     "home": "Alianza Atletico",
     "away": "Sporting Cristal",
     "predictedPick": "home",
-    "predictedProb": 0.6532,
+    "predictedProb": 0.5688,
     "status": "pending",
     "actualResult": null
   },
@@ -2536,7 +2662,7 @@
     "home": "Liverpool Montevideo",
     "away": "Cerro",
     "predictedPick": "draw",
-    "predictedProb": 0.5977,
+    "predictedProb": 0.5462,
     "status": "pending",
     "actualResult": null
   },
@@ -2547,7 +2673,7 @@
     "home": "Estudiantes de Rio Cuarto",
     "away": "San Lorenzo",
     "predictedPick": "draw",
-    "predictedProb": 0.6986,
+    "predictedProb": 0.6983,
     "status": "pending",
     "actualResult": null
   },
@@ -2558,7 +2684,7 @@
     "home": "Deportivo Cuenca",
     "away": "Mushuc Runa SC",
     "predictedPick": "away",
-    "predictedProb": 0.4486,
+    "predictedProb": 0.458,
     "status": "pending",
     "actualResult": null
   },
@@ -2569,7 +2695,7 @@
     "home": "Leones del Norte",
     "away": "Independiente del Valle",
     "predictedPick": "away",
-    "predictedProb": 0.5821,
+    "predictedProb": 0.5839,
     "status": "pending",
     "actualResult": null
   },
@@ -2580,7 +2706,18 @@
     "home": "A. Italiano",
     "away": "Union La Calera",
     "predictedPick": "home",
-    "predictedProb": 0.8332,
+    "predictedProb": 0.8343,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549734,
+    "league": "Liga BetPlay (Colombia)",
+    "date": "2026-08-22T00:30:00+00:00",
+    "home": "Alianza Valledupar",
+    "away": "Deportivo Pereira",
+    "predictedPick": "draw",
+    "predictedProb": 0.531,
     "status": "pending",
     "actualResult": null
   },
@@ -2591,7 +2728,7 @@
     "home": "Tigres UANL",
     "away": "Atlante FC",
     "predictedPick": "away",
-    "predictedProb": 0.421,
+    "predictedProb": 0.4243,
     "status": "pending",
     "actualResult": null
   },
@@ -2602,7 +2739,7 @@
     "home": "FC Juarez",
     "away": "Club America",
     "predictedPick": "away",
-    "predictedProb": 0.9417,
+    "predictedProb": 0.9694,
     "status": "pending",
     "actualResult": null
   },
@@ -2657,7 +2794,7 @@
     "home": "Central Espanol",
     "away": "Juventud",
     "predictedPick": "home",
-    "predictedProb": 0.5595,
+    "predictedProb": 0.4747,
     "status": "pending",
     "actualResult": null
   },
@@ -2712,7 +2849,7 @@
     "home": "Sport Huancayo",
     "away": "UCV Moquegua",
     "predictedPick": "home",
-    "predictedProb": 0.8025,
+    "predictedProb": 0.7183,
     "status": "pending",
     "actualResult": null
   },
@@ -2756,7 +2893,7 @@
     "home": "Sparta Rotterdam",
     "away": "Utrecht",
     "predictedPick": "away",
-    "predictedProb": 0.406,
+    "predictedProb": 0.389,
     "status": "pending",
     "actualResult": null
   },
@@ -2789,7 +2926,7 @@
     "home": "NEC Nijmegen",
     "away": "Excelsior",
     "predictedPick": "away",
-    "predictedProb": 0.885,
+    "predictedProb": 0.8996,
     "status": "pending",
     "actualResult": null
   },
@@ -2799,8 +2936,8 @@
     "date": "2026-08-22T18:00:00+00:00",
     "home": "Cerro Largo",
     "away": "Defensor Sporting",
-    "predictedPick": "draw",
-    "predictedProb": 0.3703,
+    "predictedPick": "home",
+    "predictedProb": 0.5434,
     "status": "pending",
     "actualResult": null
   },
@@ -2899,7 +3036,7 @@
     "home": "Gimnasia L.P.",
     "away": "Gimnasia M.",
     "predictedPick": "home",
-    "predictedProb": 0.6884,
+    "predictedProb": 0.6876,
     "status": "pending",
     "actualResult": null
   },
@@ -2910,7 +3047,7 @@
     "home": "Atletico Tucuman",
     "away": "Instituto Cordoba",
     "predictedPick": "draw",
-    "predictedProb": 0.5175,
+    "predictedProb": 0.4999,
     "status": "pending",
     "actualResult": null
   },
@@ -2932,7 +3069,7 @@
     "home": "Heerenveen",
     "away": "PEC Zwolle",
     "predictedPick": "home",
-    "predictedProb": 0.8648,
+    "predictedProb": 0.9302,
     "status": "pending",
     "actualResult": null
   },
@@ -2943,7 +3080,7 @@
     "home": "Universidad Catolica",
     "away": "Manta FC",
     "predictedPick": "home",
-    "predictedProb": 0.9545,
+    "predictedProb": 0.9534,
     "status": "pending",
     "actualResult": null
   },
@@ -2954,7 +3091,7 @@
     "home": "Sportivo Ameliano",
     "away": "Deportivo Recoleta",
     "predictedPick": "home",
-    "predictedProb": 0.667,
+    "predictedProb": 0.5412,
     "status": "pending",
     "actualResult": null
   },
@@ -2964,8 +3101,8 @@
     "date": "2026-08-22T19:30:00+00:00",
     "home": "Espanyol",
     "away": "Real Madrid",
-    "predictedPick": "away",
-    "predictedProb": 0.6409,
+    "predictedPick": "home",
+    "predictedProb": 0.71,
     "status": "pending",
     "actualResult": null
   },
@@ -3009,7 +3146,7 @@
     "home": "Internacional",
     "away": "Atletico-MG",
     "predictedPick": "away",
-    "predictedProb": 0.4263,
+    "predictedProb": 0.4436,
     "status": "pending",
     "actualResult": null
   },
@@ -3020,7 +3157,7 @@
     "home": "Independiente",
     "away": "Independ. Rivadavia",
     "predictedPick": "home",
-    "predictedProb": 0.4445,
+    "predictedProb": 0.4479,
     "status": "pending",
     "actualResult": null
   },
@@ -3042,7 +3179,7 @@
     "home": "Tecnico Universitario",
     "away": "Guayaquil City FC",
     "predictedPick": "away",
-    "predictedProb": 0.4128,
+    "predictedProb": 0.407,
     "status": "pending",
     "actualResult": null
   },
@@ -3053,7 +3190,7 @@
     "home": "Deportivo Maldonado",
     "away": "Penarol",
     "predictedPick": "away",
-    "predictedProb": 0.8115,
+    "predictedProb": 0.8527,
     "status": "pending",
     "actualResult": null
   },
@@ -3064,7 +3201,7 @@
     "home": "Club Queretaro",
     "away": "Toluca",
     "predictedPick": "away",
-    "predictedProb": 0.6219,
+    "predictedProb": 0.608,
     "status": "pending",
     "actualResult": null
   },
@@ -3075,7 +3212,7 @@
     "home": "Guadalajara Chivas",
     "away": "Club Tijuana",
     "predictedPick": "draw",
-    "predictedProb": 0.5981,
+    "predictedProb": 0.5571,
     "status": "pending",
     "actualResult": null
   },
@@ -3097,7 +3234,7 @@
     "home": "Cruzeiro",
     "away": "Flamengo",
     "predictedPick": "away",
-    "predictedProb": 0.5445,
+    "predictedProb": 0.5656,
     "status": "pending",
     "actualResult": null
   },
@@ -3108,7 +3245,7 @@
     "home": "Orlando City SC",
     "away": "Real Salt Lake",
     "predictedPick": "home",
-    "predictedProb": 0.546,
+    "predictedProb": 0.5459,
     "status": "pending",
     "actualResult": null
   },
@@ -3119,7 +3256,7 @@
     "home": "New York Red Bulls",
     "away": "Chicago Fire",
     "predictedPick": "away",
-    "predictedProb": 0.576,
+    "predictedProb": 0.564,
     "status": "pending",
     "actualResult": null
   },
@@ -3141,7 +3278,7 @@
     "home": "FC Cincinnati",
     "away": "Seattle Sounders",
     "predictedPick": "home",
-    "predictedProb": 0.9097,
+    "predictedProb": 0.9226,
     "status": "pending",
     "actualResult": null
   },
@@ -3152,7 +3289,7 @@
     "home": "Inter Miami",
     "away": "Toronto FC",
     "predictedPick": "home",
-    "predictedProb": 0.8756,
+    "predictedProb": 0.8444,
     "status": "pending",
     "actualResult": null
   },
@@ -3163,7 +3300,7 @@
     "home": "Charlotte",
     "away": "DC United",
     "predictedPick": "home",
-    "predictedProb": 0.7023,
+    "predictedProb": 0.7009,
     "status": "pending",
     "actualResult": null
   },
@@ -3174,7 +3311,7 @@
     "home": "Huracan",
     "away": "Deportivo Riestra",
     "predictedPick": "home",
-    "predictedProb": 0.6401,
+    "predictedProb": 0.5494,
     "status": "pending",
     "actualResult": null
   },
@@ -3185,7 +3322,7 @@
     "home": "Newells Old Boys",
     "away": "Banfield",
     "predictedPick": "home",
-    "predictedProb": 0.4599,
+    "predictedProb": 0.4633,
     "status": "pending",
     "actualResult": null
   },
@@ -3196,7 +3333,7 @@
     "home": "U. Catolica",
     "away": "Nublense",
     "predictedPick": "home",
-    "predictedProb": 0.757,
+    "predictedProb": 0.7126,
     "status": "pending",
     "actualResult": null
   },
@@ -3207,7 +3344,7 @@
     "home": "Deportivo Garcilaso",
     "away": "Cusco",
     "predictedPick": "home",
-    "predictedProb": 0.9368,
+    "predictedProb": 0.911,
     "status": "pending",
     "actualResult": null
   },
@@ -3218,7 +3355,7 @@
     "home": "Barcelona SC",
     "away": "Orense SC",
     "predictedPick": "home",
-    "predictedProb": 0.6794,
+    "predictedProb": 0.6166,
     "status": "pending",
     "actualResult": null
   },
@@ -3240,7 +3377,7 @@
     "home": "Austin",
     "away": "Philadelphia Union",
     "predictedPick": "home",
-    "predictedProb": 0.5089,
+    "predictedProb": 0.4571,
     "status": "pending",
     "actualResult": null
   },
@@ -3251,7 +3388,7 @@
     "home": "St. Louis City",
     "away": "Houston Dynamo",
     "predictedPick": "home",
-    "predictedProb": 0.5521,
+    "predictedProb": 0.523,
     "status": "pending",
     "actualResult": null
   },
@@ -3273,18 +3410,18 @@
     "home": "Puebla",
     "away": "Santos Laguna",
     "predictedPick": "home",
-    "predictedProb": 0.7969,
+    "predictedProb": 0.8017,
     "status": "pending",
     "actualResult": null
   },
   {
-    "id": 1549741,
+    "id": 1549739,
     "league": "Liga BetPlay (Colombia)",
     "date": "2026-08-23T01:15:00+00:00",
-    "home": "Junior",
-    "away": "Once Caldas",
-    "predictedPick": "away",
-    "predictedProb": 0.5071,
+    "home": "Independiente Medellin",
+    "away": "Cucuta",
+    "predictedPick": "home",
+    "predictedProb": 0.9826,
     "status": "pending",
     "actualResult": null
   },
@@ -3295,7 +3432,7 @@
     "home": "Vancouver Whitecaps",
     "away": "FC Dallas",
     "predictedPick": "home",
-    "predictedProb": 0.671,
+    "predictedProb": 0.6892,
     "status": "pending",
     "actualResult": null
   },
@@ -3306,7 +3443,7 @@
     "home": "San Jose Earthquakes",
     "away": "Minnesota United FC",
     "predictedPick": "home",
-    "predictedProb": 0.6637,
+    "predictedProb": 0.6658,
     "status": "pending",
     "actualResult": null
   },
@@ -3317,7 +3454,7 @@
     "home": "Los Angeles FC",
     "away": "Portland Timbers",
     "predictedPick": "home",
-    "predictedProb": 0.9103,
+    "predictedProb": 0.8832,
     "status": "pending",
     "actualResult": null
   },
@@ -3328,7 +3465,7 @@
     "home": "San Diego",
     "away": "Colorado Rapids",
     "predictedPick": "home",
-    "predictedProb": 0.6431,
+    "predictedProb": 0.5706,
     "status": "pending",
     "actualResult": null
   },
@@ -3339,7 +3476,7 @@
     "home": "Cruz Azul",
     "away": "Atlas",
     "predictedPick": "away",
-    "predictedProb": 0.4913,
+    "predictedProb": 0.561,
     "status": "pending",
     "actualResult": null
   },
@@ -3360,8 +3497,8 @@
     "date": "2026-08-23T12:30:00+00:00",
     "home": "PSV Eindhoven",
     "away": "Groningen",
-    "predictedPick": "home",
-    "predictedProb": 0.6115,
+    "predictedPick": "away",
+    "predictedProb": 0.6585,
     "status": "pending",
     "actualResult": null
   },
@@ -3416,7 +3553,7 @@
     "home": "Vitória SC",
     "away": "Nacional",
     "predictedPick": "away",
-    "predictedProb": 0.5141,
+    "predictedProb": 0.6853,
     "status": "pending",
     "actualResult": null
   },
@@ -3438,7 +3575,7 @@
     "home": "Atletico Madrid",
     "away": "Villarreal",
     "predictedPick": "home",
-    "predictedProb": 0.4064,
+    "predictedProb": 0.6136,
     "status": "pending",
     "actualResult": null
   },
@@ -3471,7 +3608,7 @@
     "home": "D. La Serena",
     "away": "Cobresal",
     "predictedPick": "home",
-    "predictedProb": 0.7175,
+    "predictedProb": 0.7334,
     "status": "pending",
     "actualResult": null
   },
@@ -3482,7 +3619,7 @@
     "home": "Concepción",
     "away": "Coquimbo Unido",
     "predictedPick": "home",
-    "predictedProb": 0.6178,
+    "predictedProb": 0.7046,
     "status": "pending",
     "actualResult": null
   },
@@ -3525,8 +3662,8 @@
     "date": "2026-08-23T17:30:00+00:00",
     "home": "Getafe",
     "away": "Racing Santander",
-    "predictedPick": "away",
-    "predictedProb": 0.4101,
+    "predictedPick": "draw",
+    "predictedProb": 0.3508,
     "status": "pending",
     "actualResult": null
   },
@@ -3537,7 +3674,7 @@
     "home": "Sarmiento Junin",
     "away": "Estudiantes L.P.",
     "predictedPick": "home",
-    "predictedProb": 0.7341,
+    "predictedProb": 0.8739,
     "status": "pending",
     "actualResult": null
   },
@@ -3548,7 +3685,7 @@
     "home": "Barracas Central",
     "away": "Platense",
     "predictedPick": "home",
-    "predictedProb": 0.6999,
+    "predictedProb": 0.498,
     "status": "pending",
     "actualResult": null
   },
@@ -3559,7 +3696,7 @@
     "home": "Sport Boys",
     "away": "Cienciano",
     "predictedPick": "home",
-    "predictedProb": 0.8774,
+    "predictedProb": 0.844,
     "status": "pending",
     "actualResult": null
   },
@@ -3625,7 +3762,7 @@
     "home": "Vitoria",
     "away": "Bahia",
     "predictedPick": "away",
-    "predictedProb": 0.3577,
+    "predictedProb": 0.3464,
     "status": "pending",
     "actualResult": null
   },
@@ -3636,7 +3773,7 @@
     "home": "RB Bragantino",
     "away": "Gremio",
     "predictedPick": "home",
-    "predictedProb": 0.6949,
+    "predictedProb": 0.7283,
     "status": "pending",
     "actualResult": null
   },
@@ -3658,7 +3795,7 @@
     "home": "Universidad de Chile",
     "away": "Colo Colo",
     "predictedPick": "home",
-    "predictedProb": 0.7041,
+    "predictedProb": 0.7208,
     "status": "pending",
     "actualResult": null
   },
@@ -3669,7 +3806,7 @@
     "home": "Olimpia",
     "away": "Cerro Porteno",
     "predictedPick": "home",
-    "predictedProb": 0.7991,
+    "predictedProb": 0.7678,
     "status": "pending",
     "actualResult": null
   },
@@ -3702,7 +3839,7 @@
     "home": "Belgrano Cordoba",
     "away": "Defensa Y Justicia",
     "predictedPick": "home",
-    "predictedProb": 0.9503,
+    "predictedProb": 0.95,
     "status": "pending",
     "actualResult": null
   },
@@ -3713,7 +3850,7 @@
     "home": "Delfin SC",
     "away": "Aucas",
     "predictedPick": "away",
-    "predictedProb": 0.5018,
+    "predictedProb": 0.4474,
     "status": "pending",
     "actualResult": null
   },
@@ -3724,7 +3861,7 @@
     "home": "New England Revolution",
     "away": "New York City FC",
     "predictedPick": "home",
-    "predictedProb": 0.5978,
+    "predictedProb": 0.6087,
     "status": "pending",
     "actualResult": null
   },
@@ -3757,7 +3894,7 @@
     "home": "Santos",
     "away": "Mirassol",
     "predictedPick": "home",
-    "predictedProb": 0.5618,
+    "predictedProb": 0.5886,
     "status": "pending",
     "actualResult": null
   },
@@ -3768,7 +3905,7 @@
     "home": "Chapecoense-sc",
     "away": "Sao Paulo",
     "predictedPick": "away",
-    "predictedProb": 0.43,
+    "predictedProb": 0.3832,
     "status": "pending",
     "actualResult": null
   },
@@ -3779,7 +3916,7 @@
     "home": "Club Nacional",
     "away": "Progreso",
     "predictedPick": "home",
-    "predictedProb": 0.4658,
+    "predictedProb": 0.4922,
     "status": "pending",
     "actualResult": null
   },
@@ -3790,7 +3927,7 @@
     "home": "River Plate",
     "away": "Velez Sarsfield",
     "predictedPick": "away",
-    "predictedProb": 0.8053,
+    "predictedProb": 0.5533,
     "status": "pending",
     "actualResult": null
   },
@@ -3801,7 +3938,7 @@
     "home": "Coritiba",
     "away": "Corinthians",
     "predictedPick": "away",
-    "predictedProb": 0.4848,
+    "predictedProb": 0.4691,
     "status": "pending",
     "actualResult": null
   },
@@ -3823,7 +3960,7 @@
     "home": "Atlanta United FC",
     "away": "Sporting Kansas City",
     "predictedPick": "home",
-    "predictedProb": 0.7772,
+    "predictedProb": 0.7947,
     "status": "pending",
     "actualResult": null
   },
@@ -3834,7 +3971,7 @@
     "home": "O'Higgins",
     "away": "Palestino",
     "predictedPick": "home",
-    "predictedProb": 0.3783,
+    "predictedProb": 0.407,
     "status": "pending",
     "actualResult": null
   },
@@ -3856,7 +3993,7 @@
     "home": "Universitario",
     "away": "Club Deportivo Los Chankas",
     "predictedPick": "home",
-    "predictedProb": 0.8326,
+    "predictedProb": 0.8386,
     "status": "pending",
     "actualResult": null
   },
@@ -3867,7 +4004,7 @@
     "home": "LDU de Quito",
     "away": "Emelec",
     "predictedPick": "home",
-    "predictedProb": 0.6843,
+    "predictedProb": 0.6244,
     "status": "pending",
     "actualResult": null
   },
@@ -3878,7 +4015,7 @@
     "home": "Racing Club",
     "away": "Boca Juniors",
     "predictedPick": "home",
-    "predictedProb": 0.4223,
+    "predictedProb": 0.4191,
     "status": "pending",
     "actualResult": null
   },
@@ -3888,19 +4025,19 @@
     "date": "2026-08-24T01:00:00+00:00",
     "home": "U.N.A.M. - Pumas",
     "away": "Necaxa",
-    "predictedPick": "away",
-    "predictedProb": 0.4451,
+    "predictedPick": "home",
+    "predictedProb": 0.4844,
     "status": "pending",
     "actualResult": null
   },
   {
-    "id": 1549739,
+    "id": 1549741,
     "league": "Liga BetPlay (Colombia)",
     "date": "2026-08-24T01:15:00+00:00",
-    "home": "Independiente Medellin",
-    "away": "Cucuta",
-    "predictedPick": "home",
-    "predictedProb": 0.9826,
+    "home": "Junior",
+    "away": "Once Caldas",
+    "predictedPick": "away",
+    "predictedProb": 0.5071,
     "status": "pending",
     "actualResult": null
   },
@@ -3922,7 +4059,7 @@
     "home": "Osasuna",
     "away": "Levante",
     "predictedPick": "home",
-    "predictedProb": 0.5194,
+    "predictedProb": 0.863,
     "status": "pending",
     "actualResult": null
   },
@@ -3955,7 +4092,7 @@
     "home": "Nacional Asuncion",
     "away": "Sportivo Luqueno",
     "predictedPick": "home",
-    "predictedProb": 0.6217,
+    "predictedProb": 0.645,
     "status": "pending",
     "actualResult": null
   },
@@ -3988,7 +4125,7 @@
     "home": "Libertad Asuncion",
     "away": "Club Sp. San Lorenzo",
     "predictedPick": "home",
-    "predictedProb": 0.9907,
+    "predictedProb": 0.9862,
     "status": "pending",
     "actualResult": null
   },
@@ -3999,7 +4136,7 @@
     "home": "Tigre",
     "away": "Central Cordoba de Santiago",
     "predictedPick": "draw",
-    "predictedProb": 0.4769,
+    "predictedProb": 0.5008,
     "status": "pending",
     "actualResult": null
   },
@@ -4010,18 +4147,7 @@
     "home": "Botafogo",
     "away": "Atletico Paranaense",
     "predictedPick": "home",
-    "predictedProb": 0.3774,
-    "status": "pending",
-    "actualResult": null
-  },
-  {
-    "id": 1549734,
-    "league": "Liga BetPlay (Colombia)",
-    "date": "2026-08-24T23:00:00+00:00",
-    "home": "Alianza Valledupar",
-    "away": "Deportivo Pereira",
-    "predictedPick": "draw",
-    "predictedProb": 0.531,
+    "predictedProb": 0.3598,
     "status": "pending",
     "actualResult": null
   },
@@ -4043,7 +4169,7 @@
     "home": "Libertad",
     "away": "Macara",
     "predictedPick": "home",
-    "predictedProb": 0.4756,
+    "predictedProb": 0.4747,
     "status": "pending",
     "actualResult": null
   },
@@ -4054,7 +4180,7 @@
     "home": "Lanus",
     "away": "Argentinos JRS",
     "predictedPick": "away",
-    "predictedProb": 0.5109,
+    "predictedProb": 0.3767,
     "status": "pending",
     "actualResult": null
   },
@@ -4065,7 +4191,7 @@
     "home": "Talleres Cordoba",
     "away": "Rosario Central",
     "predictedPick": "away",
-    "predictedProb": 0.7378,
+    "predictedProb": 0.8141,
     "status": "pending",
     "actualResult": null
   },
@@ -4120,7 +4246,7 @@
     "home": "2 de Mayo",
     "away": "Club Guarani",
     "predictedPick": "home",
-    "predictedProb": 0.4504,
+    "predictedProb": 0.4521,
     "status": "pending",
     "actualResult": null
   },
@@ -4263,7 +4389,7 @@
     "home": "River Plate",
     "away": "Santa Fe",
     "predictedPick": "home",
-    "predictedProb": 0.5807,
+    "predictedProb": 0.6284,
     "status": "pending",
     "actualResult": null
   },
@@ -4329,7 +4455,7 @@
     "home": "Racing Santander",
     "away": "Elche",
     "predictedPick": "home",
-    "predictedProb": 0.5339,
+    "predictedProb": 0.45,
     "status": "pending",
     "actualResult": null
   },
@@ -4395,7 +4521,7 @@
     "home": "Sportivo Luqueno",
     "away": "Rubio NU",
     "predictedPick": "home",
-    "predictedProb": 0.5953,
+    "predictedProb": 0.5329,
     "status": "pending",
     "actualResult": null
   },
@@ -4417,7 +4543,7 @@
     "home": "Alaves",
     "away": "Villarreal",
     "predictedPick": "home",
-    "predictedProb": 0.8228,
+    "predictedProb": 0.9341,
     "status": "pending",
     "actualResult": null
   },
@@ -4428,7 +4554,7 @@
     "home": "Comerciantes Unidos",
     "away": "FC Cajamarca",
     "predictedPick": "home",
-    "predictedProb": 0.6112,
+    "predictedProb": 0.6379,
     "status": "pending",
     "actualResult": null
   },
@@ -4439,7 +4565,7 @@
     "home": "Club Sp. San Lorenzo",
     "away": "Nacional Asuncion",
     "predictedPick": "away",
-    "predictedProb": 0.6962,
+    "predictedProb": 0.6842,
     "status": "pending",
     "actualResult": null
   },
@@ -4450,7 +4576,7 @@
     "home": "Huracan",
     "away": "Estudiantes de Rio Cuarto",
     "predictedPick": "home",
-    "predictedProb": 0.7485,
+    "predictedProb": 0.666,
     "status": "pending",
     "actualResult": null
   },
@@ -4461,7 +4587,7 @@
     "home": "Cobresal",
     "away": "Palestino",
     "predictedPick": "home",
-    "predictedProb": 0.5234,
+    "predictedProb": 0.471,
     "status": "pending",
     "actualResult": null
   },
@@ -4472,7 +4598,7 @@
     "home": "Union Santa Fe",
     "away": "Sarmiento Junin",
     "predictedPick": "away",
-    "predictedProb": 0.4111,
+    "predictedProb": 0.5937,
     "status": "pending",
     "actualResult": null
   },
@@ -4483,7 +4609,7 @@
     "home": "Necaxa",
     "away": "Cruz Azul",
     "predictedPick": "home",
-    "predictedProb": 0.599,
+    "predictedProb": 0.7594,
     "status": "pending",
     "actualResult": null
   },
@@ -4494,7 +4620,7 @@
     "home": "Atlante FC",
     "away": "Leon",
     "predictedPick": "home",
-    "predictedProb": 0.523,
+    "predictedProb": 0.4778,
     "status": "pending",
     "actualResult": null
   },
@@ -4505,7 +4631,7 @@
     "home": "Club Tijuana",
     "away": "U.N.A.M. - Pumas",
     "predictedPick": "home",
-    "predictedProb": 0.6877,
+    "predictedProb": 0.5685,
     "status": "pending",
     "actualResult": null
   },
@@ -4604,7 +4730,7 @@
     "home": "Excelsior",
     "away": "Sparta Rotterdam",
     "predictedPick": "away",
-    "predictedProb": 0.7238,
+    "predictedProb": 0.7411,
     "status": "pending",
     "actualResult": null
   },
@@ -4614,8 +4740,8 @@
     "date": "2026-08-29T14:30:00+00:00",
     "home": "Arouca",
     "away": "Maritimo",
-    "predictedPick": "away",
-    "predictedProb": 0.4901,
+    "predictedPick": "home",
+    "predictedProb": 0.8077,
     "status": "pending",
     "actualResult": null
   },
@@ -4637,7 +4763,7 @@
     "home": "Levante",
     "away": "Real Betis",
     "predictedPick": "away",
-    "predictedProb": 0.4824,
+    "predictedProb": 0.5465,
     "status": "pending",
     "actualResult": null
   },
@@ -4714,7 +4840,7 @@
     "home": "AZ Alkmaar",
     "away": "GO Ahead Eagles",
     "predictedPick": "home",
-    "predictedProb": 0.8307,
+    "predictedProb": 0.856,
     "status": "pending",
     "actualResult": null
   },
@@ -4725,7 +4851,7 @@
     "home": "Real Sociedad",
     "away": "Espanyol",
     "predictedPick": "home",
-    "predictedProb": 0.5515,
+    "predictedProb": 0.4826,
     "status": "pending",
     "actualResult": null
   },
@@ -4747,7 +4873,7 @@
     "home": "Deportivo Riestra",
     "away": "Velez Sarsfield",
     "predictedPick": "home",
-    "predictedProb": 0.3548,
+    "predictedProb": 0.3591,
     "status": "pending",
     "actualResult": null
   },
@@ -4758,7 +4884,7 @@
     "home": "Club Deportivo Los Chankas",
     "away": "Juan Pablo II College",
     "predictedPick": "home",
-    "predictedProb": 0.6873,
+    "predictedProb": 0.6903,
     "status": "pending",
     "actualResult": null
   },
@@ -4824,7 +4950,7 @@
     "home": "PEC Zwolle",
     "away": "NEC Nijmegen",
     "predictedPick": "away",
-    "predictedProb": 0.9668,
+    "predictedProb": 0.9762,
     "status": "pending",
     "actualResult": null
   },
@@ -4857,7 +4983,7 @@
     "home": "Rosario Central",
     "away": "Gimnasia L.P.",
     "predictedPick": "home",
-    "predictedProb": 0.7147,
+    "predictedProb": 0.7759,
     "status": "pending",
     "actualResult": null
   },
@@ -4868,7 +4994,7 @@
     "home": "Sport Boys",
     "away": "Sporting Cristal",
     "predictedPick": "home",
-    "predictedProb": 0.7551,
+    "predictedProb": 0.6409,
     "status": "pending",
     "actualResult": null
   },
@@ -4879,7 +5005,7 @@
     "home": "UTC Cajamarca",
     "away": "Universitario",
     "predictedPick": "away",
-    "predictedProb": 0.4752,
+    "predictedProb": 0.5844,
     "status": "pending",
     "actualResult": null
   },
@@ -4890,7 +5016,7 @@
     "home": "Seattle Sounders",
     "away": "Chicago Fire",
     "predictedPick": "away",
-    "predictedProb": 0.6171,
+    "predictedProb": 0.6903,
     "status": "pending",
     "actualResult": null
   },
@@ -4912,7 +5038,7 @@
     "home": "Atletico-MG",
     "away": "Vitoria",
     "predictedPick": "home",
-    "predictedProb": 0.8624,
+    "predictedProb": 0.8903,
     "status": "pending",
     "actualResult": null
   },
@@ -4923,7 +5049,7 @@
     "home": "Deportivo Recoleta",
     "away": "Olimpia",
     "predictedPick": "home",
-    "predictedProb": 0.7439,
+    "predictedProb": 0.7144,
     "status": "pending",
     "actualResult": null
   },
@@ -4945,7 +5071,7 @@
     "home": "Boca Juniors",
     "away": "Lanus",
     "predictedPick": "away",
-    "predictedProb": 0.4136,
+    "predictedProb": 0.4156,
     "status": "pending",
     "actualResult": null
   },
@@ -4956,7 +5082,7 @@
     "home": "Atlas",
     "away": "Club Queretaro",
     "predictedPick": "away",
-    "predictedProb": 0.5643,
+    "predictedProb": 0.4874,
     "status": "pending",
     "actualResult": null
   },
@@ -4967,7 +5093,7 @@
     "home": "CF Pachuca",
     "away": "Guadalajara Chivas",
     "predictedPick": "away",
-    "predictedProb": 0.3668,
+    "predictedProb": 0.5709,
     "status": "pending",
     "actualResult": null
   },
@@ -5000,7 +5126,7 @@
     "home": "Toronto FC",
     "away": "New York City FC",
     "predictedPick": "away",
-    "predictedProb": 0.4124,
+    "predictedProb": 0.3919,
     "status": "pending",
     "actualResult": null
   },
@@ -5011,7 +5137,7 @@
     "home": "New York Red Bulls",
     "away": "Philadelphia Union",
     "predictedPick": "home",
-    "predictedProb": 0.5871,
+    "predictedProb": 0.5585,
     "status": "pending",
     "actualResult": null
   },
@@ -5022,7 +5148,7 @@
     "home": "Atlanta United FC",
     "away": "Charlotte",
     "predictedPick": "away",
-    "predictedProb": 0.4774,
+    "predictedProb": 0.4743,
     "status": "pending",
     "actualResult": null
   },
@@ -5033,7 +5159,7 @@
     "home": "Columbus Crew",
     "away": "New England Revolution",
     "predictedPick": "home",
-    "predictedProb": 0.5004,
+    "predictedProb": 0.5024,
     "status": "pending",
     "actualResult": null
   },
@@ -5044,7 +5170,7 @@
     "home": "DC United",
     "away": "Los Angeles FC",
     "predictedPick": "away",
-    "predictedProb": 0.7697,
+    "predictedProb": 0.7279,
     "status": "pending",
     "actualResult": null
   },
@@ -5055,7 +5181,7 @@
     "home": "Inter Miami",
     "away": "CF Montreal",
     "predictedPick": "home",
-    "predictedProb": 0.9558,
+    "predictedProb": 0.938,
     "status": "pending",
     "actualResult": null
   },
@@ -5066,7 +5192,7 @@
     "home": "Nublense",
     "away": "Concepción",
     "predictedPick": "home",
-    "predictedProb": 0.5967,
+    "predictedProb": 0.4965,
     "status": "pending",
     "actualResult": null
   },
@@ -5077,7 +5203,7 @@
     "home": "Vasco DA Gama",
     "away": "Cruzeiro",
     "predictedPick": "away",
-    "predictedProb": 0.4666,
+    "predictedProb": 0.5475,
     "status": "pending",
     "actualResult": null
   },
@@ -5088,7 +5214,7 @@
     "home": "Alianza Lima",
     "away": "Deportivo Garcilaso",
     "predictedPick": "home",
-    "predictedProb": 0.474,
+    "predictedProb": 0.4183,
     "status": "pending",
     "actualResult": null
   },
@@ -5099,7 +5225,7 @@
     "home": "Atletico Tucuman",
     "away": "Belgrano Cordoba",
     "predictedPick": "away",
-    "predictedProb": 0.504,
+    "predictedProb": 0.5036,
     "status": "pending",
     "actualResult": null
   },
@@ -5110,7 +5236,7 @@
     "home": "Talleres Cordoba",
     "away": "Central Cordoba de Santiago",
     "predictedPick": "away",
-    "predictedProb": 0.6559,
+    "predictedProb": 0.5518,
     "status": "pending",
     "actualResult": null
   },
@@ -5132,7 +5258,7 @@
     "home": "Sporting Kansas City",
     "away": "Vancouver Whitecaps",
     "predictedPick": "away",
-    "predictedProb": 0.795,
+    "predictedProb": 0.8594,
     "status": "pending",
     "actualResult": null
   },
@@ -5143,7 +5269,7 @@
     "home": "Minnesota United FC",
     "away": "Orlando City SC",
     "predictedPick": "home",
-    "predictedProb": 0.6392,
+    "predictedProb": 0.6373,
     "status": "pending",
     "actualResult": null
   },
@@ -5154,7 +5280,7 @@
     "home": "Nashville SC",
     "away": "FC Cincinnati",
     "predictedPick": "home",
-    "predictedProb": 0.9293,
+    "predictedProb": 0.9255,
     "status": "pending",
     "actualResult": null
   },
@@ -5165,7 +5291,7 @@
     "home": "Club America",
     "away": "Puebla",
     "predictedPick": "home",
-    "predictedProb": 0.9365,
+    "predictedProb": 0.9442,
     "status": "pending",
     "actualResult": null
   },
@@ -5187,7 +5313,7 @@
     "home": "Colorado Rapids",
     "away": "Real Salt Lake",
     "predictedPick": "home",
-    "predictedProb": 0.7006,
+    "predictedProb": 0.7522,
     "status": "pending",
     "actualResult": null
   },
@@ -5198,7 +5324,7 @@
     "home": "Portland Timbers",
     "away": "Austin",
     "predictedPick": "home",
-    "predictedProb": 0.9411,
+    "predictedProb": 0.9335,
     "status": "pending",
     "actualResult": null
   },
@@ -5209,7 +5335,7 @@
     "home": "San Diego",
     "away": "Los Angeles Galaxy",
     "predictedPick": "home",
-    "predictedProb": 0.7399,
+    "predictedProb": 0.7371,
     "status": "pending",
     "actualResult": null
   },
@@ -5220,7 +5346,7 @@
     "home": "Santos Laguna",
     "away": "Tigres UANL",
     "predictedPick": "away",
-    "predictedProb": 0.5529,
+    "predictedProb": 0.5367,
     "status": "pending",
     "actualResult": null
   },
@@ -5242,7 +5368,7 @@
     "home": "Willem II",
     "away": "Heerenveen",
     "predictedPick": "away",
-    "predictedProb": 0.8694,
+    "predictedProb": 0.8755,
     "status": "pending",
     "actualResult": null
   },
@@ -5253,7 +5379,7 @@
     "home": "Feyenoord",
     "away": "ADO Den Haag",
     "predictedPick": "home",
-    "predictedProb": 0.9408,
+    "predictedProb": 0.9168,
     "status": "pending",
     "actualResult": null
   },
@@ -5330,7 +5456,7 @@
     "home": "Nacional",
     "away": "Estrela",
     "predictedPick": "home",
-    "predictedProb": 0.412,
+    "predictedProb": 0.896,
     "status": "pending",
     "actualResult": null
   },
@@ -5341,7 +5467,7 @@
     "home": "Telstar",
     "away": "Ajax",
     "predictedPick": "away",
-    "predictedProb": 0.9515,
+    "predictedProb": 0.9472,
     "status": "pending",
     "actualResult": null
   },
@@ -5396,7 +5522,7 @@
     "home": "UCV Moquegua",
     "away": "Alianza Atletico",
     "predictedPick": "home",
-    "predictedProb": 0.4741,
+    "predictedProb": 0.5107,
     "status": "pending",
     "actualResult": null
   },
@@ -5417,8 +5543,8 @@
     "date": "2026-08-30T17:00:00+00:00",
     "home": "Casa Pia",
     "away": "Moreirense",
-    "predictedPick": "away",
-    "predictedProb": 0.3824,
+    "predictedPick": "home",
+    "predictedProb": 0.7329,
     "status": "pending",
     "actualResult": null
   },
@@ -5440,7 +5566,7 @@
     "home": "Banfield",
     "away": "River Plate",
     "predictedPick": "home",
-    "predictedProb": 0.6764,
+    "predictedProb": 0.596,
     "status": "pending",
     "actualResult": null
   },
@@ -5451,7 +5577,7 @@
     "home": "Cambuur",
     "away": "Twente",
     "predictedPick": "away",
-    "predictedProb": 0.5345,
+    "predictedProb": 0.6409,
     "status": "pending",
     "actualResult": null
   },
@@ -5462,7 +5588,7 @@
     "home": "ADT",
     "away": "Sport Huancayo",
     "predictedPick": "away",
-    "predictedProb": 0.7031,
+    "predictedProb": 0.5002,
     "status": "pending",
     "actualResult": null
   },
@@ -5528,7 +5654,7 @@
     "home": "Flamengo",
     "away": "Botafogo",
     "predictedPick": "home",
-    "predictedProb": 0.8622,
+    "predictedProb": 0.8535,
     "status": "pending",
     "actualResult": null
   },
@@ -5539,7 +5665,7 @@
     "home": "Corinthians",
     "away": "Santos",
     "predictedPick": "home",
-    "predictedProb": 0.8539,
+    "predictedProb": 0.7938,
     "status": "pending",
     "actualResult": null
   },
@@ -5549,8 +5675,8 @@
     "date": "2026-08-30T19:00:00+00:00",
     "home": "Cerro Porteno",
     "away": "Libertad Asuncion",
-    "predictedPick": "away",
-    "predictedProb": 0.4086,
+    "predictedPick": "home",
+    "predictedProb": 0.363,
     "status": "pending",
     "actualResult": null
   },
@@ -5572,7 +5698,7 @@
     "home": "Famalicao",
     "away": "GIL Vicente",
     "predictedPick": "away",
-    "predictedProb": 0.4101,
+    "predictedProb": 0.6478,
     "status": "pending",
     "actualResult": null
   },
@@ -5583,7 +5709,7 @@
     "home": "Argentinos JRS",
     "away": "Aldosivi",
     "predictedPick": "home",
-    "predictedProb": 0.938,
+    "predictedProb": 0.9316,
     "status": "pending",
     "actualResult": null
   },
@@ -5593,8 +5719,8 @@
     "date": "2026-08-30T20:00:00+00:00",
     "home": "Emelec",
     "away": "Leones del Norte",
-    "predictedPick": "away",
-    "predictedProb": 0.4016,
+    "predictedPick": "home",
+    "predictedProb": 0.379,
     "status": "pending",
     "actualResult": null
   },
@@ -5605,7 +5731,7 @@
     "home": "Tecnico Universitario",
     "away": "Deportivo Cuenca",
     "predictedPick": "draw",
-    "predictedProb": 0.3737,
+    "predictedProb": 0.3617,
     "status": "pending",
     "actualResult": null
   },
@@ -5616,7 +5742,7 @@
     "home": "Independiente del Valle",
     "away": "Universidad Catolica",
     "predictedPick": "home",
-    "predictedProb": 0.6343,
+    "predictedProb": 0.636,
     "status": "pending",
     "actualResult": null
   },
@@ -5627,7 +5753,7 @@
     "home": "Aucas",
     "away": "Libertad",
     "predictedPick": "home",
-    "predictedProb": 0.5473,
+    "predictedProb": 0.4723,
     "status": "pending",
     "actualResult": null
   },
@@ -5638,7 +5764,7 @@
     "home": "Guayaquil City FC",
     "away": "LDU de Quito",
     "predictedPick": "draw",
-    "predictedProb": 0.3952,
+    "predictedProb": 0.3919,
     "status": "pending",
     "actualResult": null
   },
@@ -5649,7 +5775,7 @@
     "home": "Mushuc Runa SC",
     "away": "Delfin SC",
     "predictedPick": "home",
-    "predictedProb": 0.6684,
+    "predictedProb": 0.6657,
     "status": "pending",
     "actualResult": null
   },
@@ -5660,7 +5786,7 @@
     "home": "Manta FC",
     "away": "Barcelona SC",
     "predictedPick": "draw",
-    "predictedProb": 0.4504,
+    "predictedProb": 0.4517,
     "status": "pending",
     "actualResult": null
   },
@@ -5671,7 +5797,7 @@
     "home": "Orense SC",
     "away": "Macara",
     "predictedPick": "away",
-    "predictedProb": 0.6948,
+    "predictedProb": 0.5915,
     "status": "pending",
     "actualResult": null
   },
@@ -5693,7 +5819,7 @@
     "home": "Gremio",
     "away": "Chapecoense-sc",
     "predictedPick": "home",
-    "predictedProb": 0.818,
+    "predictedProb": 0.7882,
     "status": "pending",
     "actualResult": null
   },
@@ -5704,7 +5830,7 @@
     "home": "Colo Colo",
     "away": "A. Italiano",
     "predictedPick": "home",
-    "predictedProb": 0.9435,
+    "predictedProb": 0.9268,
     "status": "pending",
     "actualResult": null
   },
@@ -5714,8 +5840,8 @@
     "date": "2026-08-30T21:30:00+00:00",
     "home": "Club Guarani",
     "away": "Sportivo Ameliano",
-    "predictedPick": "away",
-    "predictedProb": 0.3826,
+    "predictedPick": "home",
+    "predictedProb": 0.5477,
     "status": "pending",
     "actualResult": null
   },
@@ -5726,7 +5852,7 @@
     "home": "Independiente",
     "away": "Gimnasia M.",
     "predictedPick": "draw",
-    "predictedProb": 0.5367,
+    "predictedProb": 0.5328,
     "status": "pending",
     "actualResult": null
   },
@@ -5737,7 +5863,7 @@
     "home": "Bahia",
     "away": "Internacional",
     "predictedPick": "home",
-    "predictedProb": 0.7378,
+    "predictedProb": 0.7329,
     "status": "pending",
     "actualResult": null
   },
@@ -5748,7 +5874,7 @@
     "home": "Mirassol",
     "away": "Palmeiras",
     "predictedPick": "away",
-    "predictedProb": 0.6558,
+    "predictedProb": 0.7222,
     "status": "pending",
     "actualResult": null
   },
@@ -5759,7 +5885,7 @@
     "home": "St. Louis City",
     "away": "FC Dallas",
     "predictedPick": "home",
-    "predictedProb": 0.5832,
+    "predictedProb": 0.524,
     "status": "pending",
     "actualResult": null
   },
@@ -5781,7 +5907,7 @@
     "home": "Cienciano",
     "away": "Cusco",
     "predictedPick": "away",
-    "predictedProb": 0.414,
+    "predictedProb": 0.4318,
     "status": "pending",
     "actualResult": null
   },
@@ -5792,7 +5918,7 @@
     "home": "Toluca",
     "away": "FC Juarez",
     "predictedPick": "home",
-    "predictedProb": 0.9951,
+    "predictedProb": 0.9952,
     "status": "pending",
     "actualResult": null
   },
@@ -5814,7 +5940,7 @@
     "home": "Independ. Rivadavia",
     "away": "Racing Club",
     "predictedPick": "home",
-    "predictedProb": 0.7007,
+    "predictedProb": 0.706,
     "status": "pending",
     "actualResult": null
   },
@@ -5836,7 +5962,7 @@
     "home": "Monterrey",
     "away": "Atletico San Luis",
     "predictedPick": "home",
-    "predictedProb": 0.9785,
+    "predictedProb": 0.995,
     "status": "pending",
     "actualResult": null
   },
@@ -5869,7 +5995,7 @@
     "home": "Benfica",
     "away": "Estoril",
     "predictedPick": "home",
-    "predictedProb": 0.6163,
+    "predictedProb": 0.8326,
     "status": "pending",
     "actualResult": null
   },
@@ -5924,7 +6050,7 @@
     "home": "Atletico Grau",
     "away": "FBC Melgar",
     "predictedPick": "away",
-    "predictedProb": 0.5091,
+    "predictedProb": 0.5076,
     "status": "pending",
     "actualResult": null
   },
@@ -5935,7 +6061,7 @@
     "home": "Defensa Y Justicia",
     "away": "Platense",
     "predictedPick": "home",
-    "predictedProb": 0.7179,
+    "predictedProb": 0.7234,
     "status": "pending",
     "actualResult": null
   },
@@ -5946,7 +6072,7 @@
     "home": "Estudiantes L.P.",
     "away": "Newells Old Boys",
     "predictedPick": "home",
-    "predictedProb": 0.7466,
+    "predictedProb": 0.7501,
     "status": "pending",
     "actualResult": null
   },
@@ -5957,7 +6083,7 @@
     "home": "Union La Calera",
     "away": "D. La Serena",
     "predictedPick": "away",
-    "predictedProb": 0.412,
+    "predictedProb": 0.4262,
     "status": "pending",
     "actualResult": null
   },
@@ -5990,7 +6116,7 @@
     "home": "Tigre",
     "away": "Barracas Central",
     "predictedPick": "draw",
-    "predictedProb": 0.5901,
+    "predictedProb": 0.5866,
     "status": "pending",
     "actualResult": null
   },
@@ -6001,7 +6127,7 @@
     "home": "Instituto Cordoba",
     "away": "San Lorenzo",
     "predictedPick": "home",
-    "predictedProb": 0.7628,
+    "predictedProb": 0.7626,
     "status": "pending",
     "actualResult": null
   },
@@ -6012,7 +6138,7 @@
     "home": "U. Catolica",
     "away": "O'Higgins",
     "predictedPick": "home",
-    "predictedProb": 0.9369,
+    "predictedProb": 0.9412,
     "status": "pending",
     "actualResult": null
   },
@@ -6045,7 +6171,7 @@
     "home": "Delfin SC",
     "away": "Tecnico Universitario",
     "predictedPick": "home",
-    "predictedProb": 0.567,
+    "predictedProb": 0.5688,
     "status": "pending",
     "actualResult": null
   },
@@ -6056,7 +6182,7 @@
     "home": "Barcelona SC",
     "away": "Independiente del Valle",
     "predictedPick": "away",
-    "predictedProb": 0.6141,
+    "predictedProb": 0.6158,
     "status": "pending",
     "actualResult": null
   },
@@ -6067,7 +6193,7 @@
     "home": "Deportivo Cuenca",
     "away": "Guayaquil City FC",
     "predictedPick": "home",
-    "predictedProb": 0.3783,
+    "predictedProb": 0.3648,
     "status": "pending",
     "actualResult": null
   },
@@ -6078,7 +6204,7 @@
     "home": "Macara",
     "away": "Manta FC",
     "predictedPick": "home",
-    "predictedProb": 0.9101,
+    "predictedProb": 0.9084,
     "status": "pending",
     "actualResult": null
   },
@@ -6089,7 +6215,7 @@
     "home": "Universidad Catolica",
     "away": "Aucas",
     "predictedPick": "home",
-    "predictedProb": 0.7632,
+    "predictedProb": 0.8079,
     "status": "pending",
     "actualResult": null
   },
@@ -6100,7 +6226,7 @@
     "home": "LDU de Quito",
     "away": "Mushuc Runa SC",
     "predictedPick": "home",
-    "predictedProb": 0.4435,
+    "predictedProb": 0.5112,
     "status": "pending",
     "actualResult": null
   },
@@ -6111,7 +6237,7 @@
     "home": "Libertad",
     "away": "Emelec",
     "predictedPick": "home",
-    "predictedProb": 0.875,
+    "predictedProb": 0.7792,
     "status": "pending",
     "actualResult": null
   },
@@ -6122,7 +6248,7 @@
     "home": "Leones del Norte",
     "away": "Orense SC",
     "predictedPick": "home",
-    "predictedProb": 0.7126,
+    "predictedProb": 0.6514,
     "status": "pending",
     "actualResult": null
   },
@@ -6143,8 +6269,8 @@
     "date": "2026-09-03T00:30:00+00:00",
     "home": "Deportes Limache",
     "away": "Nublense",
-    "predictedPick": "home",
-    "predictedProb": 0.4291,
+    "predictedPick": "away",
+    "predictedProb": 0.4229,
     "status": "pending",
     "actualResult": null
   },
@@ -6220,8 +6346,8 @@
     "date": "2026-09-04T18:00:00+00:00",
     "home": "Sparta Rotterdam",
     "away": "PEC Zwolle",
-    "predictedPick": "away",
-    "predictedProb": 0.3838,
+    "predictedPick": "home",
+    "predictedProb": 0.429,
     "status": "pending",
     "actualResult": null
   },
@@ -6232,7 +6358,7 @@
     "home": "FC Cajamarca",
     "away": "Cienciano",
     "predictedPick": "home",
-    "predictedProb": 0.5938,
+    "predictedProb": 0.6949,
     "status": "pending",
     "actualResult": null
   },
@@ -6298,7 +6424,7 @@
     "home": "Alianza Atletico",
     "away": "UTC Cajamarca",
     "predictedPick": "home",
-    "predictedProb": 0.9452,
+    "predictedProb": 0.9464,
     "status": "pending",
     "actualResult": null
   },
@@ -6309,7 +6435,7 @@
     "home": "New York City FC",
     "away": "Nashville SC",
     "predictedPick": "away",
-    "predictedProb": 0.4717,
+    "predictedProb": 0.5132,
     "status": "pending",
     "actualResult": null
   },
@@ -6320,7 +6446,7 @@
     "home": "Concepción",
     "away": "A. Italiano",
     "predictedPick": "home",
-    "predictedProb": 0.7322,
+    "predictedProb": 0.7928,
     "status": "pending",
     "actualResult": null
   },
@@ -6331,7 +6457,7 @@
     "home": "Puebla",
     "away": "Toluca",
     "predictedPick": "away",
-    "predictedProb": 0.5994,
+    "predictedProb": 0.5686,
     "status": "pending",
     "actualResult": null
   },
@@ -6342,7 +6468,7 @@
     "home": "FC Juarez",
     "away": "CF Pachuca",
     "predictedPick": "away",
-    "predictedProb": 0.8453,
+    "predictedProb": 0.8743,
     "status": "pending",
     "actualResult": null
   },
@@ -6496,7 +6622,7 @@
     "home": "NEC Nijmegen",
     "away": "Feyenoord",
     "predictedPick": "away",
-    "predictedProb": 0.7659,
+    "predictedProb": 0.7511,
     "status": "pending",
     "actualResult": null
   },
@@ -6528,8 +6654,8 @@
     "date": "2026-09-05T16:30:00+00:00",
     "home": "Rayo Vallecano",
     "away": "Racing Santander",
-    "predictedPick": "away",
-    "predictedProb": 0.4035,
+    "predictedPick": "home",
+    "predictedProb": 0.3682,
     "status": "pending",
     "actualResult": null
   },
@@ -6562,7 +6688,7 @@
     "home": "Utrecht",
     "away": "GO Ahead Eagles",
     "predictedPick": "away",
-    "predictedProb": 0.8454,
+    "predictedProb": 0.8653,
     "status": "pending",
     "actualResult": null
   },
@@ -6573,7 +6699,7 @@
     "home": "Ajax",
     "away": "PSV Eindhoven",
     "predictedPick": "away",
-    "predictedProb": 0.4859,
+    "predictedProb": 0.6301,
     "status": "pending",
     "actualResult": null
   },
@@ -6617,7 +6743,7 @@
     "home": "Villarreal",
     "away": "Deportivo La Coruna",
     "predictedPick": "home",
-    "predictedProb": 0.6125,
+    "predictedProb": 0.5155,
     "status": "pending",
     "actualResult": null
   },
@@ -6639,7 +6765,7 @@
     "home": "Willem II",
     "away": "Excelsior",
     "predictedPick": "away",
-    "predictedProb": 0.9835,
+    "predictedProb": 0.9887,
     "status": "pending",
     "actualResult": null
   },
@@ -6650,7 +6776,7 @@
     "home": "RB Bragantino",
     "away": "Bahia",
     "predictedPick": "home",
-    "predictedProb": 0.4672,
+    "predictedProb": 0.4821,
     "status": "pending",
     "actualResult": null
   },
@@ -6661,7 +6787,7 @@
     "home": "Sport Huancayo",
     "away": "Sport Boys",
     "predictedPick": "home",
-    "predictedProb": 0.4065,
+    "predictedProb": 0.4115,
     "status": "pending",
     "actualResult": null
   },
@@ -6683,7 +6809,7 @@
     "home": "Sao Paulo",
     "away": "Atletico-MG",
     "predictedPick": "home",
-    "predictedProb": 0.4241,
+    "predictedProb": 0.4128,
     "status": "pending",
     "actualResult": null
   },
@@ -6694,7 +6820,7 @@
     "home": "Coritiba",
     "away": "Mirassol",
     "predictedPick": "home",
-    "predictedProb": 0.5671,
+    "predictedProb": 0.5706,
     "status": "pending",
     "actualResult": null
   },
@@ -6705,7 +6831,7 @@
     "home": "Cusco",
     "away": "UCV Moquegua",
     "predictedPick": "home",
-    "predictedProb": 0.9701,
+    "predictedProb": 0.9659,
     "status": "pending",
     "actualResult": null
   },
@@ -6716,7 +6842,7 @@
     "home": "Club Queretaro",
     "away": "Monterrey",
     "predictedPick": "away",
-    "predictedProb": 0.5192,
+    "predictedProb": 0.5219,
     "status": "pending",
     "actualResult": null
   },
@@ -6727,7 +6853,7 @@
     "home": "Atletico San Luis",
     "away": "Guadalajara Chivas",
     "predictedPick": "away",
-    "predictedProb": 0.3628,
+    "predictedProb": 0.5661,
     "status": "pending",
     "actualResult": null
   },
@@ -6749,7 +6875,7 @@
     "home": "Orlando City SC",
     "away": "San Diego",
     "predictedPick": "home",
-    "predictedProb": 0.5491,
+    "predictedProb": 0.5487,
     "status": "pending",
     "actualResult": null
   },
@@ -6771,7 +6897,7 @@
     "home": "Toronto FC",
     "away": "Chicago Fire",
     "predictedPick": "away",
-    "predictedProb": 0.5288,
+    "predictedProb": 0.5162,
     "status": "pending",
     "actualResult": null
   },
@@ -6782,7 +6908,7 @@
     "home": "Columbus Crew",
     "away": "Colorado Rapids",
     "predictedPick": "home",
-    "predictedProb": 0.5135,
+    "predictedProb": 0.4504,
     "status": "pending",
     "actualResult": null
   },
@@ -6793,7 +6919,7 @@
     "home": "FC Cincinnati",
     "away": "DC United",
     "predictedPick": "home",
-    "predictedProb": 0.7069,
+    "predictedProb": 0.7078,
     "status": "pending",
     "actualResult": null
   },
@@ -6804,7 +6930,7 @@
     "home": "Inter Miami",
     "away": "Atlanta United FC",
     "predictedPick": "home",
-    "predictedProb": 0.9522,
+    "predictedProb": 0.9334,
     "status": "pending",
     "actualResult": null
   },
@@ -6815,7 +6941,7 @@
     "home": "Charlotte",
     "away": "Houston Dynamo",
     "predictedPick": "home",
-    "predictedProb": 0.5191,
+    "predictedProb": 0.5158,
     "status": "pending",
     "actualResult": null
   },
@@ -6848,7 +6974,7 @@
     "home": "Seattle Sounders",
     "away": "New York Red Bulls",
     "predictedPick": "home",
-    "predictedProb": 0.5437,
+    "predictedProb": 0.4425,
     "status": "pending",
     "actualResult": null
   },
@@ -6859,7 +6985,7 @@
     "home": "FC Dallas",
     "away": "Sporting Kansas City",
     "predictedPick": "home",
-    "predictedProb": 0.946,
+    "predictedProb": 0.9543,
     "status": "pending",
     "actualResult": null
   },
@@ -6870,7 +6996,7 @@
     "home": "Austin",
     "away": "San Jose Earthquakes",
     "predictedPick": "away",
-    "predictedProb": 0.5249,
+    "predictedProb": 0.5596,
     "status": "pending",
     "actualResult": null
   },
@@ -6881,7 +7007,7 @@
     "home": "Tigres UANL",
     "away": "Necaxa",
     "predictedPick": "home",
-    "predictedProb": 0.5554,
+    "predictedProb": 0.548,
     "status": "pending",
     "actualResult": null
   },
@@ -6892,7 +7018,7 @@
     "home": "Club America",
     "away": "Club Tijuana",
     "predictedPick": "draw",
-    "predictedProb": 0.6734,
+    "predictedProb": 0.5214,
     "status": "pending",
     "actualResult": null
   },
@@ -6914,7 +7040,7 @@
     "home": "Universitario",
     "away": "Comerciantes Unidos",
     "predictedPick": "home",
-    "predictedProb": 0.8172,
+    "predictedProb": 0.8241,
     "status": "pending",
     "actualResult": null
   },
@@ -6925,7 +7051,7 @@
     "home": "Los Angeles Galaxy",
     "away": "New England Revolution",
     "predictedPick": "away",
-    "predictedProb": 0.476,
+    "predictedProb": 0.4732,
     "status": "pending",
     "actualResult": null
   },
@@ -6936,7 +7062,7 @@
     "home": "Real Salt Lake",
     "away": "Los Angeles FC",
     "predictedPick": "away",
-    "predictedProb": 0.524,
+    "predictedProb": 0.475,
     "status": "pending",
     "actualResult": null
   },
@@ -6947,7 +7073,7 @@
     "home": "Vancouver Whitecaps",
     "away": "St. Louis City",
     "predictedPick": "home",
-    "predictedProb": 0.7127,
+    "predictedProb": 0.7895,
     "status": "pending",
     "actualResult": null
   },
@@ -6958,7 +7084,7 @@
     "home": "Portland Timbers",
     "away": "Minnesota United FC",
     "predictedPick": "home",
-    "predictedProb": 0.7342,
+    "predictedProb": 0.7219,
     "status": "pending",
     "actualResult": null
   },
@@ -6969,7 +7095,7 @@
     "home": "Atlas",
     "away": "Atlante FC",
     "predictedPick": "home",
-    "predictedProb": 0.5867,
+    "predictedProb": 0.5695,
     "status": "pending",
     "actualResult": null
   },
@@ -6980,7 +7106,7 @@
     "home": "Groningen",
     "away": "Twente",
     "predictedPick": "home",
-    "predictedProb": 0.7604,
+    "predictedProb": 0.7238,
     "status": "pending",
     "actualResult": null
   },
@@ -7002,7 +7128,7 @@
     "home": "Telstar",
     "away": "Cambuur",
     "predictedPick": "home",
-    "predictedProb": 0.4987,
+    "predictedProb": 0.5428,
     "status": "pending",
     "actualResult": null
   },
@@ -7079,7 +7205,7 @@
     "home": "ADO Den Haag",
     "away": "Fortuna Sittard",
     "predictedPick": "away",
-    "predictedProb": 0.4318,
+    "predictedProb": 0.8414,
     "status": "pending",
     "actualResult": null
   },
@@ -7090,7 +7216,7 @@
     "home": "FC Porto",
     "away": "Moreirense",
     "predictedPick": "home",
-    "predictedProb": 0.9328,
+    "predictedProb": 0.9973,
     "status": "pending",
     "actualResult": null
   },
@@ -7134,7 +7260,7 @@
     "home": "Sporting CP",
     "away": "Nacional",
     "predictedPick": "home",
-    "predictedProb": 0.9078,
+    "predictedProb": 0.8195,
     "status": "pending",
     "actualResult": null
   },
@@ -7221,8 +7347,8 @@
     "date": "2026-09-06T15:30:00+00:00",
     "home": "D. La Serena",
     "away": "Nublense",
-    "predictedPick": "home",
-    "predictedProb": 0.3913,
+    "predictedPick": "away",
+    "predictedProb": 0.4114,
     "status": "pending",
     "actualResult": null
   },
@@ -7233,7 +7359,7 @@
     "home": "Sporting Cristal",
     "away": "Club Deportivo Los Chankas",
     "predictedPick": "home",
-    "predictedProb": 0.9107,
+    "predictedProb": 0.9686,
     "status": "pending",
     "actualResult": null
   },
@@ -7255,7 +7381,7 @@
     "home": "Malaga",
     "away": "Levante",
     "predictedPick": "home",
-    "predictedProb": 0.5839,
+    "predictedProb": 0.9037,
     "status": "pending",
     "actualResult": null
   },
@@ -7277,7 +7403,7 @@
     "home": "O'Higgins",
     "away": "Union La Calera",
     "predictedPick": "home",
-    "predictedProb": 0.6458,
+    "predictedProb": 0.6873,
     "status": "pending",
     "actualResult": null
   },
@@ -7288,7 +7414,7 @@
     "home": "U.N.A.M. - Pumas",
     "away": "Leon",
     "predictedPick": "home",
-    "predictedProb": 0.5229,
+    "predictedProb": 0.5052,
     "status": "pending",
     "actualResult": null
   },
@@ -7299,7 +7425,7 @@
     "home": "Deportivo Garcilaso",
     "away": "Atletico Grau",
     "predictedPick": "home",
-    "predictedProb": 0.868,
+    "predictedProb": 0.8199,
     "status": "pending",
     "actualResult": null
   },
@@ -7332,7 +7458,7 @@
     "home": "Espanyol",
     "away": "Sevilla",
     "predictedPick": "home",
-    "predictedProb": 0.3985,
+    "predictedProb": 0.9288,
     "status": "pending",
     "actualResult": null
   },
@@ -7354,7 +7480,7 @@
     "home": "Internacional",
     "away": "Santos",
     "predictedPick": "home",
-    "predictedProb": 0.4619,
+    "predictedProb": 0.4058,
     "status": "pending",
     "actualResult": null
   },
@@ -7365,7 +7491,7 @@
     "home": "Cruzeiro",
     "away": "Atletico Paranaense",
     "predictedPick": "home",
-    "predictedProb": 0.4348,
+    "predictedProb": 0.4519,
     "status": "pending",
     "actualResult": null
   },
@@ -7376,7 +7502,7 @@
     "home": "Remo",
     "away": "Flamengo",
     "predictedPick": "away",
-    "predictedProb": 0.7373,
+    "predictedProb": 0.7669,
     "status": "pending",
     "actualResult": null
   },
@@ -7387,7 +7513,7 @@
     "home": "Gimnasia L.P.",
     "away": "Tigre",
     "predictedPick": "home",
-    "predictedProb": 0.4613,
+    "predictedProb": 0.4595,
     "status": "pending",
     "actualResult": null
   },
@@ -7398,7 +7524,7 @@
     "home": "River Plate",
     "away": "Independ. Rivadavia",
     "predictedPick": "draw",
-    "predictedProb": 0.5598,
+    "predictedProb": 0.4993,
     "status": "pending",
     "actualResult": null
   },
@@ -7409,7 +7535,7 @@
     "home": "Racing Club",
     "away": "Atletico Tucuman",
     "predictedPick": "away",
-    "predictedProb": 0.5629,
+    "predictedProb": 0.568,
     "status": "pending",
     "actualResult": null
   },
@@ -7420,7 +7546,7 @@
     "home": "Rosario Central",
     "away": "Newells Old Boys",
     "predictedPick": "home",
-    "predictedProb": 0.6336,
+    "predictedProb": 0.688,
     "status": "pending",
     "actualResult": null
   },
@@ -7431,7 +7557,7 @@
     "home": "Velez Sarsfield",
     "away": "Estudiantes L.P.",
     "predictedPick": "home",
-    "predictedProb": 0.7847,
+    "predictedProb": 0.7843,
     "status": "pending",
     "actualResult": null
   },
@@ -7442,7 +7568,7 @@
     "home": "Belgrano Cordoba",
     "away": "Huracan",
     "predictedPick": "home",
-    "predictedProb": 0.5254,
+    "predictedProb": 0.7041,
     "status": "pending",
     "actualResult": null
   },
@@ -7453,7 +7579,7 @@
     "home": "Union Santa Fe",
     "away": "Instituto Cordoba",
     "predictedPick": "away",
-    "predictedProb": 0.5214,
+    "predictedProb": 0.5962,
     "status": "pending",
     "actualResult": null
   },
@@ -7464,7 +7590,7 @@
     "home": "Lanus",
     "away": "Defensa Y Justicia",
     "predictedPick": "home",
-    "predictedProb": 0.723,
+    "predictedProb": 0.7268,
     "status": "pending",
     "actualResult": null
   },
@@ -7475,7 +7601,7 @@
     "home": "San Lorenzo",
     "away": "Talleres Cordoba",
     "predictedPick": "draw",
-    "predictedProb": 0.4349,
+    "predictedProb": 0.4339,
     "status": "pending",
     "actualResult": null
   },
@@ -7486,7 +7612,7 @@
     "home": "Aldosivi",
     "away": "Banfield",
     "predictedPick": "draw",
-    "predictedProb": 0.5751,
+    "predictedProb": 0.5726,
     "status": "pending",
     "actualResult": null
   },
@@ -7497,7 +7623,7 @@
     "home": "Platense",
     "away": "Deportivo Riestra",
     "predictedPick": "home",
-    "predictedProb": 0.4047,
+    "predictedProb": 0.4014,
     "status": "pending",
     "actualResult": null
   },
@@ -7508,7 +7634,7 @@
     "home": "Central Cordoba de Santiago",
     "away": "Independiente",
     "predictedPick": "draw",
-    "predictedProb": 0.4105,
+    "predictedProb": 0.451,
     "status": "pending",
     "actualResult": null
   },
@@ -7519,7 +7645,7 @@
     "home": "Gimnasia M.",
     "away": "Boca Juniors",
     "predictedPick": "home",
-    "predictedProb": 0.8603,
+    "predictedProb": 0.8637,
     "status": "pending",
     "actualResult": null
   },
@@ -7529,8 +7655,8 @@
     "date": "2026-09-06T20:00:00+00:00",
     "home": "Estudiantes de Rio Cuarto",
     "away": "Sarmiento Junin",
-    "predictedPick": "draw",
-    "predictedProb": 0.3603,
+    "predictedPick": "away",
+    "predictedProb": 0.4435,
     "status": "pending",
     "actualResult": null
   },
@@ -7541,7 +7667,7 @@
     "home": "Barracas Central",
     "away": "Argentinos JRS",
     "predictedPick": "home",
-    "predictedProb": 0.4745,
+    "predictedProb": 0.3355,
     "status": "pending",
     "actualResult": null
   },
@@ -7552,7 +7678,7 @@
     "home": "Huachipato",
     "away": "Colo Colo",
     "predictedPick": "away",
-    "predictedProb": 0.8409,
+    "predictedProb": 0.8165,
     "status": "pending",
     "actualResult": null
   },
@@ -7563,7 +7689,7 @@
     "home": "Emelec",
     "away": "Manta FC",
     "predictedPick": "home",
-    "predictedProb": 0.4432,
+    "predictedProb": 0.5552,
     "status": "pending",
     "actualResult": null
   },
@@ -7574,7 +7700,7 @@
     "home": "Delfin SC",
     "away": "Universidad Catolica",
     "predictedPick": "away",
-    "predictedProb": 0.5489,
+    "predictedProb": 0.5462,
     "status": "pending",
     "actualResult": null
   },
@@ -7585,7 +7711,7 @@
     "home": "Tecnico Universitario",
     "away": "LDU de Quito",
     "predictedPick": "away",
-    "predictedProb": 0.5657,
+    "predictedProb": 0.6308,
     "status": "pending",
     "actualResult": null
   },
@@ -7596,7 +7722,7 @@
     "home": "Independiente del Valle",
     "away": "Macara",
     "predictedPick": "home",
-    "predictedProb": 0.748,
+    "predictedProb": 0.7498,
     "status": "pending",
     "actualResult": null
   },
@@ -7607,7 +7733,7 @@
     "home": "Deportivo Cuenca",
     "away": "Libertad",
     "predictedPick": "away",
-    "predictedProb": 0.5247,
+    "predictedProb": 0.5323,
     "status": "pending",
     "actualResult": null
   },
@@ -7618,7 +7744,7 @@
     "home": "Aucas",
     "away": "Barcelona SC",
     "predictedPick": "home",
-    "predictedProb": 0.6742,
+    "predictedProb": 0.6076,
     "status": "pending",
     "actualResult": null
   },
@@ -7629,7 +7755,7 @@
     "home": "Mushuc Runa SC",
     "away": "Leones del Norte",
     "predictedPick": "home",
-    "predictedProb": 0.4852,
+    "predictedProb": 0.4838,
     "status": "pending",
     "actualResult": null
   },
@@ -7640,7 +7766,7 @@
     "home": "Orense SC",
     "away": "Guayaquil City FC",
     "predictedPick": "home",
-    "predictedProb": 0.4243,
+    "predictedProb": 0.5101,
     "status": "pending",
     "actualResult": null
   },
@@ -7673,7 +7799,7 @@
     "home": "Botafogo",
     "away": "Palmeiras",
     "predictedPick": "away",
-    "predictedProb": 0.5071,
+    "predictedProb": 0.5087,
     "status": "pending",
     "actualResult": null
   },
@@ -7684,7 +7810,7 @@
     "home": "Corinthians",
     "away": "Chapecoense-sc",
     "predictedPick": "home",
-    "predictedProb": 0.8892,
+    "predictedProb": 0.8766,
     "status": "pending",
     "actualResult": null
   },
@@ -7739,7 +7865,7 @@
     "home": "Cruz Azul",
     "away": "Santos Laguna",
     "predictedPick": "home",
-    "predictedProb": 0.9738,
+    "predictedProb": 0.955,
     "status": "pending",
     "actualResult": null
   },
@@ -7794,7 +7920,7 @@
     "home": "Vitoria",
     "away": "Gremio",
     "predictedPick": "home",
-    "predictedProb": 0.5021,
+    "predictedProb": 0.5566,
     "status": "pending",
     "actualResult": null
   },
@@ -7805,7 +7931,7 @@
     "home": "Deportes Limache",
     "away": "Cobresal",
     "predictedPick": "home",
-    "predictedProb": 0.7942,
+    "predictedProb": 0.8092,
     "status": "pending",
     "actualResult": null
   },
@@ -7826,8 +7952,8 @@
     "date": "2026-09-09T16:45:00+00:00",
     "home": "Twente",
     "away": "Telstar",
-    "predictedPick": "away",
-    "predictedProb": 0.3822,
+    "predictedPick": "home",
+    "predictedProb": 0.659,
     "status": "pending",
     "actualResult": null
   },
@@ -7849,7 +7975,7 @@
     "home": "Philadelphia Union",
     "away": "FC Cincinnati",
     "predictedPick": "home",
-    "predictedProb": 0.4594,
+    "predictedProb": 0.4582,
     "status": "pending",
     "actualResult": null
   },
@@ -7871,7 +7997,7 @@
     "home": "New York City FC",
     "away": "New England Revolution",
     "predictedPick": "home",
-    "predictedProb": 0.7361,
+    "predictedProb": 0.6937,
     "status": "pending",
     "actualResult": null
   },
@@ -7882,7 +8008,7 @@
     "home": "Atlanta United FC",
     "away": "Orlando City SC",
     "predictedPick": "home",
-    "predictedProb": 0.5875,
+    "predictedProb": 0.5894,
     "status": "pending",
     "actualResult": null
   },
@@ -7893,7 +8019,7 @@
     "home": "CF Montreal",
     "away": "Charlotte",
     "predictedPick": "home",
-    "predictedProb": 0.3639,
+    "predictedProb": 0.3657,
     "status": "pending",
     "actualResult": null
   },
@@ -7904,7 +8030,7 @@
     "home": "DC United",
     "away": "Columbus Crew",
     "predictedPick": "home",
-    "predictedProb": 0.6033,
+    "predictedProb": 0.5998,
     "status": "pending",
     "actualResult": null
   },
@@ -7915,7 +8041,7 @@
     "home": "Houston Dynamo",
     "away": "Real Salt Lake",
     "predictedPick": "home",
-    "predictedProb": 0.8719,
+    "predictedProb": 0.8725,
     "status": "pending",
     "actualResult": null
   },
@@ -7926,7 +8052,7 @@
     "home": "Chicago Fire",
     "away": "Inter Miami",
     "predictedPick": "home",
-    "predictedProb": 0.5101,
+    "predictedProb": 0.5994,
     "status": "pending",
     "actualResult": null
   },
@@ -7937,7 +8063,7 @@
     "home": "Minnesota United FC",
     "away": "FC Dallas",
     "predictedPick": "away",
-    "predictedProb": 0.3953,
+    "predictedProb": 0.4115,
     "status": "pending",
     "actualResult": null
   },
@@ -7948,7 +8074,7 @@
     "home": "Austin",
     "away": "Colorado Rapids",
     "predictedPick": "home",
-    "predictedProb": 0.4371,
+    "predictedProb": 0.3564,
     "status": "pending",
     "actualResult": null
   },
@@ -7970,7 +8096,7 @@
     "home": "Vancouver Whitecaps",
     "away": "Los Angeles Galaxy",
     "predictedPick": "home",
-    "predictedProb": 0.9193,
+    "predictedProb": 0.9387,
     "status": "pending",
     "actualResult": null
   },
@@ -7981,7 +8107,7 @@
     "home": "Los Angeles FC",
     "away": "New York Red Bulls",
     "predictedPick": "home",
-    "predictedProb": 0.9604,
+    "predictedProb": 0.9485,
     "status": "pending",
     "actualResult": null
   },
@@ -7992,7 +8118,7 @@
     "home": "Portland Timbers",
     "away": "St. Louis City",
     "predictedPick": "home",
-    "predictedProb": 0.4691,
+    "predictedProb": 0.4915,
     "status": "pending",
     "actualResult": null
   },
@@ -8003,7 +8129,7 @@
     "home": "San Diego",
     "away": "San Jose Earthquakes",
     "predictedPick": "home",
-    "predictedProb": 0.4906,
+    "predictedProb": 0.487,
     "status": "pending",
     "actualResult": null
   },
@@ -8015,6 +8141,72 @@
     "away": "SC Braga",
     "predictedPick": "away",
     "predictedProb": 0.4406,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552162,
+    "league": "Eredivisie",
+    "date": "2026-09-11T18:00:00+00:00",
+    "home": "AZ Alkmaar",
+    "away": "Willem II",
+    "predictedPick": "home",
+    "predictedProb": 0.9873,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1575164,
+    "league": "Bundesliga",
+    "date": "2026-09-11T18:30:00+00:00",
+    "home": "Union Berlin",
+    "away": "FC Schalke 04",
+    "predictedPick": "away",
+    "predictedProb": 0.4702,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1550126,
+    "league": "Serie A",
+    "date": "2026-09-11T18:45:00+00:00",
+    "home": "Venezia",
+    "away": "Fiorentina",
+    "predictedPick": "home",
+    "predictedProb": 0.508,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1552763,
+    "league": "Ligue 1",
+    "date": "2026-09-11T18:45:00+00:00",
+    "home": "Rennes",
+    "away": "Marseille",
+    "predictedPick": "away",
+    "predictedProb": 0.4257,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549484,
+    "league": "Liga 1 (Perú)",
+    "date": "2026-09-11T20:00:00+00:00",
+    "home": "UTC Cajamarca",
+    "away": "Juan Pablo II College",
+    "predictedPick": "draw",
+    "predictedProb": 0.4202,
+    "status": "pending",
+    "actualResult": null
+  },
+  {
+    "id": 1549779,
+    "league": "Liga BetPlay (Colombia)",
+    "date": "2026-09-11T23:15:00+00:00",
+    "home": "Jaguares",
+    "away": "Fortaleza FC",
+    "predictedPick": "away",
+    "predictedProb": 0.5187,
     "status": "pending",
     "actualResult": null
   }
