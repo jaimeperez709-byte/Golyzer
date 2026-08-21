@@ -129,6 +129,30 @@ def poisson_prob(k, lam):
     return (lam ** k) * math.exp(-lam) / math.factorial(k)
 
 
+# corrección de Dixon-Coles: el Poisson "puro" trata los goles del local y
+# del visitante como independientes entre sí, y eso hace que subestime
+# sistemáticamente los resultados cortos/empates (0-0, 1-0, 0-1, 1-1) --
+# el fútbol real tiene algo de correlación negativa ahí (cuando un equipo
+# se pone cauteloso, el otro también). rho=-0.13 es el valor típico de la
+# literatura (Dixon & Coles, 1997) -- no lo hemos calibrado con datos
+# propios todavía porque aún no tenemos suficiente historial evaluado.
+DIXON_COLES_RHO = -0.13
+
+
+def dixon_coles_tau(x, y, lam, mu, rho):
+    if x == 0 and y == 0:
+        adj = 1 - (lam * mu * rho)
+    elif x == 0 and y == 1:
+        adj = 1 + (lam * rho)
+    elif x == 1 and y == 0:
+        adj = 1 + (mu * rho)
+    elif x == 1 and y == 1:
+        adj = 1 - rho
+    else:
+        adj = 1.0
+    return max(0.0, adj)
+
+
 def altitude_bonus(home_name, away_name, is_cup=False):
     home_alt = ALTITUDE_TEAMS.get(home_name)
     if not home_alt:
@@ -175,6 +199,7 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
     for i in range(max_goals + 1):
         for j in range(max_goals + 1):
             p = poisson_prob(i, lambda_home) * poisson_prob(j, lambda_away)
+            p *= dixon_coles_tau(i, j, lambda_home, lambda_away, DIXON_COLES_RHO)
             if i > j:
                 p_home += p
             elif i == j:
