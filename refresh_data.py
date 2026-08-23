@@ -213,7 +213,73 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
         for k in probs:
             probs[k] = probs[k] * (1 - CUP_UNCERTAINTY_SHRINK) + (1 / 3) * CUP_UNCERTAINTY_SHRINK
     pick = max(probs, key=probs.get)
-    return pick, probs[pick]
+    return pick, probs[pick], lambda_home, lambda_away
+
+
+# --- mercados de goles/córners/tarjetas (línea +/-), para el contador de
+# aciertos separado que pidió Jaime. Réplica en Python de chooseLine() del
+# JS, para poder registrar y luego evaluar estos pronósticos igual que el
+# de local/empate/visitante.
+def choose_line(expected_total):
+    line = math.floor(expected_total - 0.5 + 0.5) + 0.5  # equivalente a Math.round en JS
+    if line < 0.5:
+        line = 0.5
+    return line
+
+
+def predict_goals_pick(lambda_home, lambda_away, max_goals=8):
+    """Línea de goles +/- y el lado más probable, usando el mismo modelo
+    (Poisson + Dixon-Coles) que ya usamos para local/empate/visitante --
+    no cuesta llamadas extra a la API porque reutiliza lambda_home/away."""
+    line = choose_line(lambda_home + lambda_away)
+    threshold = math.floor(line) + 1
+    p_total = p_over = 0.0
+    for i in range(max_goals + 1):
+        for j in range(max_goals + 1):
+            p = poisson_prob(i, lambda_home) * poisson_prob(j, lambda_away)
+            p *= dixon_coles_tau(i, j, lambda_home, lambda_away, DIXON_COLES_RHO)
+            p_total += p
+            if i + j >= threshold:
+                p_over += p
+    over_prob = p_over / p_total if p_total else 0.5
+    pick = "over" if over_prob >= 0.5 else "under"
+    prob = over_prob if pick == "over" else 1 - over_prob
+    return line, pick, round(prob, 4)
+
+
+def predict_line_pick(combined_avg, max_extra=20):
+    """Línea +/- para córners o tarjetas, con un solo Poisson sobre el
+    promedio combinado de ambos equipos (menos preciso que el de goles,
+    igual que en el JS, pero sirve para medir aciertos de ese mercado)."""
+    if combined_avg is None:
+        return None, None, None
+    line = choose_line(combined_avg)
+    threshold = math.floor(line) + 1
+    p_over = min(sum(poisson_prob(k, combined_avg) for k in range(threshold, threshold + max_extra)), 1.0)
+    pick = "over" if p_over >= 0.5 else "under"
+    prob = p_over if pick == "over" else 1 - p_over
+    return line, pick, round(prob, 4)
+
+
+def fetch_actual_stats(fixture_id):
+    """Total de córners y tarjetas amarillas del partido (ambos equipos
+    sumados), para poder evaluar si el pronóstico de esos mercados acertó.
+    Ojo: esto SÍ es una llamada extra a la API, una por cada partido
+    finalizado que tenía un pronóstico de córners/tarjetas pendiente --
+    similar en costo a lo que ya gastamos trayendo resultados recientes."""
+    try:
+        data = get("/fixtures/statistics", {"fixture": fixture_id})
+        total_corners = total_cards = 0.0
+        any_corners = any_cards = False
+        for team_block in data.get("response", []):
+            for stat in team_block.get("statistics", []):
+                if stat.get("type") == "Corner Kicks" and stat.get("value") is not None:
+                    total_corners += float(stat["value"]); any_corners = True
+                elif stat.get("type") == "Yellow Cards" and stat.get("value") is not None:
+                    total_cards += float(stat["value"]); any_cards = True
+        return (total_corners if any_corners else None, total_cards if any_cards else None)
+    except Exception:
+        return None, None
 
 
 def actual_outcome(result):
@@ -623,6 +689,30 @@ def fetch_all_matches():
                 entry["actualResult"] = result
                 entry["status"] = "correct" if real == entry["predictedPick"] else "incorrect"
 
+                # evaluar el mercado de goles -- no cuesta llamadas extra,
+                # ya tenemos el marcador final.
+                if entry.get("goalsPick"):
+                    actual_total = result["home"] + result["away"]
+                    threshold = math.floor(entry["goalsLine"]) + 1
+                    actual_side = "over" if actual_total >= threshold else "under"
+                    entry["goalsStatus"] = "correct" if actual_side == entry["goalsPick"] else "incorrect"
+
+                # evaluar córners/tarjetas -- esto sí implica una llamada
+                # extra a la API por partido (para saber el total real de
+                # cada uno), así que solo se hace si de verdad habíamos
+                # registrado un pronóstico de esos mercados.
+                if entry.get("cornersPick") or entry.get("cardsPick"):
+                    actual_corners, actual_cards = fetch_actual_stats(fx["fixture"]["id"])
+                    if entry.get("cornersPick") and actual_corners is not None:
+                        threshold = math.floor(entry["cornersLine"]) + 1
+                        actual_side = "over" if actual_corners >= threshold else "under"
+                        entry["cornersStatus"] = "correct" if actual_side == entry["cornersPick"] else "incorrect"
+                    if entry.get("cardsPick") and actual_cards is not None:
+                        threshold = math.floor(entry["cardsLine"]) + 1
+                        actual_side = "over" if actual_cards >= threshold else "under"
+                        entry["cardsStatus"] = "correct" if actual_side == entry["cardsPick"] else "incorrect"
+                    time.sleep(0.08)
+
         for fx in upcoming_fx:
             home_id, away_id = fx["teams"]["home"]["id"], fx["teams"]["away"]["id"]
             home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="home")
@@ -640,7 +730,7 @@ def fetch_all_matches():
             # registrar (o refrescar) el pronóstico de este partido mientras
             # todavía no se ha jugado -- se congela la última versión antes
             # del pitazo inicial, para comparar honestamente después.
-            pick, prob = predict_pick(
+            pick, prob, lambda_home, lambda_away = predict_pick(
                 home_obj["name"], away_obj["name"],
                 home_obj["gf"], home_obj["gc"], away_obj["gf"], away_obj["gc"],
                 info["homeAdvantage"],
@@ -653,12 +743,37 @@ def fetch_all_matches():
                 away_league_strength=away_obj.get("leagueStrength"),
                 is_cup=is_cup,
             )
-            PREDICTIONS_LOG[str(fx["fixture"]["id"])] = {
+            goals_line, goals_pick, goals_prob = predict_goals_pick(lambda_home, lambda_away)
+
+            corners_avg = (
+                home_obj["cornersAvg"] + away_obj["cornersAvg"]
+                if home_obj.get("cornersAvg") is not None and away_obj.get("cornersAvg") is not None
+                else None
+            )
+            cards_avg = (
+                home_obj["cardsAvg"] + away_obj["cardsAvg"]
+                if home_obj.get("cardsAvg") is not None and away_obj.get("cardsAvg") is not None
+                else None
+            )
+            corners_line, corners_pick, corners_prob = predict_line_pick(corners_avg)
+            cards_line, cards_pick, cards_prob = predict_line_pick(cards_avg)
+
+            log_entry = {
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "home": home_obj["name"], "away": away_obj["name"],
                 "predictedPick": pick, "predictedProb": round(prob, 4),
                 "status": "pending", "actualResult": None,
+                "goalsLine": goals_line, "goalsPick": goals_pick, "goalsProb": goals_prob,
+                "cornersLine": corners_line, "cornersPick": corners_pick, "cornersProb": corners_prob,
+                "cardsLine": cards_line, "cardsPick": cards_pick, "cardsProb": cards_prob,
             }
+            # si ya existía un registro pendiente de este partido (de una
+            # corrida anterior) y ya estaba evaluado por alguna razón, no lo
+            # pisamos con uno nuevo en blanco.
+            existing = PREDICTIONS_LOG.get(str(fx["fixture"]["id"]))
+            if existing and existing.get("status") != "pending":
+                continue
+            PREDICTIONS_LOG[str(fx["fixture"]["id"])] = log_entry
 
         time.sleep(0.15)
 
