@@ -76,6 +76,20 @@ LEAGUES = {
     94:  {"name": "Primeira Liga (Portugal)", "homeAdvantage": 1.20},
     13:  {"name": "Copa Libertadores", "homeAdvantage": 1.24},
     11:  {"name": "Copa Sudamericana", "homeAdvantage": 1.22},
+    308: {"name": "Saudi Pro League", "homeAdvantage": 1.22},
+    3:   {"name": "UEFA Europa League", "homeAdvantage": 1.15},
+    848: {"name": "UEFA Conference League", "homeAdvantage": 1.15},
+    169: {"name": "Super League (China)", "homeAdvantage": 1.22},
+    98:  {"name": "J1 League (Japón)", "homeAdvantage": 1.18},
+    235: {"name": "Premier League (Rusia)", "homeAdvantage": 1.20},
+    241: {"name": "Copa Colombia", "homeAdvantage": 1.27},
+    130: {"name": "Copa Argentina", "homeAdvantage": 1.28},
+    267: {"name": "Copa Chile", "homeAdvantage": 1.27},
+    503: {"name": "Copa Perú", "homeAdvantage": 1.28},
+    917: {"name": "Copa Ecuador", "homeAdvantage": 1.30},
+    501: {"name": "Copa Paraguay", "homeAdvantage": 1.27},
+    930: {"name": "Copa Uruguay", "homeAdvantage": 1.26},
+    73:  {"name": "Copa do Brasil", "homeAdvantage": 1.28},
 }
 
 DEFAULT_FORM = ["D", "D", "D", "D", "D"]
@@ -104,7 +118,7 @@ STANDINGS_FACTOR_MAX = 1.25
 # -- ahí nuestras estadísticas (goles, tabla) son menos comparables de un
 # equipo a otro, así que le bajamos la confianza a la recomendación en vez
 # de mostrar un porcentaje tan extremo como en un partido de liga local.
-CUP_COMPETITIONS = {"Copa Libertadores", "Copa Sudamericana"}
+CUP_COMPETITIONS = {"Copa Libertadores", "Copa Sudamericana", "UEFA Europa League", "UEFA Conference League"}
 CUP_UNCERTAINTY_SHRINK = 0.18  # 18% de la probabilidad se "jala" hacia un reparto parejo
 
 # qué tan fuerte es cada liga sudamericana en competiciones continentales
