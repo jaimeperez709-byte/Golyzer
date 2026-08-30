@@ -94,6 +94,11 @@
   .daily-pick-teams{font-size:.95rem; font-weight:700; color:var(--text); margin-bottom:8px;}
   .daily-pick-row{display:flex; justify-content:space-between; align-items:center; font-size:.9rem; color:var(--text); padding:4px 0;}
   .daily-pick-safe{border-top:1px dashed var(--line); margin-top:6px; padding-top:8px; font-size:.82rem; color:var(--muted);}
+  .daily-pick-accuracy-box{
+    background:#161c2c; border:1px solid #2a3247; border-radius:10px; padding:10px 14px;
+    margin-bottom:18px; font-size:13px; line-height:1.6; display:inline-block;
+  }
+  .daily-pick-accuracy-title{font-weight:700; color:var(--text); margin-bottom:2px;}
   .section-title{font-size:1rem; margin:22px 0 12px; color:var(--text);}
   .empty-state{color:var(--muted); font-size:.85rem; padding:14px 0;}
   .live-badge{
@@ -205,6 +210,7 @@
 
 <main>
   <div id="daily-picks"></div>
+  <div id="daily-picks-accuracy"></div>
   <div class="country-row">
     <label for="country-filter">País:</label>
     <select id="country-filter"></select>
@@ -71421,10 +71427,41 @@ function renderDailyPicks(){
   el.innerHTML = html;
 }
 
+// Contador de aciertos específico de la sección "Pronóstico del día":
+// entre TODOS los registros del historial que alguna vez fueron marcados
+// como el pick destacado del día (dailyPickResult / dailyPickGoals, fijado
+// por refresh_data.py el mismo día que se publicaron -- no se puede
+// recalcular después), cuántos acertaron. Separado del contador general
+// para que se pueda ver, honestamente, si esta sección en particular es
+// confiable.
+function renderDailyPickAccuracy(){
+  const el = document.getElementById("daily-picks-accuracy");
+  if(!el) return;
+  const resultPicks = predictionsLog.filter(p => p.dailyPickResult && (p.status === "correct" || p.status === "incorrect"));
+  const goalsPicks = predictionsLog.filter(p => p.dailyPickGoals && (p.goalsStatus === "correct" || p.goalsStatus === "incorrect"));
+
+  const rows = [];
+  if(resultPicks.length){
+    const correct = resultPicks.filter(p => p.status === "correct").length;
+    rows.push(`<div>🎯 Resultado: <b>${correct} de ${resultPicks.length}</b> (<b>${Math.round(100*correct/resultPicks.length)}%</b>)</div>`);
+  }
+  if(goalsPicks.length){
+    const correct = goalsPicks.filter(p => p.goalsStatus === "correct").length;
+    rows.push(`<div>⚽ Goles: <b>${correct} de ${goalsPicks.length}</b> (<b>${Math.round(100*correct/goalsPicks.length)}%</b>)</div>`);
+  }
+
+  if(rows.length === 0){ el.innerHTML = ""; return; }
+  el.innerHTML = `<div class="daily-pick-accuracy-box">
+    <div class="daily-pick-accuracy-title">📊 Historial de "Pronóstico del día"</div>
+    ${rows.join("")}
+  </div>`;
+}
+
 renderCountryFilter();
 renderFilters();
 renderMatches();
 renderDailyPicks();
+renderDailyPickAccuracy();
 renderCombinada();
 renderSavedCombinadas();
 renderAccuracyCounter();
