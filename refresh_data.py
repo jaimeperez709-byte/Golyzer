@@ -29,7 +29,7 @@ import math
 import json
 import time
 import requests
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime, timezone
 
 API_KEY = os.environ.get("API_FOOTBALL_KEY", "")
 BASE = "https://v3.football.api-sports.io"
@@ -800,7 +800,52 @@ def fetch_all_matches():
         for w in warnings[:10]:
             print(f"  - {w}")
 
+    mark_daily_picks()
+
     return all_matches
+
+
+# Colombia no usa horario de verano, así que el offset fijo -5 es válido
+# todo el año. La mayoría de la audiencia de Golyzer está ahí (según
+# Analytics), así que "hoy" para la sección "Pronóstico del día" se define
+# con esa zona horaria, igual que isToday() hace en el navegador con la
+# hora local del dispositivo (que para la mayoría será, de hecho, Colombia).
+COLOMBIA_TZ = timezone(timedelta(hours=-5))
+
+
+def mark_daily_picks():
+    """Marca, entre los partidos de HOY (pendientes, hora Colombia), cuál es
+    el pick de resultado y cuál el de goles con mayor confianza -- de forma
+    permanente en el historial. Así se puede medir después, honestamente,
+    qué tan bien le va específicamente a los picks que destacamos en la
+    sección "Pronóstico del día" de la app, no solo al modelo en general.
+    Solo toca los registros de hoy; los de días anteriores ya quedaron
+    fijados por la corrida de su propio día y no se tocan de nuevo."""
+    today_co = datetime.now(COLOMBIA_TZ).date()
+    todays_entries = [
+        r for r in PREDICTIONS_LOG.values()
+        if r.get("status") == "pending"
+        and datetime.fromisoformat(r["date"]).astimezone(COLOMBIA_TZ).date() == today_co
+    ]
+    for r in todays_entries:
+        r["dailyPickResult"] = False
+        r["dailyPickGoals"] = False
+
+    if not todays_entries:
+        return
+
+    best_result = max(todays_entries, key=lambda r: r["predictedProb"])
+    best_result["dailyPickResult"] = True
+
+    goals_candidates = [r for r in todays_entries if r.get("goalsProb") is not None]
+    if goals_candidates:
+        best_goals = max(goals_candidates, key=lambda r: r["goalsProb"])
+        best_goals["dailyPickGoals"] = True
+
+    print(f"\nPronóstico del día ({today_co}):")
+    print(f"  Resultado: {best_result['home']} vs {best_result['away']} -> {best_result['predictedPick']} ({round(best_result['predictedProb']*100)}%)")
+    if goals_candidates:
+        print(f"  Goles: {best_goals['home']} vs {best_goals['away']} -> {best_goals['goalsPick']} {best_goals['goalsLine']} ({round(best_goals['goalsProb']*100)}%)")
 
 
 def update_html_files(matches):
