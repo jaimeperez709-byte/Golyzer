@@ -812,6 +812,14 @@ def fetch_all_matches():
 # hora local del dispositivo (que para la mayoría será, de hecho, Colombia).
 COLOMBIA_TZ = timezone(timedelta(hours=-5))
 
+# Límites de sensatez para destacar un pick como "el del día" -- deben
+# coincidir con DAILY_PICK_MAX_RESULT_PROB / DAILY_PICK_GOALS_LINE_MIN/MAX
+# en el JS de ambos HTML. No cambian el cálculo del modelo, solo qué
+# registro puede quedar marcado como el pick destacado del día.
+DAILY_PICK_MAX_RESULT_PROB = 0.95
+DAILY_PICK_GOALS_LINE_MIN = 0.5
+DAILY_PICK_GOALS_LINE_MAX = 6.5
+
 
 def mark_daily_picks():
     """Marca, entre los partidos de HOY (pendientes, hora Colombia), cuál es
@@ -834,16 +842,33 @@ def mark_daily_picks():
     if not todays_entries:
         return
 
-    best_result = max(todays_entries, key=lambda r: r["predictedProb"])
-    best_result["dailyPickResult"] = True
+    # Mismos límites de sensatez que el frontend (ver DAILY_PICK_* en el
+    # JS): un caso degenerado (datos raros que inflan la confianza o la
+    # línea de goles) no debe poder ganar la selección del pick del día
+    # solo por tener el % más alto. Detectado el 31 de agosto: Monterrey
+    # al 99% perdió 1-3.
+    reasonable_result = [r for r in todays_entries if r["predictedProb"] <= DAILY_PICK_MAX_RESULT_PROB]
+    if reasonable_result:
+        best_result = max(reasonable_result, key=lambda r: r["predictedProb"])
+        best_result["dailyPickResult"] = True
+    else:
+        best_result = None
 
-    goals_candidates = [r for r in todays_entries if r.get("goalsProb") is not None]
+    goals_candidates = [
+        r for r in todays_entries
+        if r.get("goalsProb") is not None
+        and r.get("goalsLine") is not None
+        and DAILY_PICK_GOALS_LINE_MIN <= r["goalsLine"] <= DAILY_PICK_GOALS_LINE_MAX
+    ]
     if goals_candidates:
         best_goals = max(goals_candidates, key=lambda r: r["goalsProb"])
         best_goals["dailyPickGoals"] = True
 
     print(f"\nPronóstico del día ({today_co}):")
-    print(f"  Resultado: {best_result['home']} vs {best_result['away']} -> {best_result['predictedPick']} ({round(best_result['predictedProb']*100)}%)")
+    if best_result:
+        print(f"  Resultado: {best_result['home']} vs {best_result['away']} -> {best_result['predictedPick']} ({round(best_result['predictedProb']*100)}%)")
+    else:
+        print("  Resultado: ningún partido de hoy pasó el filtro de sensatez (todos >95%).")
     if goals_candidates:
         print(f"  Goles: {best_goals['home']} vs {best_goals['away']} -> {best_goals['goalsPick']} {best_goals['goalsLine']} ({round(best_goals['goalsProb']*100)}%)")
 
