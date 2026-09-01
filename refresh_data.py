@@ -101,6 +101,8 @@ EXTRA_CACHE = {}    # team_id -> {recentResults, cornersAvg, cardsAvg, lastMatch
 PREDICTIONS_LOG = {}  # match_id (string) -> registro del historial de pronósticos
 TOPSCORERS_CACHE = {}  # league_id -> {team_name: {name, goals, injured}}
 STANDINGS_CACHE = {}  # league_id -> {team_name: {rank, points, played, ppg}}
+ODDS_CACHE = {}      # fixture_id -> {"bookmaker":.., "home":.., "draw":.., "away":.., "_goals_values": [...]}
+ODDS_DATE_CACHE = {}  # (league_id, date_str) -> True, para no repetir la llamada a /odds
 
 # si el goleador principal de un equipo está lesionado, le bajamos un poco
 # el ataque -- no es exacto (no sabemos qué % de los goles del equipo son
@@ -539,6 +541,85 @@ def fetch_league_standings(league_id):
     return by_team
 
 
+# Cuotas reales de mercado (para el feature de "valor" = prob. modelo * cuota - 1).
+# Se piden por liga + fecha (no partido por partido) para no disparar el
+# gasto de API -- misma filosofía que fetch_league_topscorers/standings.
+# Preferimos Wplay (pedido por Jaime, es la casa que más usa la audiencia
+# colombiana) si la API la trae para ese partido -- se busca por NOMBRE, no
+# por id, porque el id de cada casa puede variar entre ligas/temporadas. Si
+# no está disponible, caemos en Bet365 como respaldo fijo (suele tener mejor
+# cobertura en este tipo de APIs y es una marca reconocida) en vez de tomar
+# la primera casa al azar -- así la app se ve consistente partido a partido.
+# Si ninguna de las dos está disponible, ahí sí usamos la primera que traiga
+# la API (no todas las ligas tienen cobertura de todas las casas).
+PREFERRED_BOOKMAKER_NAMES = ["wplay", "bet365"]
+
+
+def pick_bookmaker(bookmakers):
+    for name in PREFERRED_BOOKMAKER_NAMES:
+        for bk in bookmakers:
+            if name in (bk.get("name") or "").lower():
+                return bk
+    return bookmakers[0]
+
+
+def fetch_league_odds_for_date(league_id, date_str):
+    key = (league_id, date_str)
+    if key in ODDS_DATE_CACHE:
+        return
+    ODDS_DATE_CACHE[key] = True
+    page = 1
+    while True:
+        try:
+            data = get("/odds", {"league": league_id, "season": SEASON, "date": date_str, "page": page})
+        except Exception as e:
+            print(f"  AVISO: no se pudieron traer odds de liga {league_id} fecha {date_str} ({e})")
+            return
+        for item in data.get("response", []):
+            fx_id = (item.get("fixture") or {}).get("id")
+            bookmakers = item.get("bookmakers") or []
+            if not fx_id or not bookmakers:
+                continue
+            bk = pick_bookmaker(bookmakers)
+            parsed = {"bookmaker": bk.get("name")}
+            for bet in bk.get("bets") or []:
+                name = (bet.get("name") or "").lower()
+                values = bet.get("values") or []
+                if "match winner" in name:
+                    for v in values:
+                        val = (v.get("value") or "").lower()
+                        odd = safe_float(v.get("odd"))
+                        if val == "home":
+                            parsed["home"] = odd
+                        elif val == "draw":
+                            parsed["draw"] = odd
+                        elif val == "away":
+                            parsed["away"] = odd
+                elif "goals over/under" in name:
+                    parsed["_goals_values"] = values
+            ODDS_CACHE[fx_id] = parsed
+        paging = data.get("paging") or {}
+        if page >= (paging.get("total") or 1):
+            break
+        page += 1
+        time.sleep(0.1)
+
+
+def extract_goals_odd(odds_entry, line, side):
+    """Busca, dentro de las líneas de goles que trae la casa de apuestas
+    para este partido, la que coincide EXACTO con la línea que calculó
+    nuestro modelo (ej. "Over 2.5") -- si la casa no ofrece esa línea
+    puntual, no inventamos una cuota."""
+    if not odds_entry:
+        return None
+    values = odds_entry.get("_goals_values") or []
+    target = f"{'over' if side == 'over' else 'under'} {line}".lower()
+    for v in values:
+        if (v.get("value") or "").lower() == target:
+            return safe_float(v.get("odd"))
+    return None
+
+
 def standings_attack_factor(team_standing, league_avg_ppg):
     """Cuánto ajustar el ataque de un equipo según su posición en la tabla,
     comparado contra el promedio de puntos por partido de su liga."""
@@ -574,13 +655,15 @@ def team_league_strength(team_id):
     return LEAGUE_STRENGTH.get(league_name, 1.0)
 
 
-def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None, standings_by_team=None, side=None):
+def build_team_object(name, team_id, goals_data, avg_gf, avg_gc, topscorers_by_team=None, standings_by_team=None, side=None, logo=None):
     gf, gc, form = goals_data if goals_data else (avg_gf, avg_gc, DEFAULT_FORM)
     standing = standings_by_team.get(name) if standings_by_team else None
     if side:
         gf, gc = apply_home_away_split(gf, gc, standing, side)
     extra = fetch_team_extra(team_id)
     obj = {"name": name, "gf": round(gf, 2), "gc": round(gc, 2), "form": form, "leagueStrength": team_league_strength(team_id)}
+    if logo:
+        obj["logo"] = logo
     if extra["recentResults"]:
         obj["recentResults"] = extra["recentResults"]
     if extra["cornersAvg"] is not None:
@@ -636,6 +719,13 @@ def fetch_all_matches():
         )
         is_cup = info["name"] in CUP_COMPETITIONS
 
+        if upcoming_fx:
+            odds_dates = sorted({fx["fixture"]["date"][:10] for fx in upcoming_fx})
+            for d in odds_dates:
+                fetch_league_odds_for_date(league_id, d)
+            odds_hits = sum(1 for fx in upcoming_fx if fx["fixture"]["id"] in ODDS_CACHE)
+            print(f"  Odds disponibles: {odds_hits}/{len(upcoming_fx)} próximos")
+
         league_team_cache = {}  # team_id -> (gf, gc, form), solo para promedio de ESTA liga
         pending = []
 
@@ -689,8 +779,8 @@ def fetch_all_matches():
             all_matches.append({
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "finished": True, "result": result,
-                "home": {"name": fx["teams"]["home"]["name"], "gf": 1.35, "gc": 1.35, "form": DEFAULT_FORM},
-                "away": {"name": fx["teams"]["away"]["name"], "gf": 1.35, "gc": 1.35, "form": DEFAULT_FORM},
+                "home": {"name": fx["teams"]["home"]["name"], "gf": 1.35, "gc": 1.35, "form": DEFAULT_FORM, "logo": fx["teams"]["home"].get("logo")},
+                "away": {"name": fx["teams"]["away"]["name"], "gf": 1.35, "gc": 1.35, "form": DEFAULT_FORM, "logo": fx["teams"]["away"].get("logo")},
                 "homeAdvantage": info["homeAdvantage"],
             })
 
@@ -729,8 +819,8 @@ def fetch_all_matches():
 
         for fx in upcoming_fx:
             home_id, away_id = fx["teams"]["home"]["id"], fx["teams"]["away"]["id"]
-            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="home")
-            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="away")
+            home_obj = build_team_object(fx["teams"]["home"]["name"], home_id, GOALS_CACHE.get(home_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="home", logo=fx["teams"]["home"].get("logo"))
+            away_obj = build_team_object(fx["teams"]["away"]["name"], away_id, GOALS_CACHE.get(away_id), avg_gf, avg_gc, topscorers_by_team, standings_by_team, side="away", logo=fx["teams"]["away"].get("logo"))
             match_obj = {
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "home": home_obj, "away": away_obj,
@@ -758,6 +848,23 @@ def fetch_all_matches():
                 is_cup=is_cup,
             )
             goals_line, goals_pick, goals_prob = predict_goals_pick(lambda_home, lambda_away)
+
+            odds_entry = ODDS_CACHE.get(fx["fixture"]["id"])
+            if odds_entry:
+                match_odds = {}
+                if odds_entry.get("bookmaker"):
+                    match_odds["bookmaker"] = odds_entry["bookmaker"]
+                for side_key in ("home", "draw", "away"):
+                    if odds_entry.get(side_key) is not None:
+                        match_odds[side_key] = odds_entry[side_key]
+                over_odd = extract_goals_odd(odds_entry, goals_line, "over")
+                under_odd = extract_goals_odd(odds_entry, goals_line, "under")
+                if over_odd is not None:
+                    match_odds["overGoalsOdd"] = over_odd
+                if under_odd is not None:
+                    match_odds["underGoalsOdd"] = under_odd
+                if match_odds:
+                    match_obj["odds"] = match_odds
 
             corners_avg = (
                 home_obj["cornersAvg"] + away_obj["cornersAvg"]
