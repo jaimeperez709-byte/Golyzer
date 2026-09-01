@@ -99,6 +99,31 @@
     margin-bottom:18px; font-size:13px; line-height:1.6; display:inline-block;
   }
   .daily-pick-accuracy-title{font-weight:700; color:var(--text); margin-bottom:2px;}
+  .accuracy-panel{
+    display:flex; align-items:center; gap:22px; flex-wrap:wrap;
+    margin-top:10px; padding:16px 18px; border-radius:14px; background:#161c2c; border:1px solid #2a3247;
+  }
+  .accuracy-donut{
+    width:104px; height:104px; border-radius:50%; flex-shrink:0;
+    background: conic-gradient(var(--donut-color) calc(var(--pct)*1%), #1c2333 0);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 0 20px 2px var(--donut-color);
+  }
+  .accuracy-donut-inner{
+    width:78px; height:78px; border-radius:50%; background:#161c2c;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+  }
+  .accuracy-donut-pct{font-size:1.35rem; font-weight:800; color:var(--text); text-shadow:0 0 10px var(--donut-color);}
+  .accuracy-donut-label{font-size:.6rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em;}
+  .accuracy-panel-bars{flex:1; min-width:230px;}
+  .accuracy-panel-title{font-size:.76rem; color:var(--text); margin-bottom:10px; font-weight:600;}
+  .accuracy-panel-sub{font-size:.68rem; color:#6b7488; margin-top:8px; line-height:1.4;}
+  .market-acc-row{display:flex; align-items:center; gap:10px; margin-bottom:7px;}
+  .market-acc-label{width:112px; font-size:.76rem; color:var(--muted); flex-shrink:0;}
+  .market-acc-track{flex:1; height:9px; background:#0b0f19; border-radius:6px; overflow:hidden;}
+  .market-acc-fill{height:100%; border-radius:6px; box-shadow:0 0 8px 0 currentColor;}
+  .market-acc-value{width:92px; text-align:right; font-size:.76rem; font-weight:800; flex-shrink:0;}
+  .market-acc-sample{font-weight:400; color:var(--muted); font-size:.66rem;}
   .section-title{font-size:1rem; margin:22px 0 12px; color:var(--text);}
   .empty-state{color:var(--muted); font-size:.85rem; padding:14px 0;}
   .live-badge{
@@ -71729,6 +71754,35 @@ function renderCombinada(){
   `;
 }
 
+// Dona de aciertos (conic-gradient, igual técnica que el aro de confianza)
+// para el mercado de Resultado -- el número grande y el color cambian solos
+// según el % real, nunca se escribe a mano.
+function accuracyDonut(pctValue){
+  const color = pctValue >= 55 ? "var(--accent)" : pctValue >= 45 ? "var(--accent2)" : "var(--warn)";
+  return `<div class="accuracy-donut" style="--pct:${pctValue}; --donut-color:${color};">
+    <div class="accuracy-donut-inner">
+      <div class="accuracy-donut-pct">${pctValue}%</div>
+      <div class="accuracy-donut-label">acierto</div>
+    </div>
+  </div>`;
+}
+
+// Barra horizontal con brillo para el % de acierto de un mercado -- mismo
+// patrón visual que las barras de Local/Empate/Visita de cada partido.
+function marketAccuracyBar(label, correct, total, pctValue){
+  const color = pctValue >= 55 ? "var(--accent)" : pctValue >= 45 ? "var(--accent2)" : "var(--warn)";
+  return `<div class="market-acc-row">
+    <div class="market-acc-label">${label}</div>
+    <div class="market-acc-track"><div class="market-acc-fill" style="width:${pctValue}%; background:${color}; color:${color};"></div></div>
+    <div class="market-acc-value" style="color:${color};">${pctValue}% <span class="market-acc-sample">(${correct}/${total})</span></div>
+  </div>`;
+}
+
+// Contador de aciertos -- transparencia es el valor central de Golyzer, así
+// que esto se calcula 100% desde predictionsLog (historial real, partido
+// por partido), nunca a mano. La dona muestra el resultado (1X2); las
+// barras, el resto de mercados (goles/córners/tarjetas) para comparar cuál
+// rinde mejor de un vistazo.
 function renderAccuracyCounter(){
   const el = document.getElementById("accuracy-counter");
   if(!el) return;
@@ -71738,41 +71792,37 @@ function renderAccuracyCounter(){
     return;
   }
   const correct = evaluated.filter(p => p.status === "correct").length;
-  const pct = Math.round((correct / evaluated.length) * 100);
-  el.innerHTML = `
-    <div style="margin-top:10px;padding:10px 14px;border-radius:10px;background:#161c2c;border:1px solid #2a3247;display:inline-block;">
-      🎯 <b>${correct} de ${evaluated.length}</b> pronósticos acertados (<b>${pct}%</b>) — historial real, sin editar.
-    </div>`;
+  const pctValue = Math.round((correct / evaluated.length) * 100);
+
+  const markets = [
+    { key: "goalsStatus", label: "⚽ Goles (+/-)" },
+    { key: "cornersStatus", label: "🚩 Córners (+/-)" },
+    { key: "cardsStatus", label: "🟨 Tarjetas (+/-)" },
+  ];
+  const bars = markets.map(mk => {
+    const ev = predictionsLog.filter(p => p[mk.key] === "correct" || p[mk.key] === "incorrect");
+    if(ev.length === 0) return "";
+    const c = ev.filter(p => p[mk.key] === "correct").length;
+    const p = Math.round((c / ev.length) * 100);
+    return marketAccuracyBar(mk.label, c, ev.length, p);
+  }).join("");
+
+  el.innerHTML = `<div class="accuracy-panel">
+    ${accuracyDonut(pctValue)}
+    <div class="accuracy-panel-bars">
+      <div class="accuracy-panel-title">🎯 Resultado: <b>${correct} de ${evaluated.length}</b> pronósticos acertados</div>
+      ${bars}
+      <div class="accuracy-panel-sub">Historial real, sin editar -- se recalcula solo cada vez que termina un partido con pronóstico registrado.</div>
+    </div>
+  </div>`;
 }
 
-// contador de aciertos por mercado (goles / córners / tarjetas), separado
-// del de local-empate-visita -- Jaime pidió esto porque siente que estos
-// mercados rinden mejor y quería verlo medido aparte.
+// Ya no se usa un panel aparte para goles/córners/tarjetas -- todo quedó
+// fusionado dentro de renderAccuracyCounter() para que se vea como un solo
+// bloque de estadísticas en vez de dos cajitas sueltas.
 function renderMarketAccuracyCounters(){
   const el = document.getElementById("accuracy-counter-markets");
-  if(!el) return;
-  const markets = [
-    { key: "goals", label: "⚽ Goles (+/-)" },
-    { key: "corners", label: "🚩 Córners (+/-)" },
-    { key: "cards", label: "🟨 Tarjetas (+/-)" },
-  ];
-  const rows = markets.map(mk => {
-    const statusField = `${mk.key}Status`;
-    const evaluated = predictionsLog.filter(p => p[statusField] === "correct" || p[statusField] === "incorrect");
-    if(evaluated.length === 0) return null;
-    const correct = evaluated.filter(p => p[statusField] === "correct").length;
-    const pct = Math.round((correct / evaluated.length) * 100);
-    return `<div>${mk.label}: <b>${correct} de ${evaluated.length}</b> (<b>${pct}%</b>)</div>`;
-  }).filter(Boolean);
-
-  if(rows.length === 0){
-    el.innerHTML = "";
-    return;
-  }
-  el.innerHTML = `
-    <div style="margin-top:8px;padding:10px 14px;border-radius:10px;background:#161c2c;border:1px solid #2a3247;display:inline-block;font-size:13px;line-height:1.6;">
-      ${rows.join("")}
-    </div>`;
+  if(el) el.innerHTML = "";
 }
 
 // ¿El partido es HOY según la fecha real del dispositivo? (mismo criterio
