@@ -35715,7 +35715,9 @@
     "cornersProb": 0.5272,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5132
+    "cardsProb": 0.5132,
+    "dailyPickResult": true,
+    "dailyPickGoals": true
   },
   {
     "id": 1632023,
@@ -35735,7 +35737,9 @@
     "cornersProb": 0.5084,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5809,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1642247,
@@ -35755,7 +35759,9 @@
     "cornersProb": null,
     "cardsLine": null,
     "cardsPick": null,
-    "cardsProb": null
+    "cardsProb": null,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1490326,
@@ -35775,7 +35781,9 @@
     "cornersProb": 0.5645,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5237
+    "cardsProb": 0.5237,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1643389,
