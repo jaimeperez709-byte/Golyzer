@@ -982,7 +982,7 @@ def mark_daily_picks():
 
 def update_html_files(matches):
     matches_block = json.dumps(matches, ensure_ascii=False, indent=2)
-    matches_pattern = re.compile(r"const matches = (\[.*?\n\]);\n", re.S)
+    matches_pattern = re.compile(r"const matches = (\[.*?\n?\]);\n", re.S)
 
     log_records = list(PREDICTIONS_LOG.values())
     log_records.sort(key=lambda r: r["date"])
