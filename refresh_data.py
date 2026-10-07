@@ -229,7 +229,20 @@ def predict_pick(home_name, away_name, home_gf, home_gc, away_gf, away_gc, home_
         for k in probs:
             probs[k] = probs[k] * (1 - CUP_UNCERTAINTY_SHRINK) + (1 / 3) * CUP_UNCERTAINTY_SHRINK
     pick = max(probs, key=probs.get)
-    return pick, probs[pick], lambda_home, lambda_away
+    return pick, probs[pick], lambda_home, lambda_away, probs
+
+
+# Si entre el resultado más probable y el segundo hay menos de este margen
+# (ej. 36% vs 31%), el partido está demasiado parejo para ser honesto
+# recomendando uno -- se guarda igual (para historial/transparencia) pero
+# no cuenta ni a favor ni en contra del % de acierto. Debe coincidir con
+# RESULT_PICK_MIN_GAP en el JS de ambos HTML.
+RESULT_PICK_MIN_GAP = 0.08
+
+
+def result_too_close(probs):
+    ordered = sorted(probs.values(), reverse=True)
+    return (ordered[0] - ordered[1]) < RESULT_PICK_MIN_GAP
 
 
 # --- mercados de goles/córners/tarjetas (línea +/-), para el contador de
@@ -243,24 +256,32 @@ def choose_line(expected_total):
     return line
 
 
+GOALS_DISPLAY_LINES = [0.5, 1.5, 2.5, 3.5, 4.5]  # debe coincidir con GOALS_DISPLAY_LINES del JS
+
+
 def predict_goals_pick(lambda_home, lambda_away, max_goals=8):
-    """Línea de goles +/- y el lado más probable, usando el mismo modelo
-    (Poisson + Dixon-Coles) que ya usamos para local/empate/visitante --
-    no cuesta llamadas extra a la API porque reutiliza lambda_home/away."""
-    line = choose_line(lambda_home + lambda_away)
-    threshold = math.floor(line) + 1
-    p_total = p_over = 0.0
-    for i in range(max_goals + 1):
-        for j in range(max_goals + 1):
-            p = poisson_prob(i, lambda_home) * poisson_prob(j, lambda_away)
-            p *= dixon_coles_tau(i, j, lambda_home, lambda_away, DIXON_COLES_RHO)
-            p_total += p
-            if i + j >= threshold:
-                p_over += p
-    over_prob = p_over / p_total if p_total else 0.5
-    pick = "over" if over_prob >= 0.5 else "under"
-    prob = over_prob if pick == "over" else 1 - over_prob
-    return line, pick, round(prob, 4)
+    """Elige, entre varias líneas de goles razonables (GOALS_DISPLAY_LINES),
+    la que tenga MAYOR probabilidad de acertar -- "la más fija" -- en vez de
+    usar siempre la línea "central" del modelo (lambda_home + lambda_away
+    redondeado), que en partidos con datos atípicos podía salir disparatada
+    (ej. un -12.5 de goles). Replica de safestGoalsLine() en el JS."""
+    best = None
+    for line in GOALS_DISPLAY_LINES:
+        threshold = math.floor(line) + 1
+        p_total = p_over = 0.0
+        for i in range(max_goals + 1):
+            for j in range(max_goals + 1):
+                p = poisson_prob(i, lambda_home) * poisson_prob(j, lambda_away)
+                p *= dixon_coles_tau(i, j, lambda_home, lambda_away, DIXON_COLES_RHO)
+                p_total += p
+                if i + j >= threshold:
+                    p_over += p
+        over_prob = p_over / p_total if p_total else 0.5
+        pick = "over" if over_prob >= 0.5 else "under"
+        prob = round(over_prob if pick == "over" else 1 - over_prob, 4)
+        if best is None or prob > best[2]:
+            best = (line, pick, prob)
+    return best
 
 
 def predict_line_pick(combined_avg, max_extra=20):
@@ -791,7 +812,13 @@ def fetch_all_matches():
             if entry and entry.get("status") == "pending":
                 real = actual_outcome(result)
                 entry["actualResult"] = result
-                entry["status"] = "correct" if real == entry["predictedPick"] else "incorrect"
+                if entry.get("resultTooClose"):
+                    # partido demasiado parejo para honestamente haber dado
+                    # un pick -- se guarda el resultado real para historial,
+                    # pero "skipped" no cuenta en el % de acierto.
+                    entry["status"] = "skipped"
+                else:
+                    entry["status"] = "correct" if real == entry["predictedPick"] else "incorrect"
 
                 # evaluar el mercado de goles -- no cuesta llamadas extra,
                 # ya tenemos el marcador final.
@@ -834,7 +861,7 @@ def fetch_all_matches():
             # registrar (o refrescar) el pronóstico de este partido mientras
             # todavía no se ha jugado -- se congela la última versión antes
             # del pitazo inicial, para comparar honestamente después.
-            pick, prob, lambda_home, lambda_away = predict_pick(
+            pick, prob, lambda_home, lambda_away, result_probs = predict_pick(
                 home_obj["name"], away_obj["name"],
                 home_obj["gf"], home_obj["gc"], away_obj["gf"], away_obj["gc"],
                 info["homeAdvantage"],
@@ -883,6 +910,7 @@ def fetch_all_matches():
                 "id": fx["fixture"]["id"], "league": info["name"], "date": fx["fixture"]["date"],
                 "home": home_obj["name"], "away": away_obj["name"],
                 "predictedPick": pick, "predictedProb": round(prob, 4),
+                "resultTooClose": result_too_close(result_probs),
                 "status": "pending", "actualResult": None,
                 "goalsLine": goals_line, "goalsPick": goals_pick, "goalsProb": goals_prob,
                 "cornersLine": corners_line, "cornersPick": corners_pick, "cornersProb": corners_prob,
