@@ -90,6 +90,7 @@
     background:linear-gradient(135deg, var(--card2), var(--card)); border:1px solid var(--line);
     border-radius:12px; padding:14px 16px; margin-bottom:10px;
   }
+  .daily-pick-featured{border-color:var(--accent2); box-shadow:0 0 20px -6px var(--accent2);}
   .daily-pick-kicker{font-size:.7rem; font-weight:700; letter-spacing:.04em; color:var(--muted); margin-bottom:4px;}
   .daily-pick-teams{font-size:.95rem; font-weight:700; color:var(--text); margin-bottom:8px;}
   .daily-pick-row{display:flex; justify-content:space-between; align-items:center; font-size:.9rem; color:var(--text); padding:4px 0;}
@@ -511,6 +512,7 @@ const LEAGUE_COUNTRY = {
 function getCountry(m){ return LEAGUE_COUNTRY[m.league] || "Otro"; }
 
 const matches = [];
+const predictionsLog = [];
 
 /* Estado de cada partido según la fecha/hora real del dispositivo:
    'finalizado' (ya se jugó, con marcador) · 'en_vivo' (dentro de la ventana del partido)
@@ -684,6 +686,21 @@ function goalsOverUnderAtLine(lambdaHome, lambdaAway, line, maxGoals = 8){
 // si es "más de X", la línea segura es X-1 (necesita menos goles). Ambas
 // con su probabilidad real, no maquillada.
 const GOALS_DISPLAY_LINES = [0.5, 1.5, 2.5, 3.5, 4.5];
+
+// Elige, entre las líneas de GOALS_DISPLAY_LINES, la que tenga MAYOR
+// probabilidad de acertar -- "la más fija" -- en vez de usar siempre la
+// línea "central" del modelo (que en partidos con datos atípicos podía
+// salir disparatada, ej. un -12.5 de goles). Replica de
+// predict_goals_pick() en refresh_data.py.
+function safestGoalsLine(lambdaHome, lambdaAway){
+  let best = null;
+  for(const line of GOALS_DISPLAY_LINES){
+    const { over, under } = goalsOverUnderAtLine(lambdaHome, lambdaAway, line);
+    const sideProb = Math.max(over, under);
+    if(!best || sideProb > best.prob) best = { line, prob: sideProb };
+  }
+  return best.line;
+}
 // Muestra varias líneas de goles a la vez (no solo la que elige el modelo
 // como "la" línea), cada una con su propia probabilidad real -- igual que
 // el selector de líneas que vimos en la competencia. No cuesta llamadas
@@ -752,7 +769,7 @@ function matchProbabilities(m){
 
   const lambdaHome = homeAttack * awayDefense * LEAGUE_AVG_GOALS * effectiveHomeAdvantage;
   const lambdaAway = awayAttack * homeDefense * LEAGUE_AVG_GOALS;
-  const goalsLine = chooseLine(lambdaHome + lambdaAway);
+  const goalsLine = safestGoalsLine(lambdaHome, lambdaAway);
   const goalsThreshold = Math.floor(goalsLine) + 1;
 
   let pHome = 0, pDraw = 0, pAway = 0, pOverGoalsLine = 0;
@@ -1059,13 +1076,20 @@ function renderFeaturedCarousel(){
   }).join("");
 }
 
+// Debe coincidir con RESULT_PICK_MIN_GAP en refresh_data.py: si entre el
+// resultado más probable y el segundo hay menos de este margen, el
+// partido está demasiado parejo para recomendar uno con honestidad.
+const RESULT_PICK_MIN_GAP = 0.08;
+
 function pickRecommendation(probs){
   const arr = [
     { key:"home", p: probs.home },
     { key:"draw", p: probs.draw },
     { key:"away", p: probs.away }
   ].sort((a,b)=> b.p - a.p);
-  return arr[0]; // el resultado más probable
+  const rec = arr[0]; // el resultado más probable
+  rec.tooClose = (arr[0].p - arr[1].p) < RESULT_PICK_MIN_GAP;
+  return rec;
 }
 
 /* ============================================================
@@ -1368,7 +1392,9 @@ function renderUpcomingCard(m){
       </div>
       <ul class="rec-reasons">${reasons.map(r=>`<li>${r}</li>`).join("")}</ul>
       <div class="confidence ${confClass}">
-        ${confidencePct < 45
+        ${rec.tooClose
+          ? "⚖️ Partido muy parejo -- no forzamos un pick de resultado acá, por eso no cuenta en el % de acierto."
+          : confidencePct < 45
           ? "Confianza baja — partido parejo, considera esto informativo, no una apuesta segura."
           : confidencePct < 60
           ? "Confianza moderada según el modelo estadístico."
@@ -1880,22 +1906,22 @@ function marketAccuracyBar(label, correct, total, pctValue){
 
 // Contador de aciertos -- transparencia es el valor central de Golyzer, así
 // que esto se calcula 100% desde predictionsLog (historial real, partido
-// por partido), nunca a mano. La dona muestra el resultado (1X2); las
-// barras, el resto de mercados (goles/córners/tarjetas) para comparar cuál
-// rinde mejor de un vistazo.
+// por partido), nunca a mano. La dona destaca GOLES (nuestro mercado más
+// fuerte); las barras muestran el resto (resultado/córners/tarjetas) para
+// comparar cuál rinde mejor de un vistazo.
 function renderAccuracyCounter(){
   const el = document.getElementById("accuracy-counter");
   if(!el) return;
-  const evaluated = predictionsLog.filter(p => p.status === "correct" || p.status === "incorrect");
+  const evaluated = predictionsLog.filter(p => p.goalsStatus === "correct" || p.goalsStatus === "incorrect");
   if(evaluated.length === 0){
     el.innerHTML = "";
     return;
   }
-  const correct = evaluated.filter(p => p.status === "correct").length;
+  const correct = evaluated.filter(p => p.goalsStatus === "correct").length;
   const pctValue = Math.round((correct / evaluated.length) * 100);
 
   const markets = [
-    { key: "goalsStatus", label: "⚽ Goles (+/-)" },
+    { key: "status", label: "🎯 Resultado (1X2)" },
     { key: "cornersStatus", label: "🚩 Córners (+/-)" },
     { key: "cardsStatus", label: "🟨 Tarjetas (+/-)" },
   ];
@@ -1910,7 +1936,7 @@ function renderAccuracyCounter(){
   el.innerHTML = `<div class="accuracy-panel">
     ${accuracyDonut(pctValue)}
     <div class="accuracy-panel-bars">
-      <div class="accuracy-panel-title">🎯 Resultado: <b>${correct} de ${evaluated.length}</b> pronósticos acertados</div>
+      <div class="accuracy-panel-title">⚽ Goles: <b>${correct} de ${evaluated.length}</b> pronósticos acertados</div>
       ${bars}
       <div class="accuracy-panel-sub">Historial real, sin editar -- se recalcula solo cada vez que termina un partido con pronóstico registrado.</div>
     </div>
@@ -1973,7 +1999,7 @@ function renderDailyPicks(){
     const probs = matchProbabilities(m);
     const rec = pickRecommendation(probs);
     const recLabel = rec.key === "home" ? m.home.name : rec.key === "away" ? m.away.name : "Empate";
-    if(rec.p <= DAILY_PICK_MAX_RESULT_PROB && (!bestResult || rec.p > bestResult.prob)){
+    if(!rec.tooClose && rec.p <= DAILY_PICK_MAX_RESULT_PROB && (!bestResult || rec.p > bestResult.prob)){
       bestResult = { m, label: recLabel, prob: rec.p };
     }
     const gp = bestSide(probs.overGoals, probs.underGoals, `+${probs.goalsLine} goles`, `-${probs.goalsLine} goles`, "overGoals", "underGoals");
@@ -1997,6 +2023,28 @@ function renderDailyPicks(){
 
   const comboPicks = [];
 
+  // Goles va primero -- históricamente es el mercado donde más acertamos,
+  // así que es el que más conviene mostrar de entrada. Incluye su propio %
+  // de acierto real (mismo criterio transparente que el contador general).
+  if(bestGoals && dailyPickMarkets.goals){
+    comboPicks.push({ label: `${bestGoals.gp.label} (${bestGoals.m.home.name} vs ${bestGoals.m.away.name})`, prob: bestGoals.gp.prob });
+    const goalsEval = predictionsLog.filter(p => p.goalsStatus === "correct" || p.goalsStatus === "incorrect");
+    const goalsAccRow = goalsEval.length ? (() => {
+      const c = goalsEval.filter(p => p.goalsStatus === "correct").length;
+      return `<div class="daily-pick-row daily-pick-safe"><span>Precisión histórica de este mercado</span><b>${Math.round(c/goalsEval.length*100)}% (${c}/${goalsEval.length})</b></div>`;
+    })() : "";
+    html += `
+    <div class="daily-pick-card daily-pick-featured">
+      <div class="daily-pick-kicker">⭐ GOLES · ${bestGoals.m.league}</div>
+      <div class="daily-pick-teams">${teamLogoImg(bestGoals.m.home, 20)}${bestGoals.m.home.name} vs ${teamLogoImg(bestGoals.m.away, 20)}${bestGoals.m.away.name}</div>
+      <div class="daily-pick-row">
+        <span>${bestGoals.gp.label}</span>
+        <b style="color:var(--accent2)">${pct(bestGoals.gp.prob)}%</b>
+      </div>
+      ${goalsAccRow}
+    </div>`;
+  }
+
   if(bestResult && dailyPickMarkets.result){
     comboPicks.push({ label: `${bestResult.label} gana (${bestResult.m.home.name} vs ${bestResult.m.away.name})`, prob: bestResult.prob });
     html += `
@@ -2007,24 +2055,6 @@ function renderDailyPicks(){
         <span>${bestResult.label} gana</span>
         <b style="color:var(--accent)">${pct(bestResult.prob)}%</b>
       </div>
-    </div>`;
-  }
-
-  if(bestGoals && dailyPickMarkets.goals){
-    const safe = conservativeGoalsPick(bestGoals.m, bestGoals.probs, bestGoals.gp);
-    comboPicks.push({ label: `${bestGoals.gp.label} (${bestGoals.m.home.name} vs ${bestGoals.m.away.name})`, prob: bestGoals.gp.prob });
-    html += `
-    <div class="daily-pick-card">
-      <div class="daily-pick-kicker">GOLES · ${bestGoals.m.league}</div>
-      <div class="daily-pick-teams">${teamLogoImg(bestGoals.m.home, 20)}${bestGoals.m.home.name} vs ${teamLogoImg(bestGoals.m.away, 20)}${bestGoals.m.away.name}</div>
-      <div class="daily-pick-row">
-        <span>${bestGoals.gp.label}</span>
-        <b style="color:var(--accent2)">${pct(bestGoals.gp.prob)}%</b>
-      </div>
-      ${safe ? `<div class="daily-pick-row daily-pick-safe">
-        <span>${safe.label}</span>
-        <b>${pct(safe.prob)}%</b>
-      </div>` : ""}
     </div>`;
   }
 
