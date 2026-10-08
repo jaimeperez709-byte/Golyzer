@@ -137,6 +137,28 @@
   .accuracy-panel-bars{flex:1; min-width:230px;}
   .accuracy-panel-title{font-size:.76rem; color:var(--text); margin-bottom:10px; font-weight:600;}
   .accuracy-panel-sub{font-size:.68rem; color:#6b7488; margin-top:8px; line-height:1.4;}
+  .accuracy-brand-row{
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+    flex-wrap:wrap; margin-bottom:10px;
+  }
+  .accuracy-brand-row .accuracy-panel-title{margin-bottom:0;}
+  .accuracy-brand-tag{
+    display:flex; align-items:center; gap:9px; white-space:nowrap;
+  }
+  .accuracy-brand-tag .ball{
+    font-size:1.7rem; line-height:1; filter:drop-shadow(0 0 8px var(--accent2));
+    animation:golyzer-ball-spin 6s linear infinite;
+  }
+  .accuracy-brand-tag .word{
+    font-size:1.15rem; font-weight:900; letter-spacing:.03em; color:var(--text);
+    text-shadow:0 0 14px rgba(255,209,102,.35);
+  }
+  .accuracy-brand-tag .word b{color:var(--accent2);}
+  .accuracy-brand-tag .tagline{
+    display:block; font-size:.6rem; font-weight:600; color:var(--muted);
+    letter-spacing:0; text-transform:none; margin-top:1px;
+  }
+  @keyframes golyzer-ball-spin{ from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
   .market-acc-row{display:flex; align-items:center; gap:10px; margin-bottom:7px;}
   .market-acc-label{width:112px; font-size:.76rem; color:var(--muted); flex-shrink:0;}
   .market-acc-track{flex:1; height:9px; background:#0b0f19; border-radius:6px; overflow:hidden;}
@@ -153478,7 +153500,13 @@ function renderAccuracyCounter(){
   el.innerHTML = `<div class="accuracy-panel">
     ${accuracyDonut(pctValue)}
     <div class="accuracy-panel-bars">
-      <div class="accuracy-panel-title">⚽ Goles: <b>${correct} de ${evaluated.length}</b> pronósticos acertados</div>
+      <div class="accuracy-brand-row">
+        <div class="accuracy-panel-title">⚽ Goles: <b>${correct} de ${evaluated.length}</b> pronósticos acertados</div>
+        <div class="accuracy-brand-tag">
+          <span class="ball">⚽</span>
+          <span class="word">GOL<b>Y</b>ZER<span class="tagline">leemos los goles antes que nadie</span></span>
+        </div>
+      </div>
       ${bars}
       <div class="accuracy-panel-sub">Historial real, sin editar -- se recalcula solo cada vez que termina un partido con pronóstico registrado.</div>
     </div>
