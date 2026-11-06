@@ -28529,8 +28529,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8445,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9855,
@@ -28541,7 +28544,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5068,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636289,
@@ -28552,8 +28558,11 @@
     "predictedPick": "away",
     "predictedProb": 0.6035,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9424,
@@ -28564,7 +28573,10 @@
     "cardsPick": "under",
     "cardsProb": 0.6025,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636302,
@@ -28575,8 +28587,11 @@
     "predictedPick": "away",
     "predictedProb": 0.7417,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 3,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9519,
@@ -28587,7 +28602,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5737,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636208,
@@ -28598,8 +28616,11 @@
     "predictedPick": "away",
     "predictedProb": 0.8518,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9941,
@@ -28610,7 +28631,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5226,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636319,
@@ -28621,8 +28645,11 @@
     "predictedPick": "away",
     "predictedProb": 0.403,
     "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
+    "status": "skipped",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9826,
@@ -28633,7 +28660,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5377,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636211,
@@ -28644,8 +28674,11 @@
     "predictedPick": "away",
     "predictedProb": 0.4365,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9026,
@@ -28656,7 +28689,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5608,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636337,
@@ -28667,8 +28703,11 @@
     "predictedPick": "away",
     "predictedProb": 0.4665,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 3
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9258,
@@ -28679,7 +28718,10 @@
     "cardsPick": "over",
     "cardsProb": 0.51,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636286,
@@ -28690,8 +28732,11 @@
     "predictedPick": "draw",
     "predictedProb": 0.3948,
     "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
+    "status": "skipped",
+    "actualResult": {
+      "home": 1,
+      "away": 0
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9858,
@@ -28702,7 +28747,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5195,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636448,
@@ -28713,8 +28761,11 @@
     "predictedPick": "away",
     "predictedProb": 0.3969,
     "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
+    "status": "skipped",
+    "actualResult": {
+      "home": 1,
+      "away": 6
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9354,
@@ -28725,7 +28776,10 @@
     "cardsPick": "under",
     "cardsProb": 0.6092,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "incorrect",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636376,
@@ -28736,8 +28790,11 @@
     "predictedPick": "home",
     "predictedProb": 0.6876,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9023,
@@ -28748,7 +28805,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5237,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "incorrect",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636383,
@@ -28759,8 +28819,11 @@
     "predictedPick": "home",
     "predictedProb": 0.6249,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9762,
@@ -28771,7 +28834,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5801,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636399,
@@ -28782,8 +28848,11 @@
     "predictedPick": "home",
     "predictedProb": 0.6628,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9379,
@@ -28794,7 +28863,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5914,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636444,
@@ -28805,8 +28877,11 @@
     "predictedPick": "away",
     "predictedProb": 0.8561,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.991,
@@ -28817,7 +28892,10 @@
     "cardsPick": "under",
     "cardsProb": 0.6288,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636476,
@@ -28828,8 +28906,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8651,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9944,
@@ -28840,7 +28921,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5326,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636473,
@@ -28851,8 +28935,11 @@
     "predictedPick": "home",
     "predictedProb": 0.441,
     "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
+    "status": "skipped",
+    "actualResult": {
+      "home": 3,
+      "away": 1
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9878,
@@ -28863,7 +28950,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5608,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636439,
@@ -28874,8 +28964,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4939,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9224,
@@ -28886,7 +28979,10 @@
     "cardsPick": "under",
     "cardsProb": 0.6288,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "incorrect",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636452,
@@ -28897,8 +28993,11 @@
     "predictedPick": "home",
     "predictedProb": 0.779,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.978,
@@ -28909,7 +29008,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5292,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1493227,
@@ -28920,8 +29022,11 @@
     "predictedPick": "away",
     "predictedProb": 0.5764,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9432,
@@ -28932,7 +29037,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5527,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1647201,
@@ -28943,8 +29051,11 @@
     "predictedPick": "home",
     "predictedProb": 0.6534,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 4,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9105,
@@ -28955,7 +29066,8 @@
     "cardsPick": null,
     "cardsProb": null,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct"
   },
   {
     "id": 1636223,
@@ -28966,8 +29078,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8186,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9913,
@@ -28978,7 +29093,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5002,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636219,
@@ -28989,8 +29107,11 @@
     "predictedPick": "away",
     "predictedProb": 0.3771,
     "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
+    "status": "skipped",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9531,
@@ -29001,7 +29122,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5226,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636229,
@@ -29012,8 +29136,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8791,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9999,
@@ -29024,7 +29151,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5002,
     "dailyPickResult": false,
-    "dailyPickGoals": true
+    "dailyPickGoals": true,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636250,
@@ -29035,8 +29165,11 @@
     "predictedPick": "away",
     "predictedProb": 0.854,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 3,
+      "away": 2
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9991,
@@ -29047,7 +29180,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5002,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636245,
@@ -29058,8 +29194,11 @@
     "predictedPick": "away",
     "predictedProb": 0.8589,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 1,
+      "away": 2
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.983,
@@ -29070,7 +29209,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5803,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636264,
@@ -29081,8 +29223,11 @@
     "predictedPick": "draw",
     "predictedProb": 0.4999,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9992,
@@ -29093,7 +29238,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5237,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636339,
@@ -29104,8 +29252,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4601,
     "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
+    "status": "skipped",
+    "actualResult": {
+      "home": 2,
+      "away": 3
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9987,
@@ -29116,7 +29267,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5809,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "incorrect",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636345,
@@ -29127,8 +29281,11 @@
     "predictedPick": "draw",
     "predictedProb": 0.5031,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9987,
@@ -29139,7 +29296,10 @@
     "cardsPick": "under",
     "cardsProb": 0.6472,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636347,
@@ -29150,8 +29310,11 @@
     "predictedPick": "home",
     "predictedProb": 0.5351,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 2
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9496,
@@ -29162,7 +29325,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5321,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636456,
@@ -29173,8 +29339,11 @@
     "predictedPick": "home",
     "predictedProb": 0.6919,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.942,
@@ -29185,7 +29354,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5381,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636408,
@@ -29196,8 +29368,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8748,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9959,
@@ -29208,7 +29383,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5289,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1636478,
@@ -29219,8 +29397,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8623,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9939,
@@ -29231,7 +29412,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5302,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636416,
@@ -29242,8 +29426,11 @@
     "predictedPick": "away",
     "predictedProb": 0.8161,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9565,
@@ -29254,7 +29441,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5237,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636447,
@@ -29265,8 +29455,11 @@
     "predictedPick": "home",
     "predictedProb": 0.8766,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9996,
@@ -29277,7 +29470,10 @@
     "cardsPick": "under",
     "cardsProb": 0.6063,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636465,
@@ -29288,8 +29484,11 @@
     "predictedPick": "home",
     "predictedProb": 0.7565,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.992,
@@ -29300,7 +29499,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5932,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636483,
@@ -29311,8 +29513,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4798,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 0
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9329,
@@ -29323,7 +29528,10 @@
     "cardsPick": "over",
     "cardsProb": 0.5146,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636469,
@@ -29334,8 +29542,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4818,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9746,
@@ -29346,7 +29557,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5898,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "incorrect",
+    "cardsStatus": "correct"
   },
   {
     "id": 1636466,
@@ -29357,8 +29571,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4638,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 1,
+      "away": 1
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9022,
@@ -29369,7 +29586,10 @@
     "cardsPick": "under",
     "cardsProb": 0.616,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1647208,
@@ -29380,8 +29600,11 @@
     "predictedPick": "away",
     "predictedProb": 0.5019,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 0,
+      "away": 2
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9427,
@@ -29392,7 +29615,8 @@
     "cardsPick": null,
     "cardsProb": null,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct"
   },
   {
     "id": 1643187,
@@ -29403,8 +29627,11 @@
     "predictedPick": "home",
     "predictedProb": 0.6115,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 4,
+      "away": 0
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9725,
@@ -29415,7 +29642,8 @@
     "cardsPick": null,
     "cardsProb": null,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct"
   },
   {
     "id": 1632055,
@@ -29426,8 +29654,11 @@
     "predictedPick": "home",
     "predictedProb": 0.5648,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 5
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9142,
@@ -29438,7 +29669,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5416,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "incorrect",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1493233,
@@ -29449,8 +29683,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4882,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 2,
+      "away": 1
+    },
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9481,
@@ -29461,7 +29698,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5898,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "incorrect"
   },
   {
     "id": 1492447,
@@ -29472,8 +29712,11 @@
     "predictedPick": "home",
     "predictedProb": 0.9172,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 6,
+      "away": 1
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9603,
@@ -29484,7 +29727,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5687,
     "dailyPickResult": true,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1647620,
@@ -29495,8 +29741,11 @@
     "predictedPick": "home",
     "predictedProb": 0.4115,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "incorrect",
+    "actualResult": {
+      "home": 0,
+      "away": 6
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9091,
@@ -29507,7 +29756,8 @@
     "cardsPick": null,
     "cardsProb": null,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct"
   },
   {
     "id": 1492444,
@@ -29518,8 +29768,11 @@
     "predictedPick": "home",
     "predictedProb": 0.7436,
     "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
+    "status": "correct",
+    "actualResult": {
+      "home": 3,
+      "away": 2
+    },
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9781,
@@ -29530,7 +29783,10 @@
     "cardsPick": "under",
     "cardsProb": 0.5583,
     "dailyPickResult": false,
-    "dailyPickGoals": false
+    "dailyPickGoals": false,
+    "goalsStatus": "correct",
+    "cornersStatus": "correct",
+    "cardsStatus": "correct"
   },
   {
     "id": 1604054,
@@ -29551,7 +29807,9 @@
     "cornersProb": null,
     "cardsLine": null,
     "cardsPick": null,
-    "cardsProb": null
+    "cardsProb": null,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1604055,
@@ -29572,7 +29830,9 @@
     "cornersProb": null,
     "cardsLine": null,
     "cardsPick": null,
-    "cardsProb": null
+    "cardsProb": null,
+    "dailyPickResult": true,
+    "dailyPickGoals": false
   },
   {
     "id": 1561440,
@@ -29593,7 +29853,9 @@
     "cornersProb": 0.5188,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5583
+    "cardsProb": 0.5583,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1493230,
@@ -29614,7 +29876,9 @@
     "cornersProb": 0.5174,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5119
+    "cardsProb": 0.5119,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1552216,
@@ -29635,7 +29899,9 @@
     "cornersProb": 0.5618,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5984
+    "cardsProb": 0.5984,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1575218,
@@ -29656,7 +29922,9 @@
     "cornersProb": 0.5647,
     "cardsLine": 6.5,
     "cardsPick": "under",
-    "cardsProb": 0.6063
+    "cardsProb": 0.6063,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1550196,
@@ -29677,7 +29945,9 @@
     "cornersProb": 0.583,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5898
+    "cardsProb": 0.5898,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1552817,
@@ -29698,7 +29968,9 @@
     "cornersProb": 0.5393,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5512
+    "cardsProb": 0.5512,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1557460,
@@ -29719,7 +29991,9 @@
     "cornersProb": 0.5246,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5722
+    "cardsProb": 0.5722,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1570450,
@@ -29735,12 +30009,14 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9805,
-    "cornersLine": 7.5,
+    "cornersLine": 6.5,
     "cornersPick": "under",
-    "cornersProb": 0.5987,
+    "cornersProb": 0.503,
     "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5134
+    "cardsPick": "under",
+    "cardsProb": 0.5119,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1549550,
@@ -29761,7 +30037,9 @@
     "cornersProb": 0.5874,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5292
+    "cardsProb": 0.5292,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1575539,
@@ -29782,7 +30060,9 @@
     "cornersProb": 0.5786,
     "cardsLine": 6.5,
     "cardsPick": "under",
-    "cardsProb": 0.5423
+    "cardsProb": 0.5423,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1493241,
@@ -29803,7 +30083,9 @@
     "cornersProb": 0.583,
     "cardsLine": 6.5,
     "cardsPick": "over",
-    "cardsProb": 0.5093
+    "cardsProb": 0.5093,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1493235,
@@ -29824,7 +30106,9 @@
     "cornersProb": 0.5265,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5017
+    "cardsProb": 0.5017,
+    "dailyPickResult": false,
+    "dailyPickGoals": true
   },
   {
     "id": 1493238,
@@ -29845,7 +30129,9 @@
     "cornersProb": 0.5067,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.616
+    "cardsProb": 0.616,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1492449,
@@ -29854,19 +30140,21 @@
     "home": "Vitoria",
     "away": "Fluminense",
     "predictedPick": "home",
-    "predictedProb": 0.4459,
+    "predictedProb": 0.4469,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9262,
+    "goalsProb": 0.9275,
     "cornersLine": 8.5,
     "cornersPick": "over",
     "cornersProb": 0.5001,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5265
+    "cardsProb": 0.5265,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1549856,
@@ -29887,7 +30175,9 @@
     "cornersProb": 0.5333,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.584
+    "cardsProb": 0.584,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1551030,
@@ -29908,7 +30198,9 @@
     "cornersProb": 0.5002,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5932
+    "cardsProb": 0.5932,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1551029,
@@ -29929,7 +30221,9 @@
     "cornersProb": 0.583,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5646
+    "cardsProb": 0.5646,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1549858,
@@ -29950,7 +30244,9 @@
     "cornersProb": 0.508,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5461
+    "cardsProb": 0.5461,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1493229,
@@ -29971,7 +30267,9 @@
     "cornersProb": 0.5137,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5809,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1493240,
@@ -29992,7 +30290,9 @@
     "cornersProb": 0.544,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5238
+    "cardsProb": 0.5238,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1551031,
@@ -30013,7 +30313,9 @@
     "cornersProb": 0.5357,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5627
+    "cardsProb": 0.5627,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1561437,
@@ -30767,9 +31069,9 @@
     "cornersLine": 10.5,
     "cornersPick": "under",
     "cornersProb": 0.5244,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6093
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5121
   },
   {
     "id": 1575543,
@@ -31071,20 +31373,20 @@
     "date": "2026-11-07T21:00:00+00:00",
     "home": "Atletico-MG",
     "away": "Gremio",
-    "predictedPick": "away",
-    "predictedProb": 0.3703,
-    "resultTooClose": true,
+    "predictedPick": "home",
+    "predictedProb": 0.4204,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 4.5,
-    "goalsPick": "under",
-    "goalsProb": 0.9064,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9213,
     "cornersLine": 13.5,
     "cornersPick": "under",
     "cornersProb": 0.515,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6093
+    "cardsProb": 0.5608
   },
   {
     "id": 1648783,
@@ -31513,13 +31815,13 @@
     "home": "America de Cali",
     "away": "Deportivo Cali",
     "predictedPick": "home",
-    "predictedProb": 0.3825,
+    "predictedProb": 0.3764,
     "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9169,
+    "goalsProb": 0.9364,
     "cornersLine": 8.5,
     "cornersPick": "under",
     "cornersProb": 0.5327,
@@ -31877,12 +32179,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9914,
-    "cornersLine": 10.5,
+    "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5207,
+    "cornersProb": 0.576,
     "cardsLine": 2.5,
     "cardsPick": "over",
-    "cardsProb": 0.5471
+    "cardsProb": 0.5305
   },
   {
     "id": 1557458,
@@ -31898,12 +32200,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9862,
-    "cornersLine": 10.5,
+    "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5418,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5364
+    "cornersProb": 0.5874,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5862
   },
   {
     "id": 1557459,
@@ -31920,11 +32222,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9691,
     "cornersLine": 12.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5565,
+    "cornersPick": "over",
+    "cornersProb": 0.5002,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5646
+    "cardsProb": 0.5002
   },
   {
     "id": 1557462,
@@ -31941,11 +32243,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9616,
     "cornersLine": 8.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5466,
+    "cornersPick": "over",
+    "cornersProb": 0.5217,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5321
+    "cardsProb": 0.5627
   },
   {
     "id": 1557466,
@@ -31961,9 +32263,9 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9332,
-    "cornersLine": 11.5,
+    "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5352,
+    "cornersProb": 0.5121,
     "cardsLine": 4.5,
     "cardsPick": "under",
     "cardsProb": 0.5608
@@ -31987,7 +32289,7 @@
     "cornersProb": 0.5694,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5704
+    "cardsProb": 0.5321
   },
   {
     "id": 1550192,
@@ -32005,10 +32307,10 @@
     "goalsProb": 0.9927,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5835,
-    "cardsLine": 3.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5162
+    "cornersProb": 0.5179,
+    "cardsLine": 4.5,
+    "cardsPick": "under",
+    "cardsProb": 0.6288
   },
   {
     "id": 1552816,
@@ -32046,11 +32348,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9708,
     "cornersLine": 12.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5043,
+    "cornersPick": "over",
+    "cornersProb": 0.5147,
     "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5237
+    "cardsPick": "under",
+    "cardsProb": 0.5132
   },
   {
     "id": 1604061,
@@ -32089,10 +32391,10 @@
     "goalsProb": 0.995,
     "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5418,
+    "cornersProb": 0.583,
     "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5076
+    "cardsPick": "over",
+    "cardsProb": 0.5542
   },
   {
     "id": 1604060,
@@ -32235,11 +32537,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9907,
     "cornersLine": 10.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5209,
+    "cornersPick": "under",
+    "cornersProb": 0.5207,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5132
+    "cardsProb": 0.5898
   },
   {
     "id": 1552219,
@@ -32299,10 +32601,10 @@
     "goalsProb": 0.9461,
     "cornersLine": 7.5,
     "cornersPick": "under",
-    "cornersProb": 0.5541,
-    "cardsLine": 2.5,
+    "cornersProb": 0.5057,
+    "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5184
+    "cardsProb": 0.5693
   },
   {
     "id": 1552813,
@@ -32344,7 +32646,7 @@
     "cornersProb": 0.5266,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsProb": 0.5583
   },
   {
     "id": 1639805,
@@ -32406,8 +32708,8 @@
     "cornersPick": "under",
     "cornersProb": 0.5618,
     "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.541
+    "cardsPick": "over",
+    "cardsProb": 0.5167
   },
   {
     "id": 1575216,
@@ -32425,10 +32727,10 @@
     "goalsProb": 0.9996,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5479,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5292
+    "cornersProb": 0.5703,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5862
   },
   {
     "id": 1604062,
@@ -32488,7 +32790,7 @@
     "goalsProb": 0.9412,
     "cornersLine": 13.5,
     "cornersPick": "under",
-    "cornersProb": 0.573,
+    "cornersProb": 0.5511,
     "cardsLine": 5.5,
     "cardsPick": "under",
     "cardsProb": 0.5461
@@ -32507,12 +32809,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9204,
-    "cornersLine": 6.5,
+    "cornersLine": 8.5,
     "cornersPick": "over",
-    "cornersProb": 0.5307,
-    "cardsLine": 4.5,
+    "cornersProb": 0.5001,
+    "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.6288
+    "cardsProb": 0.5152
   },
   {
     "id": 1561436,
@@ -32634,11 +32936,11 @@
     "goalsPick": "over",
     "goalsProb": 0.91,
     "cornersLine": 10.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5124,
+    "cornersPick": "under",
+    "cornersProb": 0.5294,
     "cardsLine": 6.5,
     "cardsPick": "under",
-    "cardsProb": 0.5187
+    "cardsProb": 0.5822
   },
   {
     "id": 1639803,
@@ -32677,10 +32979,10 @@
     "goalsProb": 0.9737,
     "cornersLine": 13.5,
     "cornersPick": "under",
-    "cornersProb": 0.5182,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6288
+    "cornersProb": 0.5009,
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5162
   },
   {
     "id": 1549862,
@@ -32689,13 +32991,13 @@
     "home": "Santa Fe",
     "away": "Deportivo Pasto",
     "predictedPick": "home",
-    "predictedProb": 0.788,
+    "predictedProb": 0.7557,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9369,
+    "goalsProb": 0.9299,
     "cornersLine": 7.5,
     "cornersPick": "over",
     "cornersProb": 0.5288,
@@ -32717,12 +33019,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9518,
-    "cornersLine": 12.5,
-    "cornersPick": "under",
-    "cornersProb": 0.519,
+    "cornersLine": 11.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5002,
     "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.517
+    "cardsPick": "over",
+    "cardsProb": 0.5292
   },
   {
     "id": 1552818,
@@ -32740,10 +33042,10 @@
     "goalsProb": 0.9857,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5218,
-    "cardsLine": 3.5,
+    "cornersProb": 0.5427,
+    "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5004
+    "cardsProb": 0.6288
   },
   {
     "id": 1570443,
@@ -32773,19 +33075,19 @@
     "home": "Vasco DA Gama",
     "away": "Palmeiras",
     "predictedPick": "away",
-    "predictedProb": 0.9144,
+    "predictedProb": 0.9716,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9338,
+    "goalsProb": 0.9849,
     "cornersLine": 9.5,
     "cornersPick": "under",
     "cornersProb": 0.5611,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6152
+    "cardsProb": 0.6288
   },
   {
     "id": 1632056,
@@ -32815,13 +33117,13 @@
     "home": "Sport Boys",
     "away": "UTC Cajamarca",
     "predictedPick": "home",
-    "predictedProb": 0.8937,
+    "predictedProb": 0.898,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9906,
+    "goalsProb": 0.9923,
     "cornersLine": 6.5,
     "cornersPick": "over",
     "cornersProb": 0.5247,
@@ -32843,12 +33145,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9447,
-    "cornersLine": 10.5,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.558,
+    "cornersProb": 0.5793,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5119
+    "cardsProb": 0.5461
   },
   {
     "id": 1575538,
@@ -32864,9 +33166,9 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9936,
-    "cornersLine": 12.5,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5531,
+    "cornersProb": 0.5554,
     "cardsLine": 4.5,
     "cardsPick": "over",
     "cardsProb": 0.5237
@@ -32954,48 +33256,6 @@
     "cardsLine": null,
     "cardsPick": null,
     "cardsProb": null
-  },
-  {
-    "id": 1639835,
-    "league": "LigaPro (Ecuador)",
-    "date": "2026-11-08T21:00:00+00:00",
-    "home": "Tecnico Universitario",
-    "away": "Manta FC",
-    "predictedPick": "home",
-    "predictedProb": 0.6057,
-    "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9164,
-    "cornersLine": 9.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5002,
-    "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5341
-  },
-  {
-    "id": 1639834,
-    "league": "LigaPro (Ecuador)",
-    "date": "2026-11-08T21:00:00+00:00",
-    "home": "Mushuc Runa SC",
-    "away": "Delfin SC",
-    "predictedPick": "home",
-    "predictedProb": 0.4656,
-    "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.916,
-    "cornersLine": 10.5,
-    "cornersPick": "over",
-    "cornersProb": 0.516,
-    "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5332
   },
   {
     "id": 1549859,
@@ -33151,13 +33411,13 @@
     "home": "Deportes Tolima",
     "away": "Millonarios",
     "predictedPick": "away",
-    "predictedProb": 0.4423,
+    "predictedProb": 0.4409,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.928,
+    "goalsProb": 0.9168,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.5638,
@@ -33214,13 +33474,13 @@
     "home": "Universitario",
     "away": "UCV Moquegua",
     "predictedPick": "home",
-    "predictedProb": 0.9271,
+    "predictedProb": 0.9439,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9696,
+    "goalsProb": 0.9753,
     "cornersLine": 10.5,
     "cornersPick": "over",
     "cornersProb": 0.5039,
@@ -33231,17 +33491,17 @@
   {
     "id": 1551037,
     "league": "Liga MX",
-    "date": "2026-11-09T02:00:00+00:00",
+    "date": "2026-11-09T02:10:00+00:00",
     "home": "Leon",
     "away": "Guadalajara Chivas",
     "predictedPick": "away",
-    "predictedProb": 0.5522,
+    "predictedProb": 0.6566,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9604,
+    "goalsProb": 0.9644,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.5198,
@@ -33250,19 +33510,103 @@
     "cardsProb": 0.579
   },
   {
+    "id": 1639834,
+    "league": "LigaPro (Ecuador)",
+    "date": "2026-11-09T18:00:00+00:00",
+    "home": "Mushuc Runa SC",
+    "away": "Delfin SC",
+    "predictedPick": "home",
+    "predictedProb": 0.4656,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.916,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5518,
+    "cardsLine": 6.5,
+    "cardsPick": "under",
+    "cardsProb": 0.579
+  },
+  {
+    "id": 1632059,
+    "league": "Primera División (Paraguay)",
+    "date": "2026-11-09T20:00:00+00:00",
+    "home": "Club Sp. San Lorenzo",
+    "away": "Rubio NU",
+    "predictedPick": "home",
+    "predictedProb": 0.4473,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9144,
+    "cornersLine": 9.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5309,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5461
+  },
+  {
+    "id": 1639835,
+    "league": "LigaPro (Ecuador)",
+    "date": "2026-11-09T20:30:00+00:00",
+    "home": "Tecnico Universitario",
+    "away": "Manta FC",
+    "predictedPick": "home",
+    "predictedProb": 0.6057,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9164,
+    "cornersLine": 9.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5002,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5341
+  },
+  {
+    "id": 1632060,
+    "league": "Primera División (Paraguay)",
+    "date": "2026-11-09T22:30:00+00:00",
+    "home": "Sportivo Luqueno",
+    "away": "2 de Mayo",
+    "predictedPick": "away",
+    "predictedProb": 0.4248,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9055,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5084,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5461
+  },
+  {
     "id": 1549860,
     "league": "Liga BetPlay (Colombia)",
     "date": "2026-11-10T00:00:00+00:00",
     "home": "Junior",
     "away": "Cucuta",
     "predictedPick": "home",
-    "predictedProb": 0.5064,
+    "predictedProb": 0.5607,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9135,
+    "goalsProb": 0.9356,
     "cornersLine": 8.5,
     "cornersPick": "over",
     "cornersProb": 0.5231,
@@ -33277,13 +33621,13 @@
     "home": "Internacional de Bogota",
     "away": "America de Cali",
     "predictedPick": "home",
-    "predictedProb": 0.4404,
+    "predictedProb": 0.4385,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9581,
+    "goalsProb": 0.926,
     "cornersLine": 8.5,
     "cornersPick": "under",
     "cornersProb": 0.5647,
@@ -33319,13 +33663,13 @@
     "home": "Millonarios",
     "away": "Alianza Valledupar",
     "predictedPick": "home",
-    "predictedProb": 0.8009,
+    "predictedProb": 0.7937,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9313,
+    "goalsProb": 0.9203,
     "cornersLine": 8.5,
     "cornersPick": "under",
     "cornersProb": 0.5053,
@@ -33403,13 +33747,13 @@
     "home": "Internacional de Bogota",
     "away": "Santa Fe",
     "predictedPick": "home",
-    "predictedProb": 0.3906,
-    "resultTooClose": true,
+    "predictedProb": 0.4396,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9212,
+    "goalsProb": 0.9221,
     "cornersLine": 7.5,
     "cornersPick": "over",
     "cornersProb": 0.5188,
@@ -33466,13 +33810,13 @@
     "home": "Deportivo Pereira",
     "away": "America de Cali",
     "predictedPick": "away",
-    "predictedProb": 0.5873,
+    "predictedProb": 0.5558,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9326,
+    "goalsProb": 0.9545,
     "cornersLine": 9.5,
     "cornersPick": "under",
     "cornersProb": 0.5874,
@@ -33508,13 +33852,13 @@
     "home": "Cucuta",
     "away": "Jaguares",
     "predictedPick": "home",
-    "predictedProb": 0.8694,
+    "predictedProb": 0.8129,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9515,
+    "goalsProb": 0.9239,
     "cornersLine": 11.5,
     "cornersPick": "over",
     "cornersProb": 0.5002,
@@ -33557,9 +33901,9 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9765,
-    "cornersLine": 9.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5168,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5768,
     "cardsLine": 5.5,
     "cardsPick": "over",
     "cardsProb": 0.5134
@@ -33676,13 +34020,13 @@
     "home": "Sport Huancayo",
     "away": "Universitario",
     "predictedPick": "home",
-    "predictedProb": 0.708,
+    "predictedProb": 0.6359,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.994,
+    "goalsProb": 0.9926,
     "cornersLine": 12.5,
     "cornersPick": "under",
     "cornersProb": 0.519,
@@ -33697,13 +34041,13 @@
     "home": "Comerciantes Unidos",
     "away": "Sport Boys",
     "predictedPick": "home",
-    "predictedProb": 0.4231,
+    "predictedProb": 0.4256,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9552,
+    "goalsProb": 0.963,
     "cornersLine": 8.5,
     "cornersPick": "under",
     "cornersProb": 0.5466,
@@ -33970,13 +34314,13 @@
     "home": "Mirassol",
     "away": "Atletico-MG",
     "predictedPick": "home",
-    "predictedProb": 0.427,
+    "predictedProb": 0.428,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9269,
+    "goalsProb": 0.9251,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.5554,
@@ -34054,13 +34398,13 @@
     "home": "Chapecoense-sc",
     "away": "Vasco DA Gama",
     "predictedPick": "home",
-    "predictedProb": 0.4002,
+    "predictedProb": 0.3983,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9153,
+    "goalsProb": 0.916,
     "cornersLine": 8.5,
     "cornersPick": "over",
     "cornersProb": 0.5042,
@@ -34082,54 +34426,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9019,
-    "cornersLine": 7.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5044,
+    "cornersLine": 8.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5925,
     "cardsLine": 6.5,
     "cardsPick": "under",
-    "cardsProb": 0.5503
-  },
-  {
-    "id": 1632060,
-    "league": "Primera División (Paraguay)",
-    "date": "2026-11-15T21:00:00+00:00",
-    "home": "Sportivo Luqueno",
-    "away": "2 de Mayo",
-    "predictedPick": "away",
-    "predictedProb": 0.5238,
-    "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9034,
-    "cornersLine": 11.5,
-    "cornersPick": "under",
-    "cornersProb": 0.508,
-    "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5461
-  },
-  {
-    "id": 1632059,
-    "league": "Primera División (Paraguay)",
-    "date": "2026-11-15T21:00:00+00:00",
-    "home": "Club Sp. San Lorenzo",
-    "away": "Rubio NU",
-    "predictedPick": "away",
-    "predictedProb": 0.3528,
-    "resultTooClose": true,
-    "status": "pending",
-    "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9084,
-    "cornersLine": 9.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5349,
-    "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5722
+    "cardsProb": 0.5662
   },
   {
     "id": 1649062,
@@ -34166,12 +34468,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9705,
-    "cornersLine": 11.5,
+    "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5198,
+    "cornersProb": 0.519,
     "cardsLine": 6.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5398
+    "cardsPick": "under",
+    "cardsProb": 0.514
   },
   {
     "id": 1632064,
@@ -34222,19 +34524,19 @@
     "home": "Rubio NU",
     "away": "Libertad Asuncion",
     "predictedPick": "away",
-    "predictedProb": 0.3744,
-    "resultTooClose": true,
+    "predictedProb": 0.4952,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9463,
+    "goalsProb": 0.9329,
     "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5369,
+    "cornersProb": 0.5327,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5801
+    "cardsProb": 0.5512
   },
   {
     "id": 1632062,
@@ -34285,16 +34587,16 @@
     "home": "Sportivo Ameliano",
     "away": "Sportivo Luqueno",
     "predictedPick": "home",
-    "predictedProb": 0.4997,
+    "predictedProb": 0.3989,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9027,
-    "cornersLine": 10.5,
+    "goalsProb": 0.9059,
+    "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5084,
+    "cornersProb": 0.5089,
     "cardsLine": 4.5,
     "cardsPick": "over",
     "cardsProb": 0.5237
@@ -34306,13 +34608,13 @@
     "home": "Coritiba",
     "away": "Santos",
     "predictedPick": "home",
-    "predictedProb": 0.3941,
+    "predictedProb": 0.395,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9113,
+    "goalsProb": 0.9092,
     "cornersLine": 10.5,
     "cornersPick": "under",
     "cornersProb": 0.5418,
@@ -34327,19 +34629,19 @@
     "home": "Remo",
     "away": "Chapecoense-sc",
     "predictedPick": "home",
-    "predictedProb": 0.6758,
+    "predictedProb": 0.6314,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.941,
+    "goalsProb": 0.9256,
     "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5002,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5237
+    "cornersPick": "under",
+    "cornersProb": 0.5399,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.616
   },
   {
     "id": 1492453,
@@ -34348,13 +34650,13 @@
     "home": "Flamengo",
     "away": "Atletico Paranaense",
     "predictedPick": "home",
-    "predictedProb": 0.8766,
+    "predictedProb": 0.9159,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9906,
+    "goalsProb": 0.9925,
     "cornersLine": 17.5,
     "cornersPick": "under",
     "cornersProb": 0.564,
@@ -34369,19 +34671,19 @@
     "home": "Cruzeiro",
     "away": "Palmeiras",
     "predictedPick": "away",
-    "predictedProb": 0.4857,
+    "predictedProb": 0.5985,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9199,
-    "cornersLine": 10.5,
+    "goalsProb": 0.9672,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5207,
+    "cornersProb": 0.5793,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5
+    "cardsProb": 0.5119
   },
   {
     "id": 1492454,
@@ -34390,19 +34692,19 @@
     "home": "Gremio",
     "away": "Bahia",
     "predictedPick": "home",
-    "predictedProb": 0.4347,
+    "predictedProb": 0.4191,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.932,
-    "cornersLine": 11.5,
+    "goalsProb": 0.9441,
+    "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5198,
+    "cornersProb": 0.5577,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5292
+    "cardsProb": 0.5454
   },
   {
     "id": 1492450,
@@ -34411,13 +34713,13 @@
     "home": "Corinthians",
     "away": "Botafogo",
     "predictedPick": "home",
-    "predictedProb": 0.4705,
+    "predictedProb": 0.4696,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9321,
+    "goalsProb": 0.9312,
     "cornersLine": 12.5,
     "cornersPick": "over",
     "cornersProb": 0.5002,
@@ -34432,13 +34734,13 @@
     "home": "Vasco DA Gama",
     "away": "Internacional",
     "predictedPick": "home",
-    "predictedProb": 0.3625,
+    "predictedProb": 0.3633,
     "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9295,
+    "goalsProb": 0.9278,
     "cornersLine": 10.5,
     "cornersPick": "over",
     "cornersProb": 0.5039,
@@ -34453,13 +34755,13 @@
     "home": "Vitoria",
     "away": "RB Bragantino",
     "predictedPick": "home",
-    "predictedProb": 0.4481,
+    "predictedProb": 0.4492,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9113,
+    "goalsProb": 0.9093,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.5793,
@@ -34474,13 +34776,13 @@
     "home": "Sao Paulo",
     "away": "Fluminense",
     "predictedPick": "home",
-    "predictedProb": 0.5074,
+    "predictedProb": 0.5086,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9254,
+    "goalsProb": 0.9267,
     "cornersLine": 11.5,
     "cornersPick": "over",
     "cornersProb": 0.5188,
@@ -34549,7 +34851,7 @@
     "cornersProb": 0.5554,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5608
+    "cardsProb": 0.5996
   },
   {
     "id": 1551039,
@@ -34756,10 +35058,10 @@
     "goalsProb": 0.9615,
     "cornersLine": 13.5,
     "cornersPick": "under",
-    "cornersProb": 0.5478,
+    "cornersProb": 0.5292,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5512
+    "cardsProb": 0.5898
   },
   {
     "id": 1575223,
@@ -34776,11 +35078,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9794,
     "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5119,
+    "cornersPick": "under",
+    "cornersProb": 0.5281,
     "cardsLine": 6.5,
     "cardsPick": "under",
-    "cardsProb": 0.5423
+    "cardsProb": 0.6063
   },
   {
     "id": 1575225,
@@ -34818,11 +35120,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9963,
     "cornersLine": 12.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5036,
+    "cornersPick": "under",
+    "cornersProb": 0.5156,
     "cardsLine": 3.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5195
+    "cardsPick": "over",
+    "cardsProb": 0.5507
   },
   {
     "id": 1561450,
@@ -34859,12 +35161,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9241,
-    "cornersLine": 10.5,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.501,
+    "cornersProb": 0.5602,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.502
+    "cardsProb": 0.5321
   },
   {
     "id": 1557476,
@@ -34923,8 +35225,8 @@
     "goalsPick": "over",
     "goalsProb": 0.9746,
     "cornersLine": 10.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5245,
+    "cornersPick": "under",
+    "cornersProb": 0.5743,
     "cardsLine": 4.5,
     "cardsPick": "under",
     "cardsProb": 0.5898
@@ -34943,12 +35245,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.936,
-    "cornersLine": 7.5,
+    "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5246,
+    "cornersProb": 0.5925,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6132
+    "cardsProb": 0.5474
   },
   {
     "id": 1552229,
@@ -34966,10 +35268,10 @@
     "goalsProb": 0.9945,
     "cornersLine": 14.5,
     "cornersPick": "under",
-    "cornersProb": 0.5524,
+    "cornersProb": 0.5355,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5321
+    "cardsProb": 0.5801
   },
   {
     "id": 1552824,
@@ -34990,7 +35292,7 @@
     "cornersProb": 0.5618,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5321
+    "cardsProb": 0.5646
   },
   {
     "id": 1561444,
@@ -35125,19 +35427,19 @@
     "home": "Palmeiras",
     "away": "Flamengo",
     "predictedPick": "home",
-    "predictedProb": 0.6239,
+    "predictedProb": 0.6421,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9412,
+    "goalsProb": 0.9658,
     "cornersLine": 13.5,
     "cornersPick": "under",
     "cornersProb": 0.5544,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5454
+    "cardsProb": 0.5328
   },
   {
     "id": 1550204,
@@ -35176,10 +35478,10 @@
     "goalsProb": 0.9364,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5742,
+    "cornersProb": 0.5309,
     "cardsLine": 3.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6472
+    "cardsPick": "over",
+    "cardsProb": 0.5162
   },
   {
     "id": 1552823,
@@ -35200,7 +35502,7 @@
     "cornersProb": 0.5206,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5321
+    "cardsProb": 0.5646
   },
   {
     "id": 1552826,
@@ -35293,19 +35595,19 @@
     "home": "Bahia",
     "away": "Coritiba",
     "predictedPick": "home",
-    "predictedProb": 0.6667,
+    "predictedProb": 0.6553,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9242,
+    "goalsProb": 0.9211,
     "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.583,
+    "cornersProb": 0.501,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5321
+    "cardsProb": 0.5627
   },
   {
     "id": 1647047,
@@ -35335,13 +35637,13 @@
     "home": "Santos Laguna",
     "away": "Leon",
     "predictedPick": "home",
-    "predictedProb": 0.7813,
+    "predictedProb": 0.8354,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9527,
+    "goalsProb": 0.9741,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.559,
@@ -35377,16 +35679,16 @@
     "home": "Chapecoense-sc",
     "away": "Cruzeiro",
     "predictedPick": "away",
-    "predictedProb": 0.781,
+    "predictedProb": 0.7786,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9859,
+    "goalsProb": 0.9889,
     "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.583,
+    "cornersProb": 0.5207,
     "cardsLine": 5.5,
     "cardsPick": "under",
     "cardsProb": 0.5809
@@ -35468,9 +35770,9 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9999,
-    "cornersLine": 10.5,
+    "cornersLine": 11.5,
     "cornersPick": "over",
-    "cornersProb": 0.5197,
+    "cornersProb": 0.5002,
     "cardsLine": 3.5,
     "cardsPick": "over",
     "cardsProb": 0.5265
@@ -35510,12 +35812,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9906,
-    "cornersLine": 8.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5338,
+    "cornersLine": 9.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5114,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5407
+    "cardsProb": 0.5265
   },
   {
     "id": 1552230,
@@ -35533,10 +35835,10 @@
     "goalsProb": 0.9844,
     "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5207,
-    "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5932
+    "cornersProb": 0.563,
+    "cardsLine": 4.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5109
   },
   {
     "id": 1561445,
@@ -35573,12 +35875,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9586,
-    "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5002,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5406,
     "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5461
+    "cardsPick": "over",
+    "cardsProb": 0.505
   },
   {
     "id": 1550197,
@@ -35599,7 +35901,7 @@
     "cornersProb": 0.5206,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5704
+    "cardsProb": 0.5321
   },
   {
     "id": 1552825,
@@ -35762,12 +36064,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9441,
-    "cornersLine": 9.5,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5611,
+    "cornersProb": 0.5793,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5584
+    "cardsProb": 0.6472
   },
   {
     "id": 1570453,
@@ -35783,12 +36085,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9319,
-    "cornersLine": 10.5,
+    "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.583,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6132
+    "cornersProb": 0.5024,
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5527
   },
   {
     "id": 1570456,
@@ -35806,7 +36108,7 @@
     "goalsProb": 0.9053,
     "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5471,
+    "cornersProb": 0.5233,
     "cardsLine": 5.5,
     "cardsPick": "under",
     "cardsProb": 0.5548
@@ -35867,12 +36169,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9976,
-    "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5705,
+    "cornersLine": 9.5,
+    "cornersPick": "over",
+    "cornersProb": 0.513,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.6107
+    "cardsProb": 0.5513
   },
   {
     "id": 1561449,
@@ -35935,7 +36237,7 @@
     "cornersProb": 0.5565,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5583
+    "cardsProb": 0.5
   },
   {
     "id": 1575227,
@@ -35986,19 +36288,19 @@
     "home": "Atletico Paranaense",
     "away": "Remo",
     "predictedPick": "home",
-    "predictedProb": 0.7547,
+    "predictedProb": 0.8475,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.943,
-    "cornersLine": 16.5,
+    "goalsProb": 0.9733,
+    "cornersLine": 15.5,
     "cornersPick": "under",
-    "cornersProb": 0.566,
+    "cornersProb": 0.5008,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5461
   },
   {
     "id": 1550198,
@@ -36016,10 +36318,10 @@
     "goalsProb": 0.9922,
     "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5577,
+    "cornersProb": 0.5009,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5996
+    "cardsProb": 0.5512
   },
   {
     "id": 1552822,
@@ -36037,10 +36339,10 @@
     "goalsProb": 0.9975,
     "cornersLine": 6.5,
     "cornersPick": "over",
-    "cornersProb": 0.5247,
-    "cardsLine": 4.5,
+    "cornersProb": 0.5001,
+    "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5002
+    "cardsProb": 0.616
   },
   {
     "id": 1505564,
@@ -36308,12 +36610,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9241,
-    "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5244,
-    "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5332
+    "cornersLine": 9.5,
+    "cornersPick": "over",
+    "cornersProb": 0.532,
+    "cardsLine": 6.5,
+    "cardsPick": "under",
+    "cardsProb": 0.579
   },
   {
     "id": 1639837,
@@ -36343,13 +36645,13 @@
     "home": "Fluminense",
     "away": "Mirassol",
     "predictedPick": "home",
-    "predictedProb": 0.7838,
+    "predictedProb": 0.7855,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.952,
+    "goalsProb": 0.953,
     "cornersLine": 9.5,
     "cornersPick": "under",
     "cornersProb": 0.5874,
@@ -36364,13 +36666,13 @@
     "home": "RB Bragantino",
     "away": "Vasco DA Gama",
     "predictedPick": "home",
-    "predictedProb": 0.8483,
+    "predictedProb": 0.8498,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9695,
+    "goalsProb": 0.9702,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.5163,
@@ -36519,11 +36821,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9205,
     "cornersLine": 12.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5292,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5146
+    "cornersPick": "under",
+    "cornersProb": 0.5645,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.616
   },
   {
     "id": 1557469,
@@ -36553,13 +36855,13 @@
     "home": "Internacional",
     "away": "Vitoria",
     "predictedPick": "home",
-    "predictedProb": 0.6156,
+    "predictedProb": 0.6173,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9184,
+    "goalsProb": 0.9164,
     "cornersLine": 10.5,
     "cornersPick": "under",
     "cornersProb": 0.5618,
@@ -36574,13 +36876,13 @@
     "home": "Botafogo",
     "away": "Sao Paulo",
     "predictedPick": "home",
-    "predictedProb": 0.494,
+    "predictedProb": 0.4952,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9181,
+    "goalsProb": 0.9161,
     "cornersLine": 13.5,
     "cornersPick": "under",
     "cornersProb": 0.573,
@@ -36595,19 +36897,19 @@
     "home": "Santos",
     "away": "Gremio",
     "predictedPick": "home",
-    "predictedProb": 0.5837,
+    "predictedProb": 0.6306,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 4.5,
-    "goalsPick": "under",
-    "goalsProb": 0.9157,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.905,
     "cornersLine": 11.5,
     "cornersPick": "over",
     "cornersProb": 0.5188,
-    "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5266
+    "cardsLine": 6.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5935
   },
   {
     "id": 1604066,
@@ -37025,9 +37327,9 @@
     "cornersLine": 10.5,
     "cornersPick": "over",
     "cornersProb": 0.5002,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6288
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5326
   },
   {
     "id": 1635735,
@@ -37047,8 +37349,8 @@
     "cornersPick": "over",
     "cornersProb": 0.5295,
     "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.517
+    "cardsPick": "over",
+    "cardsProb": 0.5454
   },
   {
     "id": 1635673,
@@ -37162,19 +37464,19 @@
     "home": "Nacional Asuncion",
     "away": "Rubio NU",
     "predictedPick": "home",
-    "predictedProb": 0.8463,
+    "predictedProb": 0.9012,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9444,
+    "goalsProb": 0.9637,
     "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5244,
+    "cornersProb": 0.5207,
     "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5039
+    "cardsPick": "over",
+    "cardsProb": 0.5237
   },
   {
     "id": 1632068,
@@ -37225,16 +37527,16 @@
     "home": "Sportivo Luqueno",
     "away": "Olimpia",
     "predictedPick": "away",
-    "predictedProb": 0.9075,
+    "predictedProb": 0.8555,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9805,
-    "cornersLine": 12.5,
+    "goalsProb": 0.9739,
+    "cornersLine": 11.5,
     "cornersPick": "over",
-    "cornersProb": 0.5147,
+    "cornersProb": 0.5153,
     "cardsLine": 5.5,
     "cardsPick": "under",
     "cardsProb": 0.616
@@ -37288,13 +37590,13 @@
     "home": "Atletico-MG",
     "away": "Corinthians",
     "predictedPick": "home",
-    "predictedProb": 0.6739,
+    "predictedProb": 0.6766,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9291,
+    "goalsProb": 0.9302,
     "cornersLine": 13.5,
     "cornersPick": "over",
     "cornersProb": 0.5034,
@@ -37309,19 +37611,19 @@
     "home": "Kairat Almaty",
     "away": "Mjallby AIF",
     "predictedPick": "away",
-    "predictedProb": 0.7901,
+    "predictedProb": 0.8454,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9921,
-    "cornersLine": 9.5,
+    "goalsProb": 0.992,
+    "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5874,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5292
+    "cornersProb": 0.5925,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5809
   },
   {
     "id": 1636298,
@@ -37330,19 +37632,19 @@
     "home": "Marseille",
     "away": "Levski Sofia",
     "predictedPick": "away",
-    "predictedProb": 0.3906,
-    "resultTooClose": true,
+    "predictedProb": 0.4687,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9618,
+    "goalsProb": 0.9339,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.505,
-    "cardsLine": 2.5,
+    "cornersProb": 0.5257,
+    "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5586
+    "cardsProb": 0.5162
   },
   {
     "id": 1636244,
@@ -37351,19 +37653,19 @@
     "home": "Celta Vigo",
     "away": "Bournemouth",
     "predictedPick": "away",
-    "predictedProb": 0.6643,
+    "predictedProb": 0.713,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9588,
-    "cornersLine": 8.5,
-    "cornersPick": "under",
-    "cornersProb": 0.519,
-    "cardsLine": 4.5,
+    "goalsProb": 0.9719,
+    "cornersLine": 10.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5197,
+    "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.6035
+    "cardsProb": 0.5216
   },
   {
     "id": 1636231,
@@ -37372,19 +37674,19 @@
     "home": "Beşiktaş",
     "away": "Hapoel Beer Sheva",
     "predictedPick": "home",
-    "predictedProb": 0.8768,
+    "predictedProb": 0.8765,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9993,
+    "goalsProb": 0.9992,
     "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5605,
-    "cardsLine": 4.5,
+    "cornersProb": 0.5466,
+    "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5002
+    "cardsProb": 0.616
   },
   {
     "id": 1636307,
@@ -37404,8 +37706,8 @@
     "cornersPick": "under",
     "cornersProb": 0.5309,
     "cardsLine": 3.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5259
+    "cardsPick": "over",
+    "cardsProb": 0.5162
   },
   {
     "id": 1636315,
@@ -37421,12 +37723,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9963,
-    "cornersLine": 11.5,
+    "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5793,
-    "cardsLine": 4.5,
+    "cornersProb": 0.5084,
+    "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5512
+    "cardsProb": 0.616
   },
   {
     "id": 1636334,
@@ -37435,19 +37737,19 @@
     "home": "Red Bull Salzburg",
     "away": "Ararat-Armenia",
     "predictedPick": "away",
-    "predictedProb": 0.4147,
+    "predictedProb": 0.5502,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9252,
-    "cornersLine": 9.5,
+    "goalsProb": 0.9441,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5089,
-    "cardsLine": 3.5,
+    "cornersProb": 0.5435,
+    "cardsLine": 5.5,
     "cardsPick": "over",
-    "cardsProb": 0.5162
+    "cardsProb": 0.5134
   },
   {
     "id": 1636255,
@@ -37456,19 +37758,19 @@
     "home": "Dinamo Zagreb",
     "away": "Bayer Leverkusen",
     "predictedPick": "away",
-    "predictedProb": 0.7898,
+    "predictedProb": 0.7263,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9903,
+    "goalsProb": 0.9904,
     "cornersLine": 12.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5009,
+    "cornersPick": "over",
+    "cornersProb": 0.5002,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5512
+    "cardsProb": 0.5898
   },
   {
     "id": 1636329,
@@ -37477,19 +37779,19 @@
     "home": "Union St. Gilloise",
     "away": "Lech Poznan",
     "predictedPick": "home",
-    "predictedProb": 0.8792,
+    "predictedProb": 0.8782,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9997,
-    "cornersLine": 11.5,
+    "goalsProb": 0.9995,
+    "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5316,
+    "cornersProb": 0.5089,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.6092
+    "cardsProb": 0.6316
   },
   {
     "id": 1636395,
@@ -37498,19 +37800,19 @@
     "home": "Brighton",
     "away": "Universitatea Craiova",
     "predictedPick": "home",
-    "predictedProb": 0.8325,
+    "predictedProb": 0.7887,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9833,
-    "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5705,
+    "goalsProb": 0.9635,
+    "cornersLine": 8.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5404,
     "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5416
+    "cardsPick": "over",
+    "cardsProb": 0.5146
   },
   {
     "id": 1636381,
@@ -37519,19 +37821,19 @@
     "home": "Ajax",
     "away": "FC Thun",
     "predictedPick": "home",
-    "predictedProb": 0.7444,
+    "predictedProb": 0.7651,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9052,
-    "cornersLine": 7.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5428,
+    "goalsLine": 4.5,
+    "goalsPick": "under",
+    "goalsProb": 0.9133,
+    "cornersLine": 8.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5605,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.587
+    "cardsProb": 0.5152
   },
   {
     "id": 1636421,
@@ -37540,19 +37842,19 @@
     "home": "Heart Of Midlothian",
     "away": "Monaco",
     "predictedPick": "away",
-    "predictedProb": 0.5527,
+    "predictedProb": 0.5803,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9408,
+    "goalsProb": 0.9457,
     "cornersLine": 7.5,
     "cornersPick": "under",
-    "cornersProb": 0.5868,
+    "cornersProb": 0.513,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5722
+    "cardsProb": 0.6019
   },
   {
     "id": 1636393,
@@ -37561,19 +37863,19 @@
     "home": "Brann",
     "away": "Aarhus",
     "predictedPick": "home",
-    "predictedProb": 0.7489,
+    "predictedProb": 0.7436,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9558,
-    "cornersLine": 13.5,
+    "goalsLine": 4.5,
+    "goalsPick": "under",
+    "goalsProb": 0.9452,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.573,
+    "cornersProb": 0.5793,
     "cardsLine": 3.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5265
+    "cardsPick": "under",
+    "cardsProb": 0.5152
   },
   {
     "id": 1636431,
@@ -37589,12 +37891,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9381,
-    "cornersLine": 9.5,
+    "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5742,
+    "cornersProb": 0.5744,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.616
   },
   {
     "id": 1636405,
@@ -37603,19 +37905,19 @@
     "home": "Egnatia Rrogozhinë",
     "away": "Lincoln Red Imps FC",
     "predictedPick": "home",
-    "predictedProb": 0.5247,
-    "resultTooClose": false,
+    "predictedProb": 0.4117,
+    "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9286,
-    "cornersLine": 4.5,
+    "goalsProb": 0.9621,
+    "cornersLine": 6.5,
     "cornersPick": "under",
-    "cornersProb": 0.5321,
-    "cardsLine": 4.5,
+    "cornersProb": 0.5265,
+    "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5321
+    "cardsProb": 0.5289
   },
   {
     "id": 1636460,
@@ -37623,20 +37925,20 @@
     "date": "2026-11-26T17:45:00+00:00",
     "home": "Pafos",
     "away": "FC Midtjylland",
-    "predictedPick": "away",
-    "predictedProb": 0.3718,
+    "predictedPick": "home",
+    "predictedProb": 0.3811,
     "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9478,
-    "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5023,
-    "cardsLine": 3.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5326
+    "goalsProb": 0.932,
+    "cornersLine": 8.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5311,
+    "cardsLine": 4.5,
+    "cardsPick": "under",
+    "cardsProb": 0.6035
   },
   {
     "id": 1636426,
@@ -37645,19 +37947,19 @@
     "home": "FC Iberia 1999",
     "away": "Getafe",
     "predictedPick": "draw",
-    "predictedProb": 0.3738,
+    "predictedProb": 0.3825,
     "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9757,
+    "goalsProb": 0.979,
     "cornersLine": 10.5,
     "cornersPick": "under",
     "cornersProb": 0.558,
-    "cardsLine": 6.5,
+    "cardsLine": 7.5,
     "cardsPick": "under",
-    "cardsProb": 0.5108
+    "cardsProb": 0.5838
   },
   {
     "id": 1636438,
@@ -37673,12 +37975,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.912,
-    "cornersLine": 6.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5001,
-    "cardsLine": 5.5,
+    "cornersLine": 7.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5734,
+    "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5217
+    "cardsProb": 0.5364
   },
   {
     "id": 1636252,
@@ -37686,20 +37988,20 @@
     "date": "2026-11-26T20:00:00+00:00",
     "home": "Crystal Palace",
     "away": "Real Sociedad",
-    "predictedPick": "home",
-    "predictedProb": 0.4361,
+    "predictedPick": "away",
+    "predictedProb": 0.5379,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.972,
+    "goalsProb": 0.9632,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5874,
-    "cardsLine": 3.5,
+    "cornersProb": 0.565,
+    "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5025
+    "cardsProb": 0.5627
   },
   {
     "id": 1636294,
@@ -37708,19 +38010,19 @@
     "home": "Lyon",
     "away": "Lillestrom",
     "predictedPick": "home",
-    "predictedProb": 0.7725,
+    "predictedProb": 0.7689,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9859,
-    "cornersLine": 7.5,
+    "goalsProb": 0.9852,
+    "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5246,
-    "cardsLine": 2.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5305
+    "cornersProb": 0.5605,
+    "cardsLine": 3.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5259
   },
   {
     "id": 1636270,
@@ -37729,19 +38031,19 @@
     "home": "1899 Hoffenheim",
     "away": "Sturm Graz",
     "predictedPick": "home",
-    "predictedProb": 0.8298,
+    "predictedProb": 0.8226,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9625,
-    "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.535,
-    "cardsLine": 6.5,
+    "goalsProb": 0.9744,
+    "cornersLine": 13.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5259,
+    "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.6063
+    "cardsProb": 0.5809
   },
   {
     "id": 1636301,
@@ -37750,19 +38052,19 @@
     "home": "NEC Nijmegen",
     "away": "Rennes",
     "predictedPick": "home",
-    "predictedProb": 0.3693,
-    "resultTooClose": true,
+    "predictedProb": 0.6279,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9323,
-    "cornersLine": 12.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5192,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5957
+    "goalsProb": 0.9817,
+    "cornersLine": 13.5,
+    "cornersPick": "under",
+    "cornersProb": 0.573,
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5507
   },
   {
     "id": 1636277,
@@ -37770,20 +38072,20 @@
     "date": "2026-11-26T20:00:00+00:00",
     "home": "Juventus",
     "away": "Omonia Nicosia",
-    "predictedPick": "away",
-    "predictedProb": 0.5441,
+    "predictedPick": "home",
+    "predictedProb": 0.7171,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.973,
-    "cornersLine": 14.5,
+    "goalsProb": 0.995,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.562,
+    "cornersProb": 0.5495,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.6293
+    "cardsProb": 0.5366
   },
   {
     "id": 1636336,
@@ -37792,19 +38094,19 @@
     "home": "Sparta Praha",
     "away": "AZ Alkmaar",
     "predictedPick": "away",
-    "predictedProb": 0.4315,
+    "predictedProb": 0.6111,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 4.5,
-    "goalsPick": "under",
-    "goalsProb": 0.9249,
-    "cornersLine": 10.5,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9228,
+    "cornersLine": 9.5,
     "cornersPick": "over",
-    "cornersProb": 0.5245,
-    "cardsLine": 6.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5742
+    "cornersProb": 0.5333,
+    "cardsLine": 5.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5217
   },
   {
     "id": 1636261,
@@ -37813,19 +38115,19 @@
     "home": "Ferencvarosi TC",
     "away": "Celje",
     "predictedPick": "home",
-    "predictedProb": 0.8769,
+    "predictedProb": 0.8666,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9983,
-    "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5037,
-    "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5134
+    "goalsProb": 0.9988,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5084,
+    "cardsLine": 4.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5801
   },
   {
     "id": 1636343,
@@ -37834,16 +38136,16 @@
     "home": "Sunderland",
     "away": "Jagiellonia",
     "predictedPick": "home",
-    "predictedProb": 0.5359,
-    "resultTooClose": false,
+    "predictedProb": 0.3837,
+    "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9052,
+    "goalsLine": 4.5,
+    "goalsPick": "under",
+    "goalsProb": 0.9689,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5089,
+    "cornersProb": 0.5349,
     "cardsLine": 3.5,
     "cardsPick": "over",
     "cardsProb": 0.5527
@@ -37855,19 +38157,19 @@
     "home": "OFI",
     "away": "Anderlecht",
     "predictedPick": "away",
-    "predictedProb": 0.4226,
-    "resultTooClose": true,
+    "predictedProb": 0.4632,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9864,
+    "goalsProb": 0.9685,
     "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5611,
+    "cornersProb": 0.5874,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5512
+    "cardsProb": 0.5132
   },
   {
     "id": 1636349,
@@ -37876,19 +38178,19 @@
     "home": "Torreense",
     "away": "Celtic",
     "predictedPick": "home",
-    "predictedProb": 0.6163,
+    "predictedProb": 0.8198,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9735,
+    "goalsProb": 0.9987,
     "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.501,
+    "cornersPick": "over",
+    "cornersProb": 0.5209,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsProb": 0.5862
   },
   {
     "id": 1636410,
@@ -37897,19 +38199,19 @@
     "home": "SC Freiburg",
     "away": "Twente",
     "predictedPick": "away",
-    "predictedProb": 0.7783,
+    "predictedProb": 0.753,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9995,
-    "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5188,
+    "goalsProb": 0.9996,
+    "cornersLine": 12.5,
+    "cornersPick": "under",
+    "cornersProb": 0.519,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.6405
+    "cardsProb": 0.5649
   },
   {
     "id": 1636389,
@@ -37918,19 +38220,19 @@
     "home": "SC Braga",
     "away": "KuPS",
     "predictedPick": "home",
-    "predictedProb": 0.8169,
+    "predictedProb": 0.7825,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9479,
+    "goalsProb": 0.9101,
     "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5531,
-    "cardsLine": 5.5,
+    "cornersProb": 0.576,
+    "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5132
   },
   {
     "id": 1636457,
@@ -37939,19 +38241,19 @@
     "home": "FC Nordsjaelland",
     "away": "Panathinaikos",
     "predictedPick": "away",
-    "predictedProb": 0.8115,
+    "predictedProb": 0.8429,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9986,
+    "goalsProb": 0.999,
     "cornersLine": 14.5,
     "cornersPick": "under",
-    "cornersProb": 0.5071,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5109
+    "cornersProb": 0.5704,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5809
   },
   {
     "id": 1636420,
@@ -37960,19 +38262,19 @@
     "home": "HNK Hajduk Split",
     "away": "St. Truiden",
     "predictedPick": "away",
-    "predictedProb": 0.3445,
-    "resultTooClose": true,
+    "predictedProb": 0.5383,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.8989,
+    "goalsProb": 0.9874,
     "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5471,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5898
+    "cornersProb": 0.5233,
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5527
   },
   {
     "id": 1636412,
@@ -37981,19 +38283,19 @@
     "home": "Gent",
     "away": "FK Crvena Zvezda",
     "predictedPick": "home",
-    "predictedProb": 0.6882,
+    "predictedProb": 0.6576,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9197,
-    "cornersLine": 11.5,
-    "cornersPick": "under",
-    "cornersProb": 0.508,
-    "cardsLine": 4.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6191
+    "goalsProb": 0.9039,
+    "cornersLine": 12.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5147,
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5162
   },
   {
     "id": 1636402,
@@ -38002,19 +38304,19 @@
     "home": "CSKA Sofia",
     "away": "Trabzonspor",
     "predictedPick": "away",
-    "predictedProb": 0.7745,
+    "predictedProb": 0.8331,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9969,
-    "cornersLine": 11.5,
+    "goalsProb": 0.9982,
+    "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5281,
+    "cornersProb": 0.5531,
     "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5217
+    "cardsPick": "under",
+    "cardsProb": 0.5722
   },
   {
     "id": 1636428,
@@ -38023,19 +38325,19 @@
     "home": "Inter Club d'Escaldes",
     "away": "FC Copenhagen",
     "predictedPick": "away",
-    "predictedProb": 0.8014,
+    "predictedProb": 0.8128,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9965,
+    "goalsProb": 0.9951,
     "cornersLine": 8.5,
     "cornersPick": "over",
     "cornersProb": 0.5177,
-    "cardsLine": 2.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5438
+    "cardsLine": 3.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5326
   },
   {
     "id": 1636386,
@@ -38044,19 +38346,19 @@
     "home": "Borac Banja Luka",
     "away": "Atalanta",
     "predictedPick": "home",
-    "predictedProb": 0.8485,
+    "predictedProb": 0.7905,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.989,
+    "goalsProb": 0.956,
     "cornersLine": 14.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5168,
+    "cornersPick": "under",
+    "cornersProb": 0.5092,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5801
+    "cardsProb": 0.6288
   },
   {
     "id": 1552238,
@@ -38307,8 +38609,8 @@
     "cornersPick": "under",
     "cornersProb": 0.5466,
     "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsPick": "over",
+    "cardsProb": 0.5283
   },
   {
     "id": 1557483,
@@ -38539,7 +38841,7 @@
     "cornersProb": 0.5435,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5119
+    "cardsProb": 0.5461
   },
   {
     "id": 1552835,
@@ -38558,9 +38860,9 @@
     "cornersLine": 9.5,
     "cornersPick": "under",
     "cornersProb": 0.5427,
-    "cardsLine": 3.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6472
+    "cardsLine": 2.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5377
   },
   {
     "id": 1552831,
@@ -38626,6 +38928,27 @@
     "cardsProb": 0.517
   },
   {
+    "id": 1647178,
+    "league": "Copa Libertadores",
+    "date": "2026-11-28T20:00:00+00:00",
+    "home": "Palmeiras",
+    "away": "Estudiantes L.P.",
+    "predictedPick": "home",
+    "predictedProb": 0.8083,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9909,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5618,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5687
+  },
+  {
     "id": 1575553,
     "league": "Primeira Liga (Portugal)",
     "date": "2026-11-28T20:30:00+00:00",
@@ -38645,27 +38968,6 @@
     "cardsLine": 5.5,
     "cardsPick": "under",
     "cardsProb": 0.5932
-  },
-  {
-    "id": 1647178,
-    "league": "Copa Libertadores",
-    "date": "2026-11-28T21:00:00+00:00",
-    "home": "Estudiantes L.P.",
-    "away": "Palmeiras",
-    "predictedPick": "away",
-    "predictedProb": 0.5664,
-    "resultTooClose": false,
-    "status": "pending",
-    "actualResult": null,
-    "goalsLine": 0.5,
-    "goalsPick": "over",
-    "goalsProb": 0.9253,
-    "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5618,
-    "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5565
   },
   {
     "id": 1561457,
@@ -38807,12 +39109,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9914,
-    "cornersLine": 9.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5002,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5418,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6152
+    "cardsProb": 0.6288
   },
   {
     "id": 1552829,
@@ -38830,10 +39132,10 @@
     "goalsProb": 0.9846,
     "cornersLine": 10.5,
     "cornersPick": "over",
-    "cornersProb": 0.5197,
-    "cardsLine": 3.5,
+    "cornersProb": 0.5002,
+    "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5004
+    "cardsProb": 0.6288
   },
   {
     "id": 1557481,
@@ -38851,10 +39153,10 @@
     "goalsProb": 0.9529,
     "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.576,
+    "cornersProb": 0.519,
     "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5292
+    "cardsPick": "under",
+    "cardsProb": 0.5002
   },
   {
     "id": 1557478,
@@ -38870,12 +39172,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.996,
-    "cornersLine": 11.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5188,
-    "cardsLine": 4.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5364
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5207,
+    "cardsLine": 5.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5862
   },
   {
     "id": 1557479,
@@ -38891,12 +39193,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9228,
-    "cornersLine": 9.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5002,
+    "cornersLine": 10.5,
+    "cornersPick": "under",
+    "cornersProb": 0.5618,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.6107
+    "cardsProb": 0.5513
   },
   {
     "id": 1557486,
@@ -38912,9 +39214,9 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9673,
-    "cornersLine": 14.5,
+    "cornersLine": 13.5,
     "cornersPick": "under",
-    "cornersProb": 0.5673,
+    "cornersProb": 0.5478,
     "cardsLine": 3.5,
     "cardsPick": "under",
     "cardsProb": 0.5518
@@ -38933,12 +39235,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9993,
-    "cornersLine": 10.5,
-    "cornersPick": "under",
-    "cornersProb": 0.583,
+    "cornersLine": 9.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5206,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6132
+    "cardsProb": 0.5474
   },
   {
     "id": 1561455,
@@ -38998,10 +39300,10 @@
     "goalsProb": 0.9547,
     "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5387,
-    "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5635
+    "cornersProb": 0.5793,
+    "cardsLine": 4.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5418
   },
   {
     "id": 1570472,
@@ -39059,12 +39361,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9543,
-    "cornersLine": 9.5,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5089,
+    "cornersProb": 0.5316,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5132
+    "cardsProb": 0.5898
   },
   {
     "id": 1570468,
@@ -39103,7 +39405,7 @@
     "goalsProb": 0.9478,
     "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5471,
+    "cornersProb": 0.5233,
     "cardsLine": 5.5,
     "cardsPick": "over",
     "cardsProb": 0.543
@@ -39123,11 +39425,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9992,
     "cornersLine": 9.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5104,
+    "cornersPick": "under",
+    "cornersProb": 0.5349,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5693
+    "cardsProb": 0.6025
   },
   {
     "id": 1570463,
@@ -39186,11 +39488,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9981,
     "cornersLine": 7.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5116,
-    "cardsLine": 5.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5266
+    "cornersPick": "under",
+    "cornersProb": 0.5364,
+    "cardsLine": 6.5,
+    "cardsPick": "under",
+    "cardsProb": 0.579
   },
   {
     "id": 1570466,
@@ -39270,11 +39572,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9958,
     "cornersLine": 12.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5114,
-    "cardsLine": 6.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5854
+    "cornersPick": "under",
+    "cornersProb": 0.5269,
+    "cardsLine": 5.5,
+    "cardsPick": "over",
+    "cardsProb": 0.51
   },
   {
     "id": 1561456,
@@ -39335,9 +39637,9 @@
     "cornersLine": 6.5,
     "cornersPick": "under",
     "cornersProb": 0.5806,
-    "cardsLine": 3.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5265
+    "cardsLine": 4.5,
+    "cardsPick": "under",
+    "cardsProb": 0.6288
   },
   {
     "id": 1550215,
@@ -39481,10 +39783,10 @@
     "goalsProb": 0.9739,
     "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5793,
-    "cardsLine": 3.5,
-    "cardsPick": "over",
-    "cardsProb": 0.5162
+    "cornersProb": 0.5198,
+    "cardsLine": 4.5,
+    "cardsPick": "under",
+    "cardsProb": 0.6288
   },
   {
     "id": 1550209,
@@ -39500,12 +39802,12 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9201,
-    "cornersLine": 12.5,
-    "cornersPick": "under",
-    "cornersProb": 0.519,
+    "cornersLine": 11.5,
+    "cornersPick": "over",
+    "cornersProb": 0.5002,
     "cardsLine": 3.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5366
+    "cardsPick": "over",
+    "cardsProb": 0.5162
   },
   {
     "id": 1575550,
@@ -39543,11 +39845,11 @@
     "goalsPick": "over",
     "goalsProb": 0.9947,
     "cornersLine": 13.5,
-    "cornersPick": "under",
-    "cornersProb": 0.5009,
+    "cornersPick": "over",
+    "cornersProb": 0.5174,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsProb": 0.5635
   },
   {
     "id": 1552239,
@@ -39563,12 +39865,12 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9954,
-    "cornersLine": 13.5,
+    "cornersLine": 14.5,
     "cornersPick": "under",
-    "cornersProb": 0.5182,
-    "cardsLine": 3.5,
-    "cardsPick": "under",
-    "cardsProb": 0.6025
+    "cornersProb": 0.5176,
+    "cardsLine": 2.5,
+    "cardsPick": "over",
+    "cardsProb": 0.5655
   },
   {
     "id": 1552833,
@@ -39586,10 +39888,10 @@
     "goalsProb": 0.9758,
     "cornersLine": 8.5,
     "cornersPick": "under",
-    "cornersProb": 0.5466,
-    "cardsLine": 3.5,
+    "cornersProb": 0.5012,
+    "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5366
+    "cardsProb": 0.6132
   },
   {
     "id": 1575549,
@@ -39619,13 +39921,13 @@
     "home": "Internacional",
     "away": "RB Bragantino",
     "predictedPick": "home",
-    "predictedProb": 0.3848,
+    "predictedProb": 0.3856,
     "resultTooClose": true,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9302,
+    "goalsProb": 0.9285,
     "cornersLine": 13.5,
     "cornersPick": "over",
     "cornersProb": 0.5174,
@@ -39640,19 +39942,19 @@
     "home": "Botafogo",
     "away": "Bahia",
     "predictedPick": "home",
-    "predictedProb": 0.4082,
+    "predictedProb": 0.4298,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9292,
-    "cornersLine": 11.5,
+    "goalsProb": 0.9331,
+    "cornersLine": 12.5,
     "cornersPick": "under",
-    "cornersProb": 0.5387,
+    "cornersProb": 0.576,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5527
+    "cardsProb": 0.5204
   },
   {
     "id": 1492475,
@@ -39661,16 +39963,16 @@
     "home": "Fluminense",
     "away": "Cruzeiro",
     "predictedPick": "home",
-    "predictedProb": 0.6413,
+    "predictedProb": 0.6784,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9849,
-    "cornersLine": 10.5,
+    "goalsProb": 0.9894,
+    "cornersLine": 11.5,
     "cornersPick": "under",
-    "cornersProb": 0.5207,
+    "cornersProb": 0.5793,
     "cardsLine": 5.5,
     "cardsPick": "under",
     "cardsProb": 0.616
@@ -39682,19 +39984,19 @@
     "home": "Sao Paulo",
     "away": "Remo",
     "predictedPick": "home",
-    "predictedProb": 0.6793,
+    "predictedProb": 0.8036,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
-    "goalsLine": 4.5,
-    "goalsPick": "under",
-    "goalsProb": 0.9334,
-    "cornersLine": 14.5,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.933,
+    "cornersLine": 13.5,
     "cornersPick": "under",
-    "cornersProb": 0.5704,
+    "cornersProb": 0.5009,
     "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5119
+    "cardsPick": "over",
+    "cardsProb": 0.5217
   },
   {
     "id": 1492473,
@@ -39703,19 +40005,19 @@
     "home": "Corinthians",
     "away": "Gremio",
     "predictedPick": "home",
-    "predictedProb": 0.4609,
+    "predictedProb": 0.5019,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 4.5,
     "goalsPick": "under",
-    "goalsProb": 0.9569,
+    "goalsProb": 0.9449,
     "cornersLine": 12.5,
     "cornersPick": "over",
     "cornersProb": 0.5181,
     "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsPick": "over",
+    "cardsProb": 0.5134
   },
   {
     "id": 1492472,
@@ -39724,19 +40026,19 @@
     "home": "Chapecoense-sc",
     "away": "Palmeiras",
     "predictedPick": "away",
-    "predictedProb": 0.9078,
+    "predictedProb": 0.9437,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9733,
+    "goalsProb": 0.9881,
     "cornersLine": 9.5,
     "cornersPick": "under",
     "cornersProb": 0.5218,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5364
+    "cardsProb": 0.5237
   },
   {
     "id": 1492479,
@@ -39745,13 +40047,13 @@
     "home": "Vitoria",
     "away": "Santos",
     "predictedPick": "home",
-    "predictedProb": 0.5191,
+    "predictedProb": 0.5204,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9134,
+    "goalsProb": 0.9149,
     "cornersLine": 9.5,
     "cornersPick": "under",
     "cornersProb": 0.565,
@@ -39766,13 +40068,13 @@
     "home": "Coritiba",
     "away": "Flamengo",
     "predictedPick": "away",
-    "predictedProb": 0.6867,
+    "predictedProb": 0.7159,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9438,
+    "goalsProb": 0.9451,
     "cornersLine": 13.5,
     "cornersPick": "under",
     "cornersProb": 0.573,
@@ -39787,13 +40089,13 @@
     "home": "Atletico-MG",
     "away": "Vasco DA Gama",
     "predictedPick": "home",
-    "predictedProb": 0.7638,
+    "predictedProb": 0.7655,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9435,
+    "goalsProb": 0.9446,
     "cornersLine": 11.5,
     "cornersPick": "under",
     "cornersProb": 0.5316,
@@ -39808,13 +40110,13 @@
     "home": "Mirassol",
     "away": "Atletico Paranaense",
     "predictedPick": "home",
-    "predictedProb": 0.401,
-    "resultTooClose": true,
+    "predictedProb": 0.4392,
+    "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9317,
+    "goalsProb": 0.9332,
     "cornersLine": 12.5,
     "cornersPick": "over",
     "cornersProb": 0.5181,
@@ -40005,11 +40307,11 @@
     "goalsPick": "under",
     "goalsProb": 0.9031,
     "cornersLine": 8.5,
-    "cornersPick": "over",
-    "cornersProb": 0.5177,
+    "cornersPick": "under",
+    "cornersProb": 0.5577,
     "cardsLine": 5.5,
-    "cardsPick": "under",
-    "cardsProb": 0.5375
+    "cardsPick": "over",
+    "cardsProb": 0.5134
   },
   {
     "id": 1639809,
@@ -40165,19 +40467,19 @@
     "home": "Rubio NU",
     "away": "Cerro Porteno",
     "predictedPick": "away",
-    "predictedProb": 0.5562,
+    "predictedProb": 0.6856,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.8994,
+    "goalsProb": 0.9247,
     "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.558,
+    "cornersProb": 0.5543,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsProb": 0.5034
   },
   {
     "id": 1632074,
@@ -40207,16 +40509,16 @@
     "home": "Deportivo Recoleta",
     "away": "Sportivo Luqueno",
     "predictedPick": "home",
-    "predictedProb": 0.645,
+    "predictedProb": 0.5417,
     "resultTooClose": false,
     "status": "pending",
     "actualResult": null,
     "goalsLine": 0.5,
     "goalsPick": "over",
-    "goalsProb": 0.9373,
-    "cornersLine": 11.5,
+    "goalsProb": 0.9341,
+    "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5554,
+    "cornersProb": 0.558,
     "cardsLine": 4.5,
     "cardsPick": "under",
     "cardsProb": 0.5132
@@ -40340,9 +40642,9 @@
     "goalsLine": 0.5,
     "goalsPick": "over",
     "goalsProb": 0.9708,
-    "cornersLine": 10.5,
+    "cornersLine": 9.5,
     "cornersPick": "under",
-    "cornersProb": 0.5207,
+    "cornersProb": 0.5218,
     "cardsLine": 6.5,
     "cardsPick": "under",
     "cardsProb": 0.6063
@@ -40361,11 +40663,116 @@
     "goalsLine": 4.5,
     "goalsPick": "under",
     "goalsProb": 0.9205,
-    "cornersLine": 9.5,
+    "cornersLine": 10.5,
     "cornersPick": "under",
-    "cornersProb": 0.5611,
+    "cornersProb": 0.583,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5119
+    "cardsProb": 0.5461
+  },
+  {
+    "id": 1604079,
+    "league": "Saudi Pro League",
+    "date": "2026-12-01T12:20:00+00:00",
+    "home": "Al Taee",
+    "away": "Al Jabalain",
+    "predictedPick": "away",
+    "predictedProb": 0.5936,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9343,
+    "cornersLine": null,
+    "cornersPick": null,
+    "cornersProb": null,
+    "cardsLine": null,
+    "cardsPick": null,
+    "cardsProb": null
+  },
+  {
+    "id": 1604078,
+    "league": "Saudi Pro League",
+    "date": "2026-12-01T12:20:00+00:00",
+    "home": "Al Bukayriyah",
+    "away": "Al Ula",
+    "predictedPick": "away",
+    "predictedProb": 0.9236,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9751,
+    "cornersLine": null,
+    "cornersPick": null,
+    "cornersProb": null,
+    "cardsLine": null,
+    "cardsPick": null,
+    "cardsProb": null
+  },
+  {
+    "id": 1604075,
+    "league": "Saudi Pro League",
+    "date": "2026-12-01T12:25:00+00:00",
+    "home": "Al Jandal",
+    "away": "Jeddah Club",
+    "predictedPick": "home",
+    "predictedProb": 0.5211,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 4.5,
+    "goalsPick": "under",
+    "goalsProb": 0.9728,
+    "cornersLine": null,
+    "cornersPick": null,
+    "cornersProb": null,
+    "cardsLine": null,
+    "cardsPick": null,
+    "cardsProb": null
+  },
+  {
+    "id": 1604080,
+    "league": "Saudi Pro League",
+    "date": "2026-12-01T14:30:00+00:00",
+    "home": "Al-Adalah",
+    "away": "Al-Raed",
+    "predictedPick": "home",
+    "predictedProb": 0.773,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 4.5,
+    "goalsPick": "under",
+    "goalsProb": 0.9242,
+    "cornersLine": null,
+    "cornersPick": null,
+    "cornersProb": null,
+    "cardsLine": null,
+    "cardsPick": null,
+    "cardsProb": null
+  },
+  {
+    "id": 1557491,
+    "league": "Premier League",
+    "date": "2026-12-01T20:00:00+00:00",
+    "home": "Coventry",
+    "away": "Ipswich",
+    "predictedPick": "home",
+    "predictedProb": 0.5333,
+    "resultTooClose": false,
+    "status": "pending",
+    "actualResult": null,
+    "goalsLine": 0.5,
+    "goalsPick": "over",
+    "goalsProb": 0.9755,
+    "cornersLine": 6.5,
+    "cornersPick": "under",
+    "cornersProb": 0.6063,
+    "cardsLine": 4.5,
+    "cardsPick": "under",
+    "cardsProb": 0.5474
   }
 ]
