@@ -34058,7 +34058,9 @@
     "cornersProb": 0.583,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6093
+    "cardsProb": 0.6093,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1648691,
@@ -34079,7 +34081,9 @@
     "cornersProb": 0.5793,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.541
+    "cardsProb": 0.541,
+    "dailyPickResult": true,
+    "dailyPickGoals": true
   },
   {
     "id": 1549871,
