@@ -34357,7 +34357,9 @@
     "cornersProb": 0.5768,
     "cardsLine": 5.5,
     "cardsPick": "over",
-    "cardsProb": 0.5134
+    "cardsProb": 0.5134,
+    "dailyPickResult": true,
+    "dailyPickGoals": true
   },
   {
     "id": 1649058,
