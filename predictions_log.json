@@ -38451,7 +38451,9 @@
     "cornersProb": 0.5925,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5809,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636298,
@@ -38472,7 +38474,9 @@
     "cornersProb": 0.5257,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5162
+    "cardsProb": 0.5162,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636244,
@@ -38493,7 +38497,9 @@
     "cornersProb": 0.5197,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5216
+    "cardsProb": 0.5216,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636231,
@@ -38514,7 +38520,9 @@
     "cornersProb": 0.5466,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.616
+    "cardsProb": 0.616,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636307,
@@ -38535,7 +38543,9 @@
     "cornersProb": 0.5309,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5162
+    "cardsProb": 0.5162,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636315,
@@ -38556,7 +38566,9 @@
     "cornersProb": 0.5084,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.616
+    "cardsProb": 0.616,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636334,
@@ -38577,7 +38589,9 @@
     "cornersProb": 0.5435,
     "cardsLine": 5.5,
     "cardsPick": "over",
-    "cardsProb": 0.5134
+    "cardsProb": 0.5134,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636255,
@@ -38598,7 +38612,9 @@
     "cornersProb": 0.5002,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5898
+    "cardsProb": 0.5898,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636329,
@@ -38619,7 +38635,9 @@
     "cornersProb": 0.5089,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.6316
+    "cardsProb": 0.6316,
+    "dailyPickResult": true,
+    "dailyPickGoals": true
   },
   {
     "id": 1636395,
@@ -38640,7 +38658,9 @@
     "cornersProb": 0.5404,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5146
+    "cardsProb": 0.5146,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636381,
@@ -38661,7 +38681,9 @@
     "cornersProb": 0.5605,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5152
+    "cardsProb": 0.5152,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636421,
@@ -38682,7 +38704,9 @@
     "cornersProb": 0.513,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.6019
+    "cardsProb": 0.6019,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636393,
@@ -38703,7 +38727,9 @@
     "cornersProb": 0.5793,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5152
+    "cardsProb": 0.5152,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636431,
@@ -38724,7 +38750,9 @@
     "cornersProb": 0.5744,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.616
+    "cardsProb": 0.616,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636405,
@@ -38745,7 +38773,9 @@
     "cornersProb": 0.5265,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5289
+    "cardsProb": 0.5289,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636460,
@@ -38766,7 +38796,9 @@
     "cornersProb": 0.5311,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6035
+    "cardsProb": 0.6035,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636426,
@@ -38787,7 +38819,9 @@
     "cornersProb": 0.558,
     "cardsLine": 7.5,
     "cardsPick": "under",
-    "cardsProb": 0.5838
+    "cardsProb": 0.5838,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636438,
@@ -38808,7 +38842,9 @@
     "cornersProb": 0.5734,
     "cardsLine": 4.5,
     "cardsPick": "over",
-    "cardsProb": 0.5364
+    "cardsProb": 0.5364,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636252,
@@ -38829,7 +38865,9 @@
     "cornersProb": 0.565,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5627
+    "cardsProb": 0.5627,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636294,
@@ -38850,7 +38888,9 @@
     "cornersProb": 0.5605,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5259
+    "cardsProb": 0.5259,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636270,
@@ -38871,7 +38911,9 @@
     "cornersProb": 0.5259,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5809,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636301,
@@ -38892,7 +38934,9 @@
     "cornersProb": 0.573,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5507
+    "cardsProb": 0.5507,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636277,
@@ -38913,7 +38957,9 @@
     "cornersProb": 0.5495,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5366
+    "cardsProb": 0.5366,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636336,
@@ -38934,7 +38980,9 @@
     "cornersProb": 0.5333,
     "cardsLine": 5.5,
     "cardsPick": "over",
-    "cardsProb": 0.5217
+    "cardsProb": 0.5217,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636261,
@@ -38955,7 +39003,9 @@
     "cornersProb": 0.5084,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5801
+    "cardsProb": 0.5801,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636343,
@@ -38976,7 +39026,9 @@
     "cornersProb": 0.5349,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5527
+    "cardsProb": 0.5527,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636305,
@@ -38997,7 +39049,9 @@
     "cornersProb": 0.5874,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5132
+    "cardsProb": 0.5132,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636349,
@@ -39018,7 +39072,9 @@
     "cornersProb": 0.5209,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5862
+    "cardsProb": 0.5862,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636410,
@@ -39039,7 +39095,9 @@
     "cornersProb": 0.519,
     "cardsLine": 3.5,
     "cardsPick": "under",
-    "cardsProb": 0.5649
+    "cardsProb": 0.5649,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636389,
@@ -39060,7 +39118,9 @@
     "cornersProb": 0.576,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.5132
+    "cardsProb": 0.5132,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636457,
@@ -39081,7 +39141,9 @@
     "cornersProb": 0.5704,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5809
+    "cardsProb": 0.5809,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636420,
@@ -39102,7 +39164,9 @@
     "cornersProb": 0.5233,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5527
+    "cardsProb": 0.5527,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636412,
@@ -39123,7 +39187,9 @@
     "cornersProb": 0.5147,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5162
+    "cardsProb": 0.5162,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636402,
@@ -39144,7 +39210,9 @@
     "cornersProb": 0.5337,
     "cardsLine": 5.5,
     "cardsPick": "under",
-    "cardsProb": 0.5722
+    "cardsProb": 0.5722,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636428,
@@ -39165,7 +39233,9 @@
     "cornersProb": 0.5177,
     "cardsLine": 3.5,
     "cardsPick": "over",
-    "cardsProb": 0.5326
+    "cardsProb": 0.5326,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1636386,
@@ -39186,7 +39256,9 @@
     "cornersProb": 0.5092,
     "cardsLine": 4.5,
     "cardsPick": "under",
-    "cardsProb": 0.6288
+    "cardsProb": 0.6288,
+    "dailyPickResult": false,
+    "dailyPickGoals": false
   },
   {
     "id": 1552238,
